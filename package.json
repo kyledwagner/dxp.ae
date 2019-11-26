@@ -18,5 +18,9 @@
   "homepage": "https://github.com/kyledwagner/dxp.ae#readme",
   "dependencies": {
     "tailwindcss": "^1.1.4"
+  },
+  "devDependencies": {
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
   }
 }
