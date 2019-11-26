@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/kyledwagner/dxp.ae#readme",
   "dependencies": {
+    "modernizr": "^3.8.0",
     "tailwindcss": "^1.1.4"
   },
   "devDependencies": {
