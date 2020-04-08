@@ -17,12 +17,12 @@
   },
   "homepage": "https://github.com/kyledwagner/dxp.ae#readme",
   "dependencies": {
-    "modernizr": "^3.8.0",
-    "tailwindcss": "^1.1.4"
+    "modernizr": "^3.10.0",
+    "tailwindcss": "^1.2.0"
   },
   "devDependencies": {
-    "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
     "zepto": "^1.2.0"
   }
 }
