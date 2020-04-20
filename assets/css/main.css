@@ -1,1 +1,33 @@
 /* Main CSS file for DXP.ae */
+@font-face {
+    font-family: 'NunitoSans-Bold';
+    src: url('/assets/font/NunitoSans-Bold.woff2') format('woff2'),
+         url('/assets/font/NunitoSans-Bold.woff') format('woff'),
+         url('/assets/font/NunitoSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: 'NunitoSans-SemiBold';
+    src: url('/assets/font/NunitoSans-SemiBold.woff2') format('woff2'),
+         url('/assets/font/NunitoSans-SemiBold.woff') format('woff'),
+         url('/assets/font/NunitoSans-SemiBold.ttf') format('truetype');
+    font-weight: semibold;
+  }
+  @font-face {
+    font-family: 'NunitoSans-Light';
+    src: url('/assets/font/NunitoSans-Light.woff2') format('woff2'),
+         url('/assets/font/NunitoSans-Light.woff') format('woff'),
+         url('/assets/font/NunitoSans-Light.ttf') format('truetype');
+    font-weight: light;
+  }
+
+ html {
+    font-family: NunitoSans-Bold;
+  }
+
+  .bg-test {
+      background-image: url(/assets/img/home-test-bg.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 100vh !important;
+  }
