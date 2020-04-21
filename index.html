@@ -23,16 +23,19 @@
             <div id="loader"></div>
         </div>
 
-        <div class="bg-test" style="display:none;" id="hud">
+        <div class="overflow-hidden" style="display:none;" id="hud">
+            <video class="max-w-none max-h-screen" autoplay muted loop id="bg-showreel">
+                <source src="/assets/video/showreel-prev.mp4" type="video/mp4">
+            </video>
+            <!-- <div class="h-screen flex items-center absolute">
+                <div class="block w-2/3 container mx-auto text-6xl text-white tracking-tight leading-none">We expose storytelling</div>
+            </div> -->
             <div class="absolute top-0 left-0 p-6">
                <img src="assets/img/dxp-logo.svg" width="121" height="64.68" alt="DXP Logo">
             </div>
             <div class="text-sm text-white tracking-wider absolute top-0 right-0 p-12">Double Exposure Productions</div>
             <div class="text-sm text-white absolute bottom-0 right-0 p-12">All rights reserved</div>
             <div class="text-sm text-white absolute bottom-0 left-0 p-12">To discover how we could work together, just send us an <a href="#" target="_blank">email</a></div>
-            <div class="h-screen flex items-center">
-                <div class="block w-1/2 container mx-auto text-6xl text-white tracking-tight leading-none">We expose storytelling</div>
-            </div>
         </div>
 
     <script src="" async defer></script>
@@ -46,6 +49,7 @@
         function showPage() {
         document.getElementById("loader").style.display = "none";
         document.getElementById("hud").style.display = "block";
+        document.getElementById("bg-showreel").style.display = "block";
         }
     </script>
     </body>
