@@ -1,2 +1,2 @@
 # dxp.ae
-Website project for Digital Exposure Productions, with inspiration from Tao Tajima's portfolio.
+Website for Digital Exposure Productions (DXP), a Dubai-based film production company.
