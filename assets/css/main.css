@@ -29,7 +29,8 @@
       background-image: url(/assets/video/IMG_0766.gif);
       background-repeat: no-repeat;
       background-size: cover;
-      min-height: 100vh !important;
+      min-height: -webkit-fill-available;
+      min-height: 100vh;
   }
 
   /* video {
