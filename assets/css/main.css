@@ -25,14 +25,14 @@
     font-family: NunitoSans-Bold;
   }
 
-  /* .bg-test {
-      background-image: url(/assets/img/home-test-bg.png);
+  .bg-test {
+      background-image: url(/assets/video/IMG_0766.gif);
       background-repeat: no-repeat;
       background-size: cover;
       min-height: 100vh !important;
-  } */
+  }
 
-  video {
+  /* video {
     max-width: auto !important;
   }
 
@@ -42,5 +42,5 @@
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
-  }
+  } */
 
