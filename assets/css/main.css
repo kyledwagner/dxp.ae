@@ -1,3 +1,12 @@
+hr {
+  display: inline-block;
+  height: 1px;
+  width: 100px;
+  border: 0;
+  border-bottom: 1px solid #fff;
+  padding-right: 0;
+}
+
 /* Main CSS file for DXP.ae */
 @font-face {
     font-family: 'NunitoSans-Bold';
@@ -21,8 +30,14 @@
     font-weight: light;
   }
 
- html {
+ .nunito-bold {
     font-family: NunitoSans-Bold;
+  }
+  .nunito-semibold {
+    font-family: NunitoSans-SemiBold;
+  }
+  .nunito-light {
+    font-family: NunitoSans-Light;
   }
 
   .bg-test {
@@ -33,15 +48,61 @@
       min-height: 100vh;
   }
 
-  /* video {
-    max-width: auto !important;
-  }
-
   .bg-showreel {
     position: fixed;
     right: 0;
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
-  } */
+  }
+
+  /* SwiperJS */
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    width: 100vw !important;
+    height: 100vh !important;
+
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .swiper-slide video {
+    min-height: 100vh !important;
+    max-width: auto !important;
+  }
+
+  .swiper-pagination {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .swiper-pagination-bullet {
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    font-size: 1.25rem;
+    color:#ccc;
+    opacity: 1;
+    font-weight: bold;
+  }
+  .swiper-pagination-bullet-active {
+    color:#fff;
+    font-weight: normal;
+  }
 

@@ -16,49 +16,65 @@
         <link rel="stylesheet" href="/assets/css/loader.css">
         <link rel="stylesheet" href="/assets/css/tailwind.min.css">
         <link rel="stylesheet" href="/assets/css/main.css">
-        <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
-        <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"> -->
+        <link rel="stylesheet" href="/assets/css/swiper.min.css">
     </head>
     <body onload="myFunction()" style="margin:0;">
 
-        <div id="preloader">
-            <div id="loader"></div>
+    <div id="preloader">
+        <img src="assets/preloader/DXP-animation.gif" class="mx-auto my-auto h-100" width="500" id="loader">
+        <div id="loader"></div>
+    </div>
+
+    <!-- Swiper -->
+    <div style="display:none;" id="main">
+    <div class="swiper-container">
+            <div class="relative overflow-hidden bg-showreel z-10">
+              <div class="absolute top-0 left-0 p-6 xl:pl-12 xl:pt-10 xl:ml-1">
+                 <img src="assets/img/dxp-logo.svg" width="121" height="64.68" alt="DXP Logo">
+              </div>
+              <div class="nunito-bold hidden md:inline-block text-sm text-white tracking-wider absolute top-0 right-0 p-12 xl:p-16 xl:mt-1">Double Exposure Productions<hr class="ml-4 mb-1"></div>
+              <div class="nunito-light absolute bottom-0 left-0 md:right-0 md:bottom-0 md:left-auto text-sm text-white p-10 xl:p-16">All rights reserved</div>
+              <div class="nunito-semibold hidden md:block text-sm text-white absolute bottom-0 left-0 p-12 xl:p-16">To discover how we could work together, just send us an <a href="#" target="_blank">email</a></div>
+          </div>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                      <video class="max-w-none max-h-screen" autoplay muted loop>
+                          <source src="/assets/video/Showreel-sample.mp4" type="video/mp4">
+                      </video>
+                </div>
+                <div class="swiper-slide">
+                  <video class="max-w-none max-h-screen" autoplay muted loop>
+                    <source src="/assets/video/Showreel-sample.mp4" type="video/mp4">
+                </video>
+                </div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+              </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination hidden lg:block absolute pr-12 xl:pr-16"></div>
+            </div>
         </div>
 
-        <div class="relative overflow-hidden bg-test" style="display:none;" id="hud">
-            <!-- <video class="max-w-none max-h-screen" autoplay muted loop id="bg-showreel">
-                <source src="/assets/video/showreel-prev.mp4" type="video/mp4">
-            </video> -->
-            <div class="h-screen flex items-center absolute">
-                <div class="block w-full container pl-6 md:mx-auto md:pl-0 md:w-1/2 text-6xl text-white tracking-tight leading-none">We expose storytelling</div>
-            </div>
-            <div class="absolute top-0 left-0 p-6">
-               <img src="assets/img/dxp-logo.svg" width="121" height="64.68" alt="DXP Logo">
-            </div>
-            <div class="hidden md:block text-sm text-white tracking-wider absolute top-0 right-0 p-12">Double Exposure Productions</div>
-            <div class="absolute bottom-0 left-0 md:right-0 md:bottom-0 md:left-auto text-sm text-white p-12">All rights reserved</div>
-            <div class="hidden md:block text-sm text-white absolute bottom-0 left-0 p-12">To discover how we could work together, just send us an <a href="#" target="_blank">email</a></div>
-        </div>
-
-    <script src="" async defer></script>
     <script>
         var myVar;
 
         function myFunction() {
-        myVar = setTimeout(showPage, 2000);
+        myVar = setTimeout(showPage, 2500);
         }
 
         function showPage() {
         document.getElementById("loader").style.display = "none";
-        document.getElementById("hud").style.display = "block";
-        document.getElementById("bg-showreel").style.display = "block";
+        document.getElementById("main").style.display = "block";
         }
     </script>
     <!-- SwiperJS Example -->
-    <!-- <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script>
     var swiper = new Swiper('.swiper-container', {
+      observer: true,
+      observeParents: true,
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -67,6 +83,6 @@
         },
       },
     });
-    </script> -->
+    </script>
     </body>
 </html>
