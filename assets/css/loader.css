@@ -15,12 +15,12 @@
     transform: translateY(120%);
 }
 
-/* @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   #loader {
     top: 50%;
     transform: translateY(100%);
   }
-} *\
+} 
 
 /* }
 #loader {
