@@ -110,11 +110,11 @@ hr {
     opacity: 1;
     font-weight: bold;
   }
+
   .swiper-pagination-bullet-active {
     color:#fff;
     font-weight: normal;
   }
-
   @media only screen and (min-width: 1024px) {
     .text-6xl {
       font-size: 6rem;
