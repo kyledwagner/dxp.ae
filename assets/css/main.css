@@ -33,6 +33,11 @@ hr {
   .text-7xl {
     font-size: 5rem;
   }
+  @media only screen and (max-width: 600px) {
+    .text-7xl {
+      font-size: 3.75rem;
+    }
+  }
 
  .nunito-bold {
     font-family: NunitoSans-Bold;
