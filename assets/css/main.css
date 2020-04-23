@@ -30,6 +30,10 @@ hr {
     font-weight: light;
   }
 
+  .text-7xl {
+    font-size: 5rem;
+  }
+
  .nunito-bold {
     font-family: NunitoSans-Bold;
   }
@@ -62,14 +66,13 @@ hr {
     height: 100%;
   }
 
-  .swiper-slide {
-    text-align: center;
+  /* .swiper-slide {
     width: 100vw !important;
     height: 100vh !important;
-
+  } */
 
     /* Center slide text vertically */
-    display: -webkit-box;
+    /* display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
@@ -81,7 +84,8 @@ hr {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-  }
+  } */
+
   .swiper-slide video {
     min-height: 100vh !important;
     max-width: auto !important;
