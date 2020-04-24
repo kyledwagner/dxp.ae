@@ -42,6 +42,11 @@ hr {
   .text-8xl {
     font-size: 6.5rem;
   }
+  @media only screen and (max-width: 600px) {
+    .text-8xl {
+      font-size: 3.75rem;
+    }
+  }
 
  .nunito-bold {
     font-family: NunitoSans-Bold;
@@ -119,11 +124,11 @@ hr {
     color:#fff;
     font-weight: normal;
   }
-  @media only screen and (min-width: 1024px) {
+  /* @media only screen and (min-width: 1024px) {
     .text-6xl {
       font-size: 6rem;
     }
-  }
+  } */
 
   /* Hammburger Menu */
   .button_container {
@@ -136,6 +141,13 @@ hr {
     -webkit-transition: opacity .25s ease;
     transition: opacity .25s ease;
   }
+  @media only screen and (max-width: 767px) {
+  .button_container {
+    top: 3rem;
+    right: 2.25rem;
+    left: auto;
+  }
+}
   .button_container:hover {
     opacity: .9;
   }
@@ -215,6 +227,18 @@ hr {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
+  @media only screen and (max-width: 600px) {
+  .overlay nav {
+    top: 35%;
+  }
+}
+
+  @media only screen and (max-width: 600px) {
+  .mob-contact {
+    top: 52%;
+  }
+
+}
   .overlay ul {
     list-style: none;
     padding: 0;
