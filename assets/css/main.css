@@ -115,20 +115,33 @@ hr {
     height: 2rem;
     text-align: center;
     font-size: 1.25rem;
-    color:#ccc;
-    opacity: 1;
-    font-weight: bold;
+    color:#fff;
+    opacity: 0.5;
+    font-weight: normal;
   }
 
   .swiper-pagination-bullet-active {
-    color:#fff;
-    font-weight: normal;
+    color:rgb(255, 41, 41);
+    opacity: 1;
+    font-weight: bold;
   }
   /* @media only screen and (min-width: 1024px) {
     .text-6xl {
       font-size: 6rem;
     }
   } */
+
+  .swiper-button-next {
+    position: absolute;
+    top: 48% !important;
+    right: 0rem !important;
+  }
+  .swiper-button-prev {
+    position: absolute;
+    top: 48% !important;
+    right: 12.25rem !important;
+  }
+
 
   /* Hammburger Menu */
   .button_container {
