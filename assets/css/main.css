@@ -1,6 +1,9 @@
 html { /* body won't work ¯\_(ツ)_/¯ */
   scroll-snap-type: y mandatory;
 }
+body { /* body won't work ¯\_(ツ)_/¯ */
+  scroll-snap-type: y mandatory;
+}
 
 hr {
   display: inline-block;
@@ -86,12 +89,14 @@ hr {
   }
 
   .bg-sharjah {
-    background-image: url(/assets/img/bg-sharjah-task.jpg);
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.25)
+    ),url(/assets/img/bg-sharjah-task.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: -webkit-fill-available;
     min-height: 100vh;
-    filter: brightness(70%);
     scroll-snap-align: start;
     scroll-snap-stop: always;
   }
