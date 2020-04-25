@@ -34,11 +34,6 @@ hr {
     font-weight: light;
   }
 
-  .case-study {
-    scroll-snap-type: mandatory;
-    scroll-snap-type: y mandatory;
-  }
-
   .text-7xl {
     font-size: 5rem;
   }
@@ -116,29 +111,16 @@ hr {
     scroll-snap-stop: always;
   }
 
-  /* .swiper-slide {
-    width: 100vw !important;
-    height: 100vh !important;
-  } */
-
-    /* Center slide text vertically */
-    /* display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-  } */
+  .sharjah-reel video {
+    min-height: 100vh !important;
+    max-width: auto !important;
+    pointer-events: none !important;
+  }
 
   .swiper-slide video {
     min-height: 100vh !important;
     max-width: auto !important;
+    pointer-events: none !important;
   }
 
   .swiper-pagination {
