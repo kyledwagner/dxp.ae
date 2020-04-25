@@ -125,11 +125,6 @@ hr {
     opacity: 1;
     font-weight: bold;
   }
-  /* @media only screen and (min-width: 1024px) {
-    .text-6xl {
-      font-size: 6rem;
-    }
-  } */
 
   .swiper-button-next {
     position: absolute;
@@ -141,7 +136,6 @@ hr {
     top: 48% !important;
     right: 12.25rem !important;
   }
-
 
   /* Hammburger Menu */
   .button_container {
