@@ -3,15 +3,13 @@
 html { /* body won't work for Chrome, Firefox ¯\_(ツ)_/¯ */
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
-  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 body { /* html won't work for Safari ¯\_(ツ)_/¯ */
   scroll-snap-type: y mandatory;
   min-height: 100vh;
   min-height: -webkit-fill-available;
-  min-height: -moz-available;
-  min-height: -webkit-fill-available;
-  min-height: fill-available;
+  -webkit-overflow-scrolling: touch;
 }
 
 @font-face {
@@ -209,6 +207,7 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
   .bg-gradient-light {
     background: rgb(233,238,242);
     background: linear-gradient(25deg, rgba(233,238,242,1) 0%, rgba(165,176,191,1) 100%);
+    overflow-y: scroll;
     scroll-snap-align: start;
     scroll-snap-stop: always;
   }
@@ -220,6 +219,7 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     ),url(/assets/img/bg-sharjah-task.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    overflow-y: scroll;
     scroll-snap-align: start;
     scroll-snap-stop: always;
   }
@@ -227,6 +227,7 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
   .bg-film {
     background: rgb(21,40,55);
     background: radial-gradient(circle, rgba(21,40,55,1) 0%, rgba(13,21,28,1) 100%);
+    overflow-y: scroll;
     scroll-snap-align: start;
     scroll-snap-stop: always;
   }
@@ -239,12 +240,16 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
   .swiper-container {
     width: 100%;
     height: 100%;
+    overflow-y: scroll;
     scroll-snap-align: start;
     scroll-snap-stop: always;
   }
 
   .sharjah-reel {
-    overflow: hidden;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
   }
 
   .sharjah-reel video {
