@@ -1,22 +1,17 @@
+/* Main CSS file for DXP.ae */
+
 html { /* body won't work for Chrome, Firefox ¯\_(ツ)_/¯ */
   scroll-snap-type: y mandatory;
 }
-body { /* html won't work for Safari */
+body { /* html won't work for Safari ¯\_(ツ)_/¯ */
   scroll-snap-type: y mandatory;
   min-height: 100vh;
   min-height: -webkit-fill-available;
+  min-height: -moz-available;
+  min-height: -webkit-fill-available;
+  min-height: fill-available;
 }
 
-hr {
-  display: inline-block;
-  height: 1px;
-  width: 100px;
-  border: 0;
-  border-bottom: 0.1rem solid #fff;
-  padding-right: 0;
-}
-
-/* Main CSS file for DXP.ae */
 @font-face {
     font-family: 'NunitoSans-Bold';
     src: url('/assets/font/NunitoSans-Bold.woff2') format('woff2'),
@@ -37,6 +32,15 @@ hr {
          url('/assets/font/NunitoSans-Light.woff') format('woff'),
          url('/assets/font/NunitoSans-Light.ttf') format('truetype');
     font-weight: light;
+  }
+
+  hr {
+    display: inline-block;
+    height: 1px;
+    width: 100px;
+    border: 0;
+    border-bottom: 0.1rem solid #fff;
+    padding-right: 0;
   }
 
   .text-7xl {
@@ -329,4 +333,63 @@ hr {
       opacity: 1;
       left: 0;
     }
+  }
+.vertical-cent {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+  /* Mobile Accordian */
+  ul.expand {
+    list-style-type: none;
+    max-width: 25rem;
+  }
+  .expand > li {
+    border-bottom: #bbbbbb solid 1px;
+  }
+  .expand > li label {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    padding: .5em .5em;
+  }
+  .expand > li input[type="checkbox"] {
+    display: none;
+    width: 100%;
+  }
+
+  .expand input[type="checkbox"] + label:after {
+    display: inline-block;
+    position: absolute;
+    right: 1em;
+    top: .75em;
+    height: .5em;
+    width: .5em;
+    border-color: #000000;
+    border-width: 0 1px 1px 0;
+    border-style: solid;
+    transform: rotate(-45deg);
+    content: "";
+    transition: all 0.3s ease-in-out;
+  }
+  .expand input[type="checkbox"]:checked + label:after {
+    margin-left: .5em;
+    transform: rotate(45deg);
+  }
+
+  .expand input[type="checkbox"] ~ *:not(label),
+  .whole-item input[type="checkbox"] ~ label > *:nth-child(n+2) {
+    transform-origin: top;
+    padding: 0 1em;
+    opacity: 0;
+    visibility: hidden;
+    line-height: 0;
+    transition: all 0.35s ease-in-out;
+  }
+  .expand input[type="checkbox"]:checked ~ *:not(label),
+  .whole-item input[type="checkbox"]:checked ~ label > *:nth-child(n+2) {
+    visibility: visible;
+    opacity: 1;
+    line-height:  1.2;
+    padding-bottom: .5em;
   }
