@@ -196,13 +196,13 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     scroll-snap-stop: always;
   }
 
-  /* .bg-film video{
+  .bg-film video{
     box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.25), 0 0 80rem 0.25rem rgba(255, 255, 255, 0.25), inset 2px 2px 0 rgba(255, 255, 255, 0.25);
-  } */
+  }
 
   /* SwiperJS */
   .swiper-container {
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     width: 100%;
     height: 100%;
     scroll-snap-align: start;
