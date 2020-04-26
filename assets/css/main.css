@@ -103,7 +103,6 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     width: 100px;
     position: relative;
     color: #fff;
-    cursor: pointer;
     -webkit-transition: opacity 1s ease;
     transition: opacity 1s ease;
   }

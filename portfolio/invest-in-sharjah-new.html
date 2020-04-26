@@ -16,9 +16,7 @@
         <link rel="stylesheet" href="/assets/css/loader.css">
         <link rel="stylesheet" href="/assets/css/tailwind.min.css">
         <link rel="stylesheet" href="/assets/css/main.css">
-        <link rel="stylesheet" href="/assets/css/mediabox.min.css">
         <link rel="stylesheet" href="/assets/css/swiper.min.css">
-
     </head>
     <body onload="myFunction()" style="margin:0;">
 
@@ -34,9 +32,9 @@
       <div class="fixed top-0 left-0 p-6 xl:pl-12 xl:pt-10 xl:ml-1">
         <a href="/index.html"><img class="hvr-grow" src="/assets/img/dxp-logo.svg" width="121" height="64.68" alt="DXP Logo"></a>
       </div>
-      <div class="nunito-bold hidden md:inline-block text-sm text-white tracking-wider fixed top-0 right-0 p-12 xl:pr-16 xl:pt-12 xl:mt-1">Double Exposure Productions<div class="ml-4 slider-scroll-down"><span class="bounce-line"></span></div></div>
+      <div class="nunito-bold hidden md:inline-block text-sm text-white tracking-wider fixed top-0 right-0 p-12 xl:p-16 xl:mt-1">Double Exposure Productions<div class="ml-4 slider-scroll-down"><span class="bounce-line"></span></div></div>
       <div class="nunito-light hidden md:block fixed bottom-0 left-0 md:right-0 md:bottom-0 md:left-auto text-sm text-white p-8 md:p-12 xl:p-16">All rights reserved.</div>
-      <div class="nunito-semibold hidden md:block text-sm text-white fixed bottom-0 left-0 p-12 xl:p-16"><a href="mailto:contact@dxp.ae" class="hvr-grow"><div class="showhim"><img src="/assets/icon/mail.svg" width="40" class="inline-block"></a><div class="showme pl-4 inline-block">To discover how we could work together, just send us an <a href="#" class="underline">email</a></div></div></div>
+      <div class="nunito-semibold hidden md:block text-sm text-white fixed bottom-0 left-0 p-12 xl:p-16"><a href="mailto:contact@dxp.ae" class="hvr-grow"><img src="/assets/icon/mail.svg" width="40" class="inline-block"></a><div class="pl-4 inline-block">To discover how we could work together, just send us an <a href="#"class="underline">email</a></div></div>
     </div>
       <!-- Hamburger Menu -->
       <div class="button_container z-20 hvr-grow" id="toggle">
@@ -48,7 +46,7 @@
         <div class="absolute top-0 left-0 p-6 xl:pl-12 xl:pt-10 xl:ml-1">
           <img src="/assets/img/dxp-logo.svg" width="121" height="64.68" alt="DXP Logo">
         </div>
-        <div class="nunito-bold hidden md:inline-block text-sm text-white tracking-wider absolute top-0 right-0 p-12 xl:p-16 xl:mt-1">Double Exposure Productions<hr class="ml-4 mb-1"></div>
+        <div class="nunito-bold hidden md:inline-block text-sm text-white tracking-wider absolute top-0 right-0 p-12 xl:p-16 xl:mt-1">Double Exposure Productions<div class="ml-4 slider-scroll-down"><span class="bounce-line"></span></div></div>
         <nav class="overlay-menu nunito-bold text-8xl text-left tracking-tight leading-none">
           <div class="w-full pl-8 md:pl-0 container md:w-1/2 mx-auto">
           <ul>
@@ -81,12 +79,13 @@
       <!-- END Hamburger Menu -->
 
       <div class="swiper-container">
+
       <div class="sharjah-reel">
       <div class="h-screen w-screen flex flex-wrap items-center absolute">
         <div class="w-full container md:w-1/2 mx-auto">
             <div class="nunito-bold block md:mr-auto pl-8 md:pl-1 text-xl text-white text-left tracking-widest leading-none">Sharjah Investment & Development Authority</div>
             <div class="nunito-bold block w-3/4 md:mr-auto pl-8 md:pl-0 text-7xl text-white pt-2 text-left tracking-tight leading-none">Invest in Sharjah</div>
-            <div class="nunito-semibold inline-block md:mr-auto pl-8 md:pl-1 pt-4 text-xl text-white text-left tracking-normal leading-none">Case Study<div class="mx-4 slider-scroll-down"><span class="bounce-line"></span></div></div><div class="nunito-semibold uppercase inline-block absolute bottom-0 mb-10 pl-8 md:pl-0 md:mb-auto md:relative md:inline-block text-white text-left tracking-widest leading-none">Scroll Down</div>
+            <div class="nunito-semibold inline-block md:mr-auto pl-8 md:pl-1 pt-4 text-xl text-white text-left tracking-normal leading-none"><a href="/index.html">Case Study</a><hr class="hidden md:inline-block mx-4 mb-1"></div><div class="uppercase block absolute bottom-0 mb-10 pl-8 md:pl-0 md:mb-auto md:relative md:inline-block text-white text-left tracking-widest leading-none">Scroll Down</div>
         </div>
         </div>
           <video class="max-w-none" autoplay playsinline muted loop>
@@ -94,7 +93,6 @@
           </video>
       </div>
       </div>
-
 
         <!-- Intro Section -->
         <div class="h-screen w-screen bg-gradient-light">
@@ -164,25 +162,49 @@
 
     <script>
         var myVar;
+
         function myFunction() {
         myVar = setTimeout(showPage, 2500);
         }
+
         function showPage() {
         document.getElementById("loader").style.display = "none";
         document.getElementById("main").style.display = "block";
         }
     </script>
+    <!-- SwiperJS Example -->
+    <!-- <script src="/assets/js/swiper.min.js"></script> -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js'></script>
-    <script src="/assets/js/mediabox.min.js"></script>
-    <script>
-        MediaBox('.mediabox');
-    </script>
     <script>
       $('#toggle').click(function() {
       $(this).toggleClass('active');
       $('#overlay').toggleClass('open');
     });
     </script>
+    <!-- <script>
+    var swiper = new Swiper('.swiper-container', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      mousewheel: {
+      invert: true,
+      sensitivity: 1,
+      },
+      preventClicks: false,
+      preventClicksPropagation: false,
+      loop: true,
+      observer: true,
+      observeParents: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (1 + '0' + index).slice(-2) + '</span>';
+        },
+      },
+    });
+    </script> -->
     </body>
 </html>
