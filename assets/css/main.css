@@ -2,14 +2,13 @@
 
 html { /* body won't work for Chrome, Firefox ¯\_(ツ)_/¯ */
   scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
 }
 body { /* html won't work for Safari ¯\_(ツ)_/¯ */
   scroll-snap-type: y mandatory;
   min-height: 100vh;
   min-height: -webkit-fill-available;
-  -webkit-overflow-scrolling: touch;
+  min-height: -moz-fill-available;
+  min-height: fill-available;
 }
 
 @font-face {
@@ -41,40 +40,6 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     border: 0;
     border-bottom: 0.1rem solid #fff;
     padding-right: 0;
-  }
-
-  nav a {
-    display: inline-block;
-  }
-
-  .scroll-down a {
-    overflow: hidden;
-    padding: 0 4px;
-    height: 1em;
-  }
-
-  .scroll-down a span {
-    position: relative;
-    display: inline-block;
-    -webkit-transition: -webkit-transform 0.3s;
-    -moz-transition: -moz-transform 0.3s;
-    transition: transform 0.3s;
-  }
-
-  .scroll-down a span::before {
-    position: absolute;
-    top: 100%;
-    content: attr(data-hover);
-    -webkit-transform: translate3d(0,0,0);
-    -moz-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-  }
-
-  .scroll-down a:hover span,
-  .scroll-down a:focus span {
-    -webkit-transform: translateY(-100%);
-    -moz-transform: translateY(-100%);
-    transform: translateY(-100%);
   }
 
   @-webkit-keyframes bounce-line {
@@ -218,6 +183,8 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     ),url(/assets/img/bg-sharjah-task.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: -webkit-fill-available;
+    min-height: 100vh;
     scroll-snap-align: start;
     scroll-snap-stop: always;
   }
@@ -458,65 +425,6 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
       opacity: 1;
       left: 0;
     }
-  }
-.vertical-cent {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-  /* Mobile Accordian */
-  ul.expand {
-    list-style-type: none;
-    max-width: 25rem;
-  }
-  .expand > li {
-    border-bottom: #bbbbbb solid 1px;
-  }
-  .expand > li label {
-    position: relative;
-    width: 100%;
-    display: inline-block;
-    padding: .5em .5em;
-  }
-  .expand > li input[type="checkbox"] {
-    display: none;
-    width: 100%;
-  }
-
-  .expand input[type="checkbox"] + label:after {
-    display: inline-block;
-    position: absolute;
-    right: 1em;
-    top: .75em;
-    height: .5em;
-    width: .5em;
-    border-color: #000000;
-    border-width: 0 1px 1px 0;
-    border-style: solid;
-    transform: rotate(-45deg);
-    content: "";
-    transition: all 0.3s ease-in-out;
-  }
-  .expand input[type="checkbox"]:checked + label:after {
-    margin-left: .5em;
-    transform: rotate(45deg);
-  }
-
-  .expand input[type="checkbox"] ~ *:not(label),
-  .whole-item input[type="checkbox"] ~ label > *:nth-child(n+2) {
-    transform-origin: top;
-    padding: 0 1em;
-    opacity: 0;
-    visibility: hidden;
-    line-height: 0;
-    transition: all 0.35s ease-in-out;
-  }
-  .expand input[type="checkbox"]:checked ~ *:not(label),
-  .whole-item input[type="checkbox"]:checked ~ label > *:nth-child(n+2) {
-    visibility: visible;
-    opacity: 1;
-    line-height:  1.2;
-    padding-bottom: .5em;
   }
 
   /* Bob */
