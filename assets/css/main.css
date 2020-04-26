@@ -1,8 +1,10 @@
-html { /* body won't work ¯\_(ツ)_/¯ */
+html { /* body won't work for Chrome, Firefox ¯\_(ツ)_/¯ */
   scroll-snap-type: y mandatory;
 }
-body { /* body won't work ¯\_(ツ)_/¯ */
+body { /* html won't work for Safari */
   scroll-snap-type: y mandatory;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
 }
 
 hr {
