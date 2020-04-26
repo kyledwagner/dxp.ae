@@ -45,6 +45,131 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     padding-right: 0;
   }
 
+  nav a {
+    display: inline-block;
+  }
+
+  .scroll-down a {
+    overflow: hidden;
+    padding: 0 4px;
+    height: 1em;
+  }
+
+  .scroll-down a span {
+    position: relative;
+    display: inline-block;
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+  }
+
+  .scroll-down a span::before {
+    position: absolute;
+    top: 100%;
+    content: attr(data-hover);
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
+
+  .scroll-down a:hover span,
+  .scroll-down a:focus span {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+
+  @-webkit-keyframes bounce-line {
+    0% {
+      width: 0;
+      right: auto;
+      left: 0;
+    }
+    4% {
+      width: 100%;
+      right: auto;
+      left: 0;
+    }
+    90% {
+      width: 100%;
+      right: 0;
+      left: auto;
+    }
+    95% {
+      width: 0;
+      right: 0;
+      left: auto;
+    }
+    100% {
+      width: 0;
+      right: 0;
+      left: auto;
+    }
+  }
+
+  @keyframes bounce-line {
+    0% {
+      width: 0;
+      right: auto;
+      left: 0;
+    }
+    6% {
+      width: 100%;
+      right: auto;
+      left: 0;
+    }
+    87% {
+      width: 100%;
+      right: 0;
+      left: auto;
+    }
+    97% {
+      width: 0;
+      right: 0;
+      left: auto;
+    }
+    100% {
+      width: 0;
+      right: 0;
+      left: auto;
+    }
+  }
+  .slider-scroll-down {
+    display: inline-block;
+    padding-bottom: 0.15rem;
+    width: 100px;
+    position: relative;
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition: opacity 1s ease;
+    transition: opacity 1s ease;
+  }
+  .slider-scroll-down .bounce-line {
+    display: block;
+    position: relative;
+    width: 100px;
+    height: 2px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .slider-scroll-down .bounce-line:after {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-name: bounce-line;
+            animation-name: bounce-line;
+  }
+
   .text-7xl {
     font-size: 5rem;
   }
@@ -393,3 +518,94 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     line-height:  1.2;
     padding-bottom: .5em;
   }
+
+  /* Bob */
+@-webkit-keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@-webkit-keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+.hvr-bob {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+  -webkit-animation-name: hvr-bob-float, hvr-bob;
+  animation-name: hvr-bob-float, hvr-bob;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
+
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.showme {
+  display: none;
+  transition: .5s ease;
+}
+
+.showhim:hover .showme {
+  display: inline-block;
+  transition: .5s ease;
+}
