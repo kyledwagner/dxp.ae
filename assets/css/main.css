@@ -175,6 +175,9 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     background: linear-gradient(25deg, rgba(233,238,242,1) 0%, rgba(165,176,191,1) 100%);
     scroll-snap-align: start;
     scroll-snap-stop: always;
+    min-height: -webkit-fill-available;
+    min-height: -moz-fill-available;
+    min-height: fill-available;
   }
 
   .bg-sharjah {
@@ -185,7 +188,8 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     background-repeat: no-repeat;
     background-size: cover;
     min-height: -webkit-fill-available;
-    min-height: 100vh;
+    min-height: -moz-fill-available;
+    min-height: fill-available;
     scroll-snap-align: start;
     scroll-snap-stop: always;
   }
@@ -195,6 +199,9 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     background: radial-gradient(circle, rgba(21,40,55,1) 0%, rgba(13,21,28,1) 100%);
     scroll-snap-align: start;
     scroll-snap-stop: always;
+    min-height: -webkit-fill-available;
+    min-height: -moz-fill-available;
+    min-height: fill-available;
   }
 
   .bg-film video{
