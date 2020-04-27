@@ -2,7 +2,9 @@
 
 html { /* body won't work for Chrome, Firefox ¯\_(ツ)_/¯ */
   scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
+
 body { /* html won't work for Safari ¯\_(ツ)_/¯ */
   scroll-snap-type: y mandatory;
   min-height: 100vh;
@@ -238,12 +240,13 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     font-size: 1.25rem;
     color:#fff;
     opacity: 0.5;
-    font-weight: normal;
+    font-family: NunitoSans-Light;
+    font-weight: light;
   }
 
   .swiper-pagination-bullet-active {
-    color:rgb(255, 41, 41);
     opacity: 1;
+    font-family: NunitoSans-Bold;
     font-weight: bold;
   }
 
@@ -388,7 +391,7 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     text-decoration: none;
     overflow: hidden;
   }
-  .overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
+  /* .overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
     width: 100%;
   }
   .overlay ul li a:after {
@@ -403,7 +406,7 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     background: #FFF;
     -webkit-transition: .35s;
     transition: .35s;
-  }
+  } */
 
   @-webkit-keyframes fadeInRight {
     0% {
@@ -442,6 +445,41 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
+
+.hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+}
+
+.hvr-forward {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-forward:hover, .hvr-forward:focus, .hvr-forward:active {
+  -webkit-transform: translateX(8px);
+  transform: translateX(8px);
+}
+
 
 .showme {
   display: none;
