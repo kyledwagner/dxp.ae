@@ -13,23 +13,23 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
 
 @font-face {
     font-family: 'NunitoSans-Bold';
-    src: url('/assets/font/NunitoSans-Bold.woff2') format('woff2'),
-         url('/assets/font/NunitoSans-Bold.woff') format('woff'),
-         url('/assets/font/NunitoSans-Bold.ttf') format('truetype');
+    src: url('../font/NunitoSans-Bold.woff2') format('woff2'),
+         url('../font/NunitoSans-Bold.woff') format('woff'),
+         url('../font/NunitoSans-Bold.ttf') format('truetype');
     font-weight: bold;
   }
   @font-face {
     font-family: 'NunitoSans-SemiBold';
-    src: url('/assets/font/NunitoSans-SemiBold.woff2') format('woff2'),
-         url('/assets/font/NunitoSans-SemiBold.woff') format('woff'),
-         url('/assets/font/NunitoSans-SemiBold.ttf') format('truetype');
+    src: url('../font/NunitoSans-SemiBold.woff2') format('woff2'),
+         url('../font/NunitoSans-SemiBold.woff') format('woff'),
+         url('../font/NunitoSans-SemiBold.ttf') format('truetype');
     font-weight: semibold;
   }
   @font-face {
     font-family: 'NunitoSans-Light';
-    src: url('/assets/font/NunitoSans-Light.woff2') format('woff2'),
-         url('/assets/font/NunitoSans-Light.woff') format('woff'),
-         url('/assets/font/NunitoSans-Light.ttf') format('truetype');
+    src: url('../font/NunitoSans-Light.woff2') format('woff2'),
+         url('../font/NunitoSans-Light.woff') format('woff'),
+         url('../font/NunitoSans-Light.ttf') format('truetype');
     font-weight: light;
   }
 
@@ -179,7 +179,7 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     background: linear-gradient(
       rgba(0, 0, 0, 0.45),
       rgba(0, 0, 0, 0.25)
-    ),url(/assets/img/bg-sharjah-task.jpg);
+    ),url(../img/bg-sharjah-task.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: -webkit-fill-available;
