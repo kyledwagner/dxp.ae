@@ -181,7 +181,7 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     background: linear-gradient(
       rgba(0, 0, 0, 0.45),
       rgba(0, 0, 0, 0.25)
-    ),url(../img/bg-sharjah-task.jpg);
+    ),url(../img/bg-sharjah-task-2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: -webkit-fill-available;
