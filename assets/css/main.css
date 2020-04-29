@@ -320,19 +320,22 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     background: rgb(21,40,55);
     background: radial-gradient(circle, rgba(21,40,55,1) 0%, rgba(13,21,28,1) 100%);
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 0%;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transition: opacity .35s, visibility .35s, height .35s;
-    transition: opacity .35s, visibility .35s, height .35s;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    /* opacity: 0; */
+    opacity: 1;
+    /* visibility: hidden; */
+    /* -webkit-transition: opacity .35s, visibility .35s, width .35s ease;
+    transition: opacity .35s, visibility .35s, width .35s ease; */
+    -webkit-transition: width .50s ease-in-out;
+    transition: width .50s ease-in-out;
     overflow: hidden;
   }
   .overlay.open {
-    opacity: .95;
-    visibility: visible;
-    height: 100%;
+    opacity: 1;
+    /* visibility: visible; */
+    width: 100%;
   }
   .overlay.open li {
     -webkit-animation: fadeInRight .5s ease forwards;
