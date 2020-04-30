@@ -44,6 +44,25 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     padding-right: 0;
   }
 
+  .black-line hr {
+    display: inline-block;
+    height: 1px;
+    width: 50px;
+    border: 0;
+    border-bottom: 0.1rem solid #000;
+    padding-right: 0;
+  }
+
+  .gray-line hr {
+    display: inline-block;
+    height: 1px;
+    width: 75px;
+    border: 0;
+    border-bottom: 0.05rem solid #718096;
+    padding-right: 0;
+  }
+
+
   @-webkit-keyframes bounce-line {
     0% {
       width: 0;
