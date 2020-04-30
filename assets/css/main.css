@@ -328,8 +328,8 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     /* visibility: hidden; */
     /* -webkit-transition: opacity .35s, visibility .35s, width .35s ease;
     transition: opacity .35s, visibility .35s, width .35s ease; */
-    -webkit-transition: width .50s ease-in-out;
-    transition: width .50s ease-in-out;
+    -webkit-transition: width .5s ease-in-out;
+    transition: width .5s ease-in-out;
     overflow: hidden;
   }
   .overlay.open {
