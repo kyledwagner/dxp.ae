@@ -162,6 +162,15 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     }
   }
 
+  .text-7xl-about {
+    font-size: 5rem;
+  }
+  @media only screen and (max-width: 600px) {
+    .text-7xl-about {
+      font-size: 2.5rem;
+    }
+  }
+
   .text-8xl {
     font-size: 6.5rem;
   }
@@ -515,3 +524,63 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
 .play-button {
   width: 12%;
 }
+
+/* New Toggle Pure CSS */
+.wrap-collabsible {
+  margin-bottom: 1.2rem 0;
+}
+
+input[type='checkbox'] {
+  display: none;
+}
+
+.lbl-toggle {
+  display: block;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.25s ease-out;
+}
+
+.lbl-toggle:hover {
+  color: rgb(177, 177, 177);
+}
+
+.lbl-toggle::before {
+  content: ' ';
+  display: inline-block;
+
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid currentColor;
+  vertical-align: middle;
+  margin-right: 1rem;
+  transform: translateY(-2px);
+  transition: transform .2s ease-out;
+}
+
+.toggle:checked + .lbl-toggle::before {
+  transform: rotate(90deg) translateX(-3px);
+}
+
+.collapsible-content {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height .25s ease-in-out;
+}
+
+.toggle:checked + .lbl-toggle + .collapsible-content {
+  max-height: 100vh;
+}
+
+.toggle:checked + .lbl-toggle {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* .collapsible-content .content-inner {
+  background: rgba(250, 224, 66, .2);
+  border-bottom: 1px solid rgba(250, 224, 66, .45);
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  padding: .5rem 1rem;
+} */
