@@ -542,7 +542,7 @@ input[type='checkbox'] {
 }
 
 .lbl-toggle:hover {
-  color: rgb(177, 177, 177);
+  color: #ccc;
 }
 
 .lbl-toggle::before {
@@ -584,3 +584,13 @@ input[type='checkbox'] {
   border-bottom-right-radius: 7px;
   padding: .5rem 1rem;
 } */
+
+#particles-js {
+  top: 0;
+  left: 0;
+  background: rgb(21,40,55);
+  background: radial-gradient(circle, rgba(21,40,55,1) 0%, rgba(13,21,28,1) 100%);
+  height: 100vh;
+  width: 100vw;
+
+}
