@@ -620,14 +620,6 @@ input[type='checkbox'] {
   border-bottom-left-radius: 0;
 }
 
-/* .collapsible-content .content-inner {
-  background: rgba(250, 224, 66, .2);
-  border-bottom: 1px solid rgba(250, 224, 66, .45);
-  border-bottom-left-radius: 7px;
-  border-bottom-right-radius: 7px;
-  padding: .5rem 1rem;
-} */
-
 #particles-js {
   top: 0;
   left: 0;
