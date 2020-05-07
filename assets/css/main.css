@@ -641,10 +641,10 @@ input[type='checkbox'] {
 }
 
 .video-player a {
-  opacity: 1;
-  transition: .5s ease;
+  opacity: 0.75;
+  transition: .4s ease;
 }
 
 .video-player a:hover {
-  opacity: 0.75;
+  opacity: 1;
 }
