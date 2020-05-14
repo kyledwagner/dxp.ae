@@ -118,6 +118,36 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
       left: auto;
     }
   }
+
+  /* Cursor */
+.page,
+.page a {
+  cursor: none;
+}
+
+.circle-cursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  border-radius: 50%;
+}
+.circle-cursor--outer {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #fff;
+  z-index: 12000;
+  opacity: 0.7;
+}
+.circle-cursor--inner {
+  width: 5px;
+  height: 5px;
+  left: -2.5px;
+  top: -2.5px;
+  z-index: 11000;
+  background: #fff;
+}
+
   .slider-scroll-down {
     display: inline-block;
     padding-bottom: 0.15rem;
@@ -339,7 +369,7 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     left: 4rem;
     height: 27px;
     width: 35px;
-    cursor: pointer;
+    /* cursor: pointer; */
     -webkit-transition: opacity .25s ease;
     transition: opacity .25s ease;
   }
@@ -377,7 +407,7 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     left: 0;
     -webkit-transition: all .35s ease;
     transition: all .35s ease;
-    cursor: pointer;
+    /* cursor: pointer; */
   }
   .button_container span:nth-of-type(2) {
     top: 11px;
@@ -622,7 +652,7 @@ input[type='checkbox'] {
 .lbl-toggle {
   display: block;
   color: #fff;
-  cursor: pointer;
+  /* cursor: pointer; */
   transition: all 0.25s ease-out;
 }
 
@@ -674,7 +704,7 @@ input[type='checkbox'] {
 
 .bg-film a {
   color: #fff;
-  cursor: pointer;
+  /* cursor: pointer; */
   transition: all 0.25s ease-out;
 }
 
