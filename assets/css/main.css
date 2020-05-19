@@ -359,7 +359,7 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
   .swiper-button-prev {
     position: absolute;
     top: 48% !important;
-    right: 12.25rem !important;
+    right: 15.75rem !important;
   }
 
   /* Hammburger Menu */
