@@ -20,10 +20,6 @@
 }
 
 /* Circle Loader */
-body {
-    background-color: #fff;
-  }
-
   .showbox {
     z-index: -1;
     position: absolute;
