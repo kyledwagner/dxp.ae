@@ -381,7 +381,7 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
   }
 
   .swiper-pagination {
-    top: 50%;
+    top: 49%;
     transform: translateY(-50%);
   }
 
@@ -389,7 +389,7 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     width: 2rem;
     height: 2rem;
     text-align: center;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     color:#fff;
     opacity: 0.5;
     font-family: NunitoSans-Light;
@@ -404,19 +404,19 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
 
   .swiper-button-next {
     position: absolute;
-    top: 48% !important;
+    top: 47% !important;
     right: 0rem !important;
   }
   .swiper-button-prev {
     position: absolute;
-    top: 48% !important;
-    right: 12.3rem !important;
+    top: 47% !important;
+    right: 10.3rem !important;
   }
 
   /* Hammburger Menu */
   .button_container {
     position: fixed;
-    top: 49%;
+    top: 48%;
     left: 4rem;
     height: 27px;
     width: 35px;
