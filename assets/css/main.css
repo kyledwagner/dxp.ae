@@ -235,6 +235,14 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     scroll-snap-stop: always;
   }
 
+  .bg-dubai-urban-sky-dome-img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: -webkit-fill-available;
+    min-height: 100vh;
+  }
+
   .bg-sharjah {
     background: linear-gradient(
       rgba(0, 0, 0, 0.45),
