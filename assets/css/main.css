@@ -35,6 +35,11 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     font-weight: light;
   }
 
+  /* Fix Numbering on Home Slider */
+  .swiper-pagination-bullet:first-child {
+    display: none !important;
+  }
+
   hr {
     display: inline-block;
     height: 1px;
@@ -358,7 +363,7 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
   .sharjah-reel video {
     height: 100vh !important;
     width: 100% !important;
-    object-fit: cover; 
+    object-fit: cover;
     pointer-events: none !important;
   }
 
@@ -369,8 +374,9 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
   }
 
   .swiper-slide video {
-    min-height: 100vh !important;
-    max-width: auto !important;
+    height: 100vh !important;
+    width: 100% !important;
+    object-fit: cover;
     pointer-events: none !important;
   }
 
@@ -404,7 +410,7 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
   .swiper-button-prev {
     position: absolute;
     top: 48% !important;
-    right: 15.8rem !important;
+    right: 12.3rem !important;
   }
 
   /* Hammburger Menu */
