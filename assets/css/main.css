@@ -291,6 +291,20 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     scroll-snap-stop: always;
   }
 
+  .bg-dubai-urban-sky-dome {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.25)
+    ),url(../img/bg-dubai-urban-sky-dome-task.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: -webkit-fill-available;
+    min-height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+
   .bg-film {
     background: rgb(21,40,55);
     background: radial-gradient(circle, rgba(21,40,55,1) 0%, rgba(13,21,28,1) 100%);
@@ -318,6 +332,12 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
   } */
 
   .sharjah-reel video {
+    min-height: 100vh !important;
+    max-width: auto !important;
+    pointer-events: none !important;
+  }
+
+  .sharjah-reel img {
     min-height: 100vh !important;
     max-width: auto !important;
     pointer-events: none !important;
