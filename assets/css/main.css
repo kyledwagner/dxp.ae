@@ -350,7 +350,7 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
   .sharjah-reel video {
     height: 100vh !important;
     width: 100% !important;
-    object-fit: fill;
+    object-fit: cover;
     pointer-events: none !important;
   }
 
