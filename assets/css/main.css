@@ -380,6 +380,13 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     pointer-events: none !important;
   }
 
+  .swiper-slide img {
+    height: 100vh !important;
+    width: 100% !important;
+    object-fit: cover;
+    pointer-events: none !important;
+  }
+
   .swiper-pagination {
     top: 49%;
     transform: translateY(-50%);
