@@ -209,6 +209,11 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
   .text-8xl {
     font-size: 5rem;
   }
+  @media only screen and (max-width: 1024px) {
+    .text-8xl {
+      font-size: 4rem;
+    }
+  }
   @media only screen and (max-width: 768px) {
     .text-8xl {
       font-size: 3.15rem;
@@ -551,7 +556,7 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
   .overlay ul li {
     /* height: 25%;
     height: calc(100% / 4); */
-    min-height: 50px;
+    /* min-height: 50px; */
     position: relative;
     opacity: 0;
   }
@@ -775,6 +780,16 @@ input[type='checkbox'] {
 }
 
 .bg-film a:hover {
+  color: #ccc;
+}
+
+.link-3 a {
+  color: #fff;
+  /* cursor: pointer; */
+  transition: all 0.25s ease-out;
+}
+
+.link-3 a:hover {
   color: #ccc;
 }
 
