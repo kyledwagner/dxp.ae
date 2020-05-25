@@ -350,6 +350,11 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     scroll-snap-stop: always;
   }
 
+  .bg-portfolio {
+    background: rgb(21,40,55);
+    background: radial-gradient(circle, rgba(21,40,55,1) 0%, rgba(13,21,28,1) 100%);
+  }
+
   .bg-film {
     background: rgb(21,40,55);
     background: radial-gradient(circle, rgba(21,40,55,1) 0%, rgba(13,21,28,1) 100%);
