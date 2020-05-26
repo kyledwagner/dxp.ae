@@ -375,6 +375,20 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     transition: box-shadow 2.5s ease;
   }
 
+  #portfolio .swiper-slide video {
+    filter: brightness(20%);
+    -webkit-transition: filter 0.5s ease;
+    transition: filter 0.5s ease;
+  }
+
+  #portfolio .swiper-slide-active hr {
+    border-bottom: 0.15rem solid #fff;
+  }
+
+  #portfolio hr {
+    border-bottom: 0.1rem solid #979797;
+  }
+
   /* SwiperJS */
   .swiper-container {
     overflow-x: hidden;
@@ -411,14 +425,11 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     pointer-events: none !important;
   }
 
-  #portfolio .swiper-slide video {
-    filter: brightness(30%);
+  .portfolio-video {
     margin: 0;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    -webkit-transition: filter 0.5s ease;
-    transition: filter 0.5s ease;
   }
 
   #future-plans img {
