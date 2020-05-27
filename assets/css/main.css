@@ -369,13 +369,28 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
   #portfolio .swiper-slide-active video {
     filter: brightness(100%) !important;
     box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.25), 0 0 80rem 0.25rem rgba(255, 255, 255, 0.25), inset 2px 2px 0 rgba(255, 255, 255, 0.25);
-    -webkit-transition: filter 0.5s ease;
-    transition: filter 0.5s ease;
-    -webkit-transition: box-shadow 2.5s ease;
-    transition: box-shadow 2.5s ease;
+    -webkit-transition: filter 0.75s ease;
+    transition: filter 0.75s ease;
+    -webkit-transition: box-shadow 3s ease;
+    transition: box-shadow 3s ease;
+  }
+
+  #portfolio .swiper-slide-active img {
+    filter: brightness(100%) !important;
+    box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.25), 0 0 80rem 0.25rem rgba(255, 255, 255, 0.25), inset 2px 2px 0 rgba(255, 255, 255, 0.25);
+    -webkit-transition: filter 0.75s ease;
+    transition: filter 0.75s ease;
+    -webkit-transition: box-shadow 3s ease;
+    transition: box-shadow 3s ease;
   }
 
   #portfolio .swiper-slide video {
+    filter: brightness(20%);
+    -webkit-transition: filter 0.5s ease;
+    transition: filter 0.5s ease;
+  }
+
+  #portfolio .swiper-slide img {
     filter: brightness(20%);
     -webkit-transition: filter 0.5s ease;
     transition: filter 0.5s ease;
