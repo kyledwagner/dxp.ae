@@ -366,6 +366,10 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     box-shadow: 0px 0px 0 rgba(255, 255, 255, 0.25), 0 0 80rem 0.25rem rgba(255, 255, 255, 0.25), inset 2px 2px 0 rgba(255, 255, 255, 0.25);
   }
 
+  .portfolio-mob-line {
+    width: 3rem;
+  }
+
   #portfolio .swiper-slide-active video {
     filter: brightness(100%) !important;
     box-shadow: 0px 0px 0 rgba(255, 255, 255, 0.25), 0 0 80rem 0.25rem rgba(255, 255, 255, 0.25), inset 2px 2px 0 rgba(255, 255, 255, 0.25);
@@ -382,6 +386,33 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     transition: filter 0.75s ease;
     -webkit-transition: box-shadow 3s ease;
     transition: box-shadow 3s ease;
+  }
+
+  @media only screen and (max-width: 767px) {
+  #portfolio .swiper-slide-active img {
+      filter: brightness(75%) !important;
+      box-shadow: 0px 0px 0 rgba(255, 255, 255, 0.25), 0 0 80rem 0.25rem rgba(255, 255, 255, 0.25), inset 2px 2px 0 rgba(255, 255, 255, 0.25);
+      -webkit-transition: filter 0.75s ease;
+      transition: filter 0.75s ease;
+      -webkit-transition: box-shadow 3s ease;
+      transition: box-shadow 3s ease;
+    }
+  }
+
+  /* Temp Fix for Mobile Slider on Portfolio Page */
+  @media only screen and (max-width: 767px) {
+    #portfolio .swiper-slide:last-child img {
+      filter: brightness(100%) !important;
+    }
+    #portfolio .swiper-slide-active:last-child img {
+      box-shadow: none;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    #portfolio .swiper-container {
+      height: none;
+    }
   }
 
   #portfolio .swiper-slide {
@@ -403,6 +434,19 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     -webkit-transition: opacity 0.75s ease;
     transition: opacity 0.75s ease;
   }
+
+  #portfolio .swiper-slide .portfolio-mob-text {
+    opacity: 0.25;
+    -webkit-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+  }
+
+  #portfolio .swiper-slide-active .portfolio-mob-text {
+    opacity: 1;
+    -webkit-transition: opacity 0.75s ease;
+    transition: opacity 0.75s ease;
+  }
+
 
   #portfolio .swiper-slide video {
     filter: brightness(20%);

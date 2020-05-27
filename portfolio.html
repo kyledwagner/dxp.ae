@@ -100,7 +100,7 @@
       <div class="h-screen w-screen bg-film">
       <!-- Swiper Desktop -->
       <div class="swiper-container">
-        <div class="swiper-wrapper">
+        <div class="swiper-wrapper -mt-40 md:-mt-0">
           <div class="swiper-slide">
             <div class="flex flex-col portfolio-video px-4 md:px-0">
             <a href="https://vimeo.com/414304532" class="mediabox">
@@ -108,6 +108,11 @@
                 <source src="assets/video/Case_Study_Invest_In_Sharjah_Prev.mp4" type="video/mp4">
               </video> -->
               <img src="assets/img/film-invest-in-sharjah.jpg">
+            <div class="portfolio-mob-text">
+              <hr class="block md:hidden portfolio-mob-line absolute top-0 ml-4 pt-4">
+              <div class="block md:hidden absolute top-0 nunito-bold text-white text-left text-3xl leading-none pl-16 pt-16">Invest in<br>Sharjah</div>
+              <div class="block md:hidden absolute bottom-0 right-0 nunito-light text-white text-right leading-tight text-sm tracking-wider pb-3 pr-8">Sharjah Investment <br>& Development Authority</div>
+            </div>
             </a>
             <div class="hidden md:block relative pt-10">
               <div class="nunito-bold text-white text-center text-2xl mb-5">Invest in Sharjah</div>
@@ -124,8 +129,13 @@
                 <source src="assets/video/Case_Study_The_Abu_Dhabi_Plan_Prev.mp4" type="video/mp4">
               </video> -->
               <img src="assets/img/film-abu-dhabi-plan.jpg">
+            <div class="portfolio-mob-text">
+              <hr class="block md:hidden portfolio-mob-line absolute top-0 ml-4 pt-4">
+              <div class="block md:hidden absolute top-0 nunito-bold text-white text-left text-3xl leading-none pl-16 pt-16">Abu Dhabi<br>Plan</div>
+              <div class="block md:hidden absolute bottom-0 right-0 nunito-light text-white text-center text-sm tracking-wider pb-3 pr-8">Abu Dhabi Executive Council</div>
+            </div>
             </a>
-            <div class="hidden md:block  relative pt-10">
+            <div class="hidden md:block relative pt-10">
               <div class="nunito-bold text-white text-center text-2xl mb-5">Abu Dhabi Plan</div>
               <div class="-ml-4 -mr-4"><hr class="w-full mb-5"></div>
               <div class="nunito-light text-white text-center text-base tracking-wider pb-1">Abu Dhabi Executive Council</div>
@@ -140,6 +150,11 @@
                 <source src="assets/video/Case_Study_Time_To_Care_Prev.mp4" type="video/mp4">
               </video> -->
               <img src="assets/img/film-time-to-care.jpg">
+            <div class="portfolio-mob-text">
+              <hr class="block md:hidden portfolio-mob-line absolute top-0 ml-4 pt-4">
+              <div class="block md:hidden absolute top-0 nunito-bold text-white text-left text-3xl leading-none pl-16 pt-20">Time To Care</div>
+              <div class="block md:hidden absolute bottom-0 right-0 nunito-light text-white text-right leading-tight text-sm tracking-wider pb-3 pr-8">Ministry of Health & Prevention UAE</div>
+            </div>
             </a>
             <div class="hidden md:block relative pt-10">
               <div class="nunito-bold text-white text-center text-2xl mb-5">Time To Care</div>
@@ -156,6 +171,11 @@
                 <source src="assets/video/Case_Study_Business_Excellence_Prev.mp4" type="video/mp4">
               </video> -->
               <img src="assets/img/film-business-excellence-awards.jpg">
+            <div class="portfolio-mob-text">
+              <hr class="block md:hidden portfolio-mob-line absolute top-0 ml-4 pt-4">
+              <div class="block md:hidden absolute top-0 nunito-bold text-white text-left text-3xl leading-none pl-16 pt-12 mt-2">Business<br>Excellence<br>Awards</div>
+              <div class="block md:hidden absolute bottom-0 right-0 nunito-light text-white text-right leading-tight text-sm tracking-wider pb-3 pr-8">Dubai Economy</div>
+            </div>
             </a>
             <div class="hidden md:block relative pt-10">
               <div class="block nunito-bold text-white text-center text-2xl mb-5">Business Excellence Awards</div>
@@ -172,6 +192,11 @@
                 <source src="assets/video/Case_Study_Business_Excellence_Prev.mp4" type="video/mp4">
               </video> -->
               <img src="assets/img/bg-dubai-economy.jpg">
+            <div class="portfolio-mob-text">
+              <hr class="block md:hidden portfolio-mob-line absolute top-0 ml-4 pt-4">
+              <div class="block md:hidden absolute top-0 nunito-bold text-white text-left text-3xl leading-none pl-16 pt-16">Dubai<br>Economy</div>
+              <div class="block md:hidden absolute bottom-0 right-0 nunito-light text-white text-right leading-tight text-sm tracking-wider pb-3 pr-8">Dubai Economy</div>
+            </div>
             </a>
             <div class="hidden md:block relative pt-10">
               <div class="nunito-bold text-white text-center text-2xl mb-5">Dubai Economy</div>
@@ -181,11 +206,22 @@
             </div>
             </div>
           </div>
+          <div class="block md:hidden swiper-slide">
+          <a href="mailto:contact@dxp.ae">
+            <div class="block md:hidden flex items-center ml-4 px-10 mt-10">
+              <img src="assets/icon/mail.svg" width="40" class="inline-block">
+              <div class="nunito-semibold text-sm text-white text-left pl-5">To discover how we could work together, just send us an <span class="underline">email</span>.</div>
+            </div>
+          </a>
+          </div>
       </div>
+
         <!-- Add Arrows -->
         <div class="hidden lg:block">
           <div class="swiper-button-next absolute pr-12 xl:pr-16"><img src="assets/icon/next.svg" class="max-w-none" width="50"></div>
           <div class="swiper-button-prev absolute pr-12 xl:pr-16"><img src="assets/icon/prev.svg" class="max-w-none" width="50"></div>
+        </div>
+
         </div>
       </div>
 
@@ -239,6 +275,16 @@
         forceToAxis: true,
         releaseOnEdges: true,
         },
+        breakpoints: {
+        300: {
+          slidesPerView: 3,
+          spaceBetween: 6,
+        },
+        767: {
+          slidesPerView: 2.5,
+          spaceBetween: 31,
+        }
+      },
         on: {
         resize: function () {
           swiper.changeDirection(getDirection());
