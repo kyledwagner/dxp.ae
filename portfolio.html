@@ -100,7 +100,7 @@
       <div class="h-screen w-screen bg-film">
       <!-- Swiper Desktop -->
       <div class="swiper-container">
-        <div class="swiper-wrapper -mt-40 md:-mt-0">
+        <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="flex flex-col portfolio-video px-4 md:px-0">
             <a href="https://vimeo.com/414304532" class="mediabox">
@@ -260,6 +260,7 @@
         slidesPerView: '2.5',
         direction: getDirection(),
         spaceBetween: 31,
+        loop: true,
         centeredSlides: true,
         centerInsufficientSlides: true,
         navigation: {
@@ -278,7 +279,7 @@
         breakpoints: {
         300: {
           slidesPerView: 3,
-          spaceBetween: 6,
+          spaceBetween: 50,
         },
         767: {
           slidesPerView: 2.5,
