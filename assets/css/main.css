@@ -911,9 +911,56 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
   }
 }
 
+@-webkit-keyframes slide-out-blurred-right {
+  0% {
+    -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+            transform: translateX(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(1000px) scaleX(1.5) scaleY(0.2);
+            transform: translateX(1000px) scaleX(1.5) scaleY(0.2);
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+}
+@keyframes slide-out-blurred-right {
+  0% {
+    -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+            transform: translateX(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(100px) scaleX(1.5) scaleY(0.2);
+            transform: translateX(100px) scaleX(1.5) scaleY(0.2);
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+    -webkit-filter: blur(20px);
+            filter: blur(20px);
+    opacity: 0;
+  }
+}
+
+/* Prevents the CSS From Loading on Page Load */
+.showhim:not(:hover) .showme  {
+  visibility: hidden;
+  transition: visibility 0.01s 1s;
+}
 
 .showme {
-  display: none;
+  -webkit-animation: slide-out-blurred-right 0.3s cubic-bezier(0.755, 0.050, 0.855, 0.060) both;
+  animation: slide-out-blurred-right 0.3s cubic-bezier(0.755, 0.050, 0.855, 0.060) both;
 }
 
 .showhim:hover .showme {
