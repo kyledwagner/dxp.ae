@@ -557,20 +557,35 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
   }
 
   #portfolio .swiper-button-next {
+    opacity: 0.4;
     height: 5rem;
     position: absolute;
     top: 44.75% !important;
     right: 0rem !important;
+    -webkit-transition: opacity 0.75s ease;
+    transition: opacity 0.75s ease;
   }
+
   #portfolio .swiper-button-prev {
+    opacity: 0.4;
     height: 5rem;
     position: absolute;
     top: 44.75% !important;
     left: 10.3rem !important;
+    -webkit-transition: opacity 0.75s ease;
+    transition: opacity 0.75s ease;
   }
 
-  #portfolio .swiper-button-disabled {
-    display: none;
+  #portfolio .swiper-button-prev:hover {
+    opacity: 1;
+    -webkit-transition: opacity 0.75s ease;
+    transition: opacity 0.75s ease;
+  }
+
+  #portfolio .swiper-button-next:hover {
+    opacity: 1;
+    -webkit-transition: opacity 0.75s ease;
+    transition: opacity 0.75s ease;
   }
 
   /* Hammburger Menu */
