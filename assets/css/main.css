@@ -556,6 +556,73 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     right: 10.3rem !important;
   }
 
+  #sky-dome .swiper-button-next {
+    position: absolute;
+    top: 47% !important;
+    right: 5rem !important;
+  }
+  #sky-dome .swiper-button-prev {
+    position: absolute;
+    top: 47% !important;
+    left: 5rem !important;
+  }
+
+  #sky-dome .swiper-container {
+    box-shadow: 0px 0px 0 rgba(255, 255, 255, 0.25), 0 0 80rem 0.25rem rgba(255, 255, 255, 0.25), inset 2px 2px 0 rgba(255, 255, 255, 0.25);
+  }
+
+  /* .gclose.gbtn {
+    right: 2.6rem !important;
+    top: 2.6rem !important;
+  } */
+
+  .gclose.gbtn {
+    right: 3rem !important;
+    top: 3.9rem !important;
+  }
+  @media only screen and (max-width: 1280px) {
+    .gclose.gbtn {
+      right: 2rem !important;
+      top: 2.7rem !important;
+    }
+  }
+
+  .gnext.gbtn {
+    top: 46% !important;
+    right: 4rem !important;
+  }
+  @media only screen and (max-width: 1280px) {
+    .gnext.gbtn {
+      right: 3rem !important;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .gnext.gbtn {
+      display:none !important;
+    }
+  }
+  .gprev.gbtn {
+    top: 46% !important;
+    left: 4rem !important;
+  }
+  @media only screen and (max-width: 1280px) {
+    .gprev.gbtn {
+      left: 3rem !important;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .gprev.gbtn {
+      display:none !important;
+    }
+  }
+
+@media only screen and (min-width: 767px) {
+  #glightbox-slider {
+    width: 75vw;
+    margin: auto;
+    pointer-events: none;
+  }
+
   #portfolio .swiper-button-next {
     opacity: 0.4;
     height: 5rem;
@@ -592,12 +659,17 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
   .button_container {
     position: fixed;
     top: 48%;
-    left: 4rem;
+    left: 4.1rem;
     height: 27px;
     width: 35px;
     /* cursor: pointer; */
     -webkit-transition: opacity .25s ease;
     transition: opacity .25s ease;
+  }
+  @media only screen and (max-width: 1280px) {
+    .button_container {
+      left: 3.25rem;
+    }
   }
   @media only screen and (max-width: 767px) {
   .button_container {

@@ -18,8 +18,9 @@
         <link rel="stylesheet" href="../assets/css/main.css">
         <!-- <link rel="stylesheet" href="../assets/css/mediabox.min.css"> -->
         <link rel="stylesheet" href="../assets/css/swiper.min.css">
+        <link rel="stylesheet" href="../assets/css/glightbox.min.css">
     </head>
-    <body>
+    <body id="sky-dome">
 
     <!-- <div id="preloader">
       <img src="../assets/preloader/DXP-animation.gif" class="mx-auto my-auto h-100" width="500" id="loader">
@@ -157,26 +158,27 @@
         <div class="swiper-container">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="../assets/img/visualization-slider/Visualization_Slide_01.jpg">
+              <a href="../assets/img/visualization-slider/Visualization_Slide_01.jpg" class="glightbox" data-gallery="gallery1"><img src="../assets/img/visualization-slider/Visualization_Slide_01.jpg"></a>
             </div>
             <div class="swiper-slide">
-              <img src="../assets/img/visualization-slider/Visualization_Slide_02.jpg">
+              <a href="../assets/img/visualization-slider/Visualization_Slide_02.jpg" class="glightbox" data-gallery="gallery1"><img src="../assets/img/visualization-slider/Visualization_Slide_02.jpg"></a>
             </div>
             <div class="swiper-slide">
-              <img src="../assets/img/visualization-slider/Visualization_Slide_03.jpg">
+              <a href="../assets/img/visualization-slider/Visualization_Slide_03.jpg" class="glightbox" data-gallery="gallery1"><img src="../assets/img/visualization-slider/Visualization_Slide_03.jpg"></a>
             </div>
             <div class="swiper-slide">
-              <img src="../assets/img/visualization-slider/Visualization_Slide_04.jpg">
+              <a href="../assets/img/visualization-slider/Visualization_Slide_04.jpg" class="glightbox" data-gallery="gallery1"><img src="../assets/img/visualization-slider/Visualization_Slide_04.jpg"></a>
             </div>
             <div class="swiper-slide">
-              <img src="../assets/img/visualization-slider/Visualization_Slide_05.jpg">
+              <a href="../assets/img/visualization-slider/Visualization_Slide_05.jpg" class="glightbox" data-gallery="gallery1"><img src="../assets/img/visualization-slider/Visualization_Slide_05.jpg"></a>
             </div>
           </div>
-          <!-- Add Arrows -->
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <!-- Add Pagination -->
-          <div class="swiper-pagination"></div>
+
+        </div>
+         <!-- Add Arrows -->
+        <div class="hidden lg:block">
+          <div class="swiper-button-next absolute"><img src="../assets/icon/next.svg" class="max-w-none" width="50"></div>
+          <div class="swiper-button-prev absolute"><img src="../assets/icon/prev.svg" class="max-w-none" width="50"></div>
         </div>
         </div>
         </div>
@@ -215,9 +217,6 @@
     </script>
     <script>
       var swiper = new Swiper('.swiper-container', {
-        pagination: {
-          el: '.swiper-pagination',
-        },
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
@@ -237,9 +236,16 @@
       $('#overlay').toggleClass('open');
     });
     </script>
-    <!-- <script src="../assets/js/mediabox.min.js"></script>
-    <script>
-      MediaBox('.mediabox');
-    </script> -->
+    <script src='../assets/js/glightbox.min.js'></script>
+    <script type="text/javascript">
+      const lightbox = GLightbox({
+        slideEffect: 'fade',
+        touchNavigation: true,
+        keyboardNavigation: true,
+        closeOnOutsideClick: true,
+        loop: true,
+        svg: {},
+      });
+    </script>
     </body>
 </html>
