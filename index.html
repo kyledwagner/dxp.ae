@@ -50,11 +50,11 @@
                     <!-- <div class="nunito-bold block w-full container md:mx-auto pl-8 md:pl-0 md:w-1/2 text-7xl text-white text-left tracking-tight leading-none">We expose storytelling</div> -->
                   </div>
                   <!-- Showing Mobile Version vs Desktop -->
-                  <video class="block md:hidden max-w-none" autoplay playsinline muted loop>
+                  <!-- <video class="block md:hidden max-w-none" autoplay playsinline muted loop>
                     <source src="assets/video/mobile/DXP_web_mobile_showreel_XS_310520.mp4" type="video/mp4">
-                  </video>
-                  <video class="hidden md:block max-w-none" autoplay playsinline muted loop>
-                    <source src="assets/video/DXP_web_desktop_showreel_small_280520.mp4" type="video/mp4">
+                  </video> -->
+                  <video id="showreel" class="max-w-none" autoplay playsinline muted loop>
+                    <source id="showreel_mp4" src="assets/video/DXP_web_desktop_showreel_small_280520.mp4" type="video/mp4">
                   </video>
                 </div>
                 <div class="swiper-slide" data-hash="abu-dhabi-plan">
@@ -66,11 +66,11 @@
                     </div>
                   </div>
                   <!-- Showing Mobile Version vs Desktop -->
-                  <video class="block md:hidden max-w-none" autoplay playsinline muted loop>
+                  <!-- <video class="block md:hidden max-w-none" autoplay playsinline muted loop>
                     <source src="assets/video/mobile/DXP_Case_study_THE_ABU_DHABI_PLAN_mobile_XS.mp4" type="video/mp4">
-                  </video>
-                  <video class="hidden md:block max-w-none" autoplay playsinline muted loop>
-                    <source src="assets/video/Case_Study_The_Abu_Dhabi_Plan_Prev.mp4" type="video/mp4">
+                  </video> -->
+                  <video id="abu-dhabi-plan" class="max-w-none" autoplay playsinline muted loop>
+                    <source id="abu-dhabi-plan_mp4" src="assets/video/Case_Study_The_Abu_Dhabi_Plan_Prev.mp4" type="video/mp4">
                   </video>
                 </div>
                 <div class="swiper-slide" data-hash="invest-in-sharjah">
@@ -82,11 +82,11 @@
                     </div>
                   </div>
                   <!-- Showing Mobile Version vs Desktop -->
-                  <video class="block md:hidden max-w-none" autoplay playsinline muted loop>
+                  <!-- <video class="block md:hidden max-w-none" autoplay playsinline muted loop>
                     <source src="assets/video/mobile/DXP_Case_study_INVEST_IN_SHARJAH_mobile_XS.mp4" type="video/mp4">
-                  </video>
-                  <video class="hidden md:block max-w-none" autoplay playsinline muted loop>
-                    <source src="assets/video/Case_Study_Invest_In_Sharjah_Prev.mp4" type="video/mp4">
+                  </video> -->
+                  <video id="abu-dhabi-plan" class="max-w-none" autoplay playsinline muted loop>
+                    <source id="abu-dhabi-plan_mp4" src="assets/video/Case_Study_Invest_In_Sharjah_Prev.mp4" type="video/mp4">
                   </video>
                 </div>
                 <div class="swiper-slide" data-hasH="time-to-care">
@@ -98,11 +98,11 @@
                     </div>
                   </div>
                   <!-- Showing Mobile Version vs Desktop -->
-                  <video class="block md:hidden max-w-none" autoplay playsinline muted loop>
+                  <!-- <video class="block md:hidden max-w-none" autoplay playsinline muted loop>
                     <source src="assets/video/mobile/DXP_Case_study_TIME_TO_CARE_mobile_XS.mp4" type="video/mp4">
-                  </video>
-                  <video class="hidden md:block max-w-none" autoplay playsinline muted loop>
-                    <source src="assets/video/Case_Study_Time_To_Care_Prev.mp4" type="video/mp4">
+                  </video> -->
+                  <video id="time-to-care" class="max-w-none" autoplay playsinline muted loop>
+                    <source id="time-to-care_mp4" src="assets/video/Case_Study_Time_To_Care_Prev.mp4" type="video/mp4">
                   </video>
                 </div>
                 <div class="swiper-slide" data-hash="business-excellence-awards">
@@ -114,11 +114,11 @@
                     </div>
                   </div>
                   <!-- Showing Mobile Version vs Desktop -->
-                  <video class="block md:hidden max-w-none" autoplay playsinline muted loop>
+                  <!-- <video class="block md:hidden max-w-none" autoplay playsinline muted loop>
                     <source src="assets/video/mobile/DXP_Case_study_BUSINESS_EXCELLENCE_AWARD_mobile_XS.mp4" type="video/mp4">
-                  </video>
-                  <video class="hidden md:block max-w-none" autoplay playsinline muted loop>
-                    <source src="assets/video/Case_Study_Business_Excellence_Prev.mp4" type="video/mp4">
+                  </video> -->
+                  <video id="business-excellence-awards" class="max-w-none" autoplay playsinline muted loop>
+                    <source id="business-excellence-awards_mp4" src="assets/video/Case_Study_Business_Excellence_Prev.mp4" type="video/mp4">
                   </video>
                 </div>
                 <div class="swiper-slide" data-hash="future-plans-visualization" id="future-plans">
@@ -207,6 +207,45 @@
         document.getElementById("showbox").style.display = "none";
         document.getElementById("main").style.display = "block";
         }
+    </script>
+    <script>
+      /* JavaScript Media Queries */
+      if (matchMedia) {
+        const mq = window.matchMedia("(min-width: 767px)");
+        mq.addListener(WidthChange);
+        WidthChange(mq);
+      }
+      // media query change
+      function WidthChange(mq) {
+      if (mq.matches) {
+        document.getElementById("showreel_mp4").src = "assets/video/DXP_web_desktop_showreel_small_280520.mp4";
+        document.getElementById("showreel").load();
+
+        document.getElementById("abu-dhabi-plan_mp4").src = "assets/video/Case_Study_The_Abu_Dhabi_Plan_Prev.mp4";
+        document.getElementById("abu-dhabi-plan").load();
+
+        document.getElementById("invest-in-sharjah_mp4").src = "assets/video/Case_Study_Invest_In_Sharjah_Prev.mp4";
+        document.getElementById("invest-in-sharjah").load();
+
+        document.getElementById("time-to-care_mp4").src = "assets/video/Case_Study_Time_To_Care_Prev.mp4";
+        document.getElementById("time-to-care").load();
+
+        document.getElementById("business-excellence-awards_mp4").src = "assets/video/Case_Study_Business_Excellence_Prev.mp4";
+        document.getElementById("business-excellence-awards").load();
+      } else {
+        document.getElementById("showreel_mp4").src = "assets/video/mobile/DXP_web_mobile_showreel_XS_310520.mp4";
+        document.getElementById("showreel").load();
+
+        document.getElementById("abu-dhabi-plan_mp4").src = "assets/video/mobile/DXP_Case_study_THE_ABU_DHABI_PLAN_mobile_XS.mp4";
+        document.getElementById("abu-dhabi-plan").load();
+
+        document.getElementById("invest-in-sharjah_mp4").src = "assets/video/mobile/DXP_Case_study_INVEST_IN_SHARJAH_mobile_XS.mp4";
+        document.getElementById("invest-in-sharjah").load();
+
+        document.getElementById("business-excellence-awards_mp4").src = "assets/video/mobile/DXP_Case_study_BUSINESS_EXCELLENCE_AWARD_mobile_XS.mp4";
+        document.getElementById("business-excellence-awards").load();
+      }
+      }
     </script>
     <!-- SwiperJS Example -->
     <script src="assets/js/swiper.min.js"></script>
