@@ -194,7 +194,20 @@
       <div class="hidden md:block circle-cursor circle-cursor--inner"></div>
       <div class="hidden md:block circle-cursor circle-cursor--outer"></div>
       </div>
-      <!-- </div> -->
+    </div>
+    <script>
+        var myVar;
+
+        function myFunction() {
+        myVar = setTimeout(showPage, 1000);
+        }
+
+        function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("showbox").style.display = "none";
+        document.getElementById("main").style.display = "block";
+        }
+    </script>
     <script>
       /* JavaScript Media Queries */
       if (matchMedia) {
@@ -236,19 +249,6 @@
         document.getElementById("business-excellence-awards").load();
       }
       }
-    </script>
-    <script>
-        var myVar;
-
-        function myFunction() {
-        myVar = setTimeout(showPage, 1000);
-        }
-
-        function showPage() {
-        document.getElementById("loader").style.display = "none";
-        document.getElementById("showbox").style.display = "none";
-        document.getElementById("main").style.display = "block";
-        }
     </script>
     <!-- SwiperJS Example -->
     <script src="assets/js/swiper.min.js"></script>
