@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>DXP | Double Exposure Productions</title>
+        <meta name="description" content="Double Exposure enhances visual storytelling with a unique combination of creativity, professionalism, teamwork, and our deep understanding of local Emirati culture, making us adept at meeting the demand and growth of international markets.">
+        <meta name="keywords" content="UAE production, Dubai production, Abu Dhabi production, Sharjah production, Dubai filmmaker, storytelling, brand stories, content marketing, commercial, corporate film, feature film, animation, documentary">
+        <meta name="author" content="Double Exposure Productions (DXP)">
+        <meta name="theme-color" content="#152837">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="assets/favicon/favicon.svg">
+        <link rel=”mask-icon” href=”assets/favicon/mask-icon.svg” color=”#152837">
+        <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
+      <style>
+      #preloader {
+          z-index: -1;
+          background: rgb(21,40,55);
+          background: radial-gradient(circle, rgba(21,40,55,1) 0%, rgba(13,21,28,1) 100%);
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          cursor: none;
+      }
+      #loader {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          cursor: none;
+      }
+      /* Circle Loader */
+        .showbox {
+          z-index: -1;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          cursor: none;
+        }
+        .loader {
+          position: relative;
+          margin: 0px auto;
+          width: 210px;
+        }
+        .loader:before {
+          content: '';
+          display: block;
+          padding-top: 100%;
+        }
+        .circular {
+          animation: rotate 2s linear infinite;
+          height: 100%;
+          transform-origin: center center;
+          width: 100%;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+        }
+        .path {
+          stroke-dasharray: 1,200;
+          stroke-dashoffset: 0;
+          animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+          stroke-linecap: round;
+        }
+        @keyframes rotate {
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+        @keyframes dash {
+          0% {
+            stroke-dasharray: 1,200;
+            stroke-dashoffset: 0;
+          }
+          50% {
+            stroke-dasharray: 89,200;
+            stroke-dashoffset: -35px;
+          }
+          100% {
+            stroke-dasharray: 89,200;
+            stroke-dashoffset: -124px;
+          }
+        }
+        @keyframes color {
+          100%, 0% {
+            stroke: #0069A7;
+          }
+          40% {
+            stroke: #0069A7;
+          }
+          66% {
+            stroke: #0069A7;
+          }
+          80%, 90% {
+            stroke: #0069A7;
+          }
+        }
+        #main {
+          display: none;
+        }
+      </style>
+        <!-- <link rel="stylesheet" href="assets/css/loader.css"> -->
+        <link rel="stylesheet" href="assets/css/tailwind.min.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/swiper.min.css">
+    </head>
+    <body onload="myFunction()">
+
+    <div id="preloader">
+        <img src="assets/preloader/DXP-animation.gif" class="mx-auto my-auto h-100" width="500" id="loader">
+        <div id="loader"></div>
+        <div class="showbox" id="showbox">
+          <div class="loader">
+            <svg class="circular" viewBox="25 25 50 50">
+              <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="0.5" stroke-miterlimit="10"/>
+            </svg>
+          </div>
+        </div>
+    </div>
+
+    <div class="page">
+    <div style="display:none;" id="main">
+    <!-- HUD -->
+        <div class="z-20 fixed top-0 left-0 p-6 xl:pl-12 xl:pt-10 xl:ml-1">
+          <a href="index.html" target="_self"><img class="hvr-grow" src="assets/img/dxp-logo.svg" width="121" height="64.68" alt="DXP Logo"></a>
+        </div>
+        <div class="z-20 nunito-bold hidden md:inline-block text-sm text-white tracking-wider fixed top-0 right-0 p-12 xl:pr-16 xl:pt-12 xl:mt-1">Double Exposure Productions<div class="ml-4 slider-scroll-down"><span class="bounce-line"></span></div></div>
+        <div class="z-20 nunito-light fixed bottom-0 left-0 md:right-0 md:bottom-0 md:left-auto text-sm text-white pl-8 pb-10 md:pr-12 md:pl-12 md:pb-12 xl:p-16">All rights reserved.</div>
+        <div class="z-20 nunito-semibold hidden md:block fixed bottom-0 left-0 p-12 xl:p-16">
+          <div class="py-8 -mb-12 showhim">
+            <a href="mailto:contact@dxp.ae" class="hvr-grow"><img src="assets/icon/mail.svg" width="40" class="inline-block"></a>
+            <div class="showme text-white pl-4 pr-10 inline-block">To discover how we could work together, just send us an <a href="mailto:contact@dxp.ae" class="underline">email</a>.</div>
+          </div>
+        </div>
+    <!-- Swiper Home -->
+    <div class="swiper-container" id="home">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" data-hash="welcome">
+                  <div class="h-screen w-screen flex items-center absolute overflow-hidden">
+                  </div>
+                  <!-- Showing Mobile Version vs Desktop -->
+                  <!-- <video class="block md:hidden max-w-none" autoplay playsinline muted loop>
+                    <source src="assets/video/mobile/DXP_web_mobile_showreel_XS_310520.mp4" type="video/mp4">
+                  </video> -->
+                  <!-- <video id="showreel" class="max-w-none" autoplay playsinline muted loop>
+                    <source id="showreel_mp4" src="assets/video/mobile/DXP_web_mobile_showreel_small_280520_30secs.mp4" type="video/mp4">
+                  </video> -->
+                </div>
+                <div class="swiper-slide" data-hash="abu-dhabi-plan">
+                  <div class="h-screen w-screen flex flex-wrap items-center absolute overflow-hidden">
+                    <div class="w-full container md:w-1/2 mx-auto">
+                      <div class="nunito-bold block md:mr-auto pl-8 md:pl-1 text-xl text-white text-left tracking-widest leading-none" data-swiper-parallax="-25%" data-swiper-parallax-opacity="0" data-swiper-parallax-duration="750">Abu Dhabi Executive Council</div>
+                      <div class="nunito-bold block w-full md:w-3/4 md:mr-auto pl-8 md:pl-0 text-7xl text-white pt-2 text-left tracking-tight leading-none" data-swiper-parallax="-50%" data-swiper-parallax-scale="1.25" data-swiper-parallax-duration="750">Abu Dhabi <br>Plan</div>
+                      <div class="nunito-semibold md:mr-auto pl-8 md:pl-1 pt-4 text-xl text-white text-left tracking-normal leading-none" data-swiper-parallax="-70" data-swiper-parallax-opacity="0" data-swiper-parallax-duration="750"><a href="portfolio/abu-dhabi-plan.html" target="_self" class="link-2">View Case</a></div>
+                    </div>
+                  </div>
+                  <!-- Showing Mobile Version vs Desktop -->
+                  <!-- <video class="block md:hidden max-w-none" autoplay playsinline muted loop>
+                    <source src="assets/video/mobile/DXP_Case_study_THE_ABU_DHABI_PLAN_mobile_XS.mp4" type="video/mp4">
+                  </video> -->
+                  <!-- <video id="abu-dhabi-plan" class="max-w-none" autoplay playsinline muted loop>
+                    <source id="abu-dhabi-plan_mp4" src="assets/video/mobile/Abu-Dhabi-Plan_Vertical.mp4" type="video/mp4">
+                  </video> -->
+                </div>
+                <div class="swiper-slide" data-hash="invest-in-sharjah">
+                  <div class="h-screen w-screen flex flex-wrap items-center absolute overflow-hidden">
+                    <div class="w-full container md:w-1/2 mx-auto">
+                      <div class="nunito-bold block md:mr-auto pl-8 md:pl-1 text-xl text-white text-left tracking-widest leading-none" data-swiper-parallax="-25%" data-swiper-parallax-opacity="0" data-swiper-parallax-duration="750">Sharjah Investment &amp; Development Authority</div>
+                      <div class="nunito-bold block w-3/4 md:mr-auto pl-8 md:pl-0 text-7xl text-white pt-2 text-left tracking-tight leading-none" data-swiper-parallax="-50%" data-swiper-parallax-scale="1.25" data-swiper-parallax-duration="750">Invest in <br>Sharjah</div>
+                      <div class="nunito-semibold md:mr-auto pl-8 md:pl-1 pt-4 text-xl text-white text-left tracking-normal leading-none" data-swiper-parallax="-70%" data-swiper-parallax-opacity="0" data-swiper-parallax-duration="750"><a href="portfolio/invest-in-sharjah.html" target="_self" class="link-2">View Case</a></div>
+                    </div>
+                  </div>
+                  <!-- Showing Mobile Version vs Desktop -->
+                  <!-- <video class="block md:hidden max-w-none" autoplay playsinline muted loop>
+                    <source src="assets/video/mobile/DXP_Case_study_INVEST_IN_SHARJAH_mobile_XS.mp4" type="video/mp4">
+                  </video> -->
+                  <!-- <video id="invest-in-sharjah" class="max-w-none" autoplay playsinline muted loop>
+                    <source id="invest-in-sharjah_mp4" src="assets/video/mobile/Invest-In-Sharjah_Vertical.mp4" type="video/mp4">
+                  </video> -->
+                </div>
+                <div class="swiper-slide" data-hasH="time-to-care">
+                  <div class="h-screen w-screen flex flex-wrap items-center absolute overflow-hidden">
+                    <div class="w-full container md:w-1/2 mx-auto">
+                      <div class="nunito-bold block md:mr-auto pl-8 md:pl-1 text-xl text-white text-left tracking-widest leading-none" data-swiper-parallax="-25%" data-swiper-parallax-opacity="0" data-swiper-parallax-duration="750">Ministry of Health &amp; Prevention UAE</div>
+                      <div class="nunito-bold block w-full md:mr-auto pl-8 md:pl-0 text-7xl text-white pt-2 text-left tracking-tight leading-none" data-swiper-parallax="-50%" data-swiper-parallax-scale="1.25" data-swiper-parallax-duration="750">Time To Care</div>
+                      <div class="nunito-semibold md:mr-auto pl-8 md:pl-1 pt-4 text-xl text-white text-left tracking-normal leading-none" data-swiper-parallax="-70%" data-swiper-parallax-opacity="0" data-swiper-parallax-duration="750"><a href="portfolio/time-to-care.html" target="_self" class="link-2">View Case</a></div>
+                    </div>
+                  </div>
+                  <!-- Showing Mobile Version vs Desktop -->
+                  <!-- <video class="block md:hidden max-w-none" autoplay playsinline muted loop>
+                    <source src="assets/video/mobile/DXP_Case_study_TIME_TO_CARE_mobile_XS.mp4" type="video/mp4">
+                  </video> -->
+                  <!-- <video id="time-to-care" class="max-w-none" autoplay playsinline muted loop>
+                    <source id="time-to-care_mp4" src="assets/video/mobile/Time-To-Care_Vertical.mp4" type="video/mp4">
+                  </video> -->
+                </div>
+                <div class="swiper-slide" data-hash="business-excellence-awards">
+                  <div class="h-screen w-screen flex flex-wrap items-center absolute overflow-hidden">
+                    <div class="w-full container md:w-1/2 mx-auto">
+                      <div class="nunito-bold block md:mr-auto pl-8 md:pl-1 text-xl text-white text-left tracking-widest leading-none" data-swiper-parallax="-25%" data-swiper-parallax-opacity="0" data-swiper-parallax-duration="750">Dubai Economy</div>
+                      <div class="nunito-bold block w-3/4 md:mr-auto pl-8 md:pl-0 text-7xl text-white pt-2 text-left tracking-tight leading-none" data-swiper-parallax="-50%" data-swiper-parallax-scale="1.25" data-swiper-parallax-duration="750">Business Excellence Awards</div>
+                      <div class="nunito-semibold md:mr-auto pl-8 md:pl-1 pt-4 text-xl text-white text-left tracking-normal leading-none" data-swiper-parallax="-70%" data-swiper-parallax-opacity="0" data-swiper-parallax-duration="750"><a href="portfolio/business-excellence-awards.html" target="_self" class="link-2">View Case</a></div>
+                    </div>
+                  </div>
+                  <!-- Showing Mobile Version vs Desktop -->
+                  <!-- <video class="block md:hidden max-w-none" autoplay playsinline muted loop>
+                    <source src="assets/video/mobile/DXP_Case_study_BUSINESS_EXCELLENCE_AWARD_mobile_XS.mp4" type="video/mp4">
+                  </video> -->
+                  <!-- <video id="business-excellence-awards" class="max-w-none" autoplay playsinline muted loop>
+                    <source id="business-excellence-awards_mp4" src="assets/video/mobile/Business-Excellence-Award_Vertical.mp4" type="video/mp4">
+                  </video> -->
+                </div>
+                <div class="swiper-slide" data-hash="future-plans-visualization" id="future-plans">
+                  <div class="h-screen w-screen flex flex-wrap items-center absolute overflow-hidden">
+                    <div class="w-full container md:w-1/2 mx-auto">
+                      <div class="nunito-bold block md:mr-auto pl-8 md:pl-1 text-lg md:text-xl text-white text-left tracking-widest leading-none" data-swiper-parallax="-25%" data-swiper-parallax-opacity="0" data-swiper-parallax-duration="750">Dubai Civil Aviation Authority</div>
+                      <div class="nunito-bold block w-full pl-8 md:pl-0 text-7xl-future text-white pt-2 text-left tracking-tight leading-none" data-swiper-parallax="-50%" data-swiper-parallax-scale="1.25" data-swiper-parallax-duration="750">Future Plans Visualization</div>
+                      <div class="nunito-semibold md:mr-auto pl-8 md:pl-1 pt-4 text-xl text-white text-left tracking-normal leading-none" data-swiper-parallax="-70%" data-swiper-parallax-opacity="0" data-swiper-parallax-duration="750"><a href="portfolio/dubai-urban-sky-dome.html" target="_self" class="link-2">View Case</a></div>
+                    </div>
+                  </div>
+                  <img src="assets/img/bg-dubai-urban-sky-dome.png" class="mr-auto h-screen w-screen">
+                </div>
+              </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination hidden lg:block absolute pr-12 xl:pr-16 mr-4"></div>
+              <!-- Add Arrows -->
+              <div class="hidden lg:block">
+                <div class="swiper-button-next absolute pr-12 xl:pr-16"><img src="assets/icon/next.svg" class="max-w-none" width="50"></div>
+                <div class="swiper-button-prev absolute pr-12 xl:pr-16"><img src="assets/icon/prev.svg" class="max-w-none" width="50"></div>
+              </div>
+            </div>
+          <!-- Hamburger Menu -->
+          <div class="button_container z-20 hvr-grow" id="toggle">
+            <span class="top"></span>
+            <span class="middle"></span>
+            <span class="bottom"></span>
+          </div>
+          <div class="overlay z-10" id="overlay">
+            <nav class="overlay-menu">
+              <div class="h-screen w-screen flex items-center px-8">
+                <div class="flex flex-wrap container pl-0 md:pl-32 lg:pl-40 mx-auto">
+                  <div class="w-full md:pt-0 lg:w-7/12 pt-1 nunito-bold text-8xl text-left tracking-tight leading-none">
+                    <ul>
+                      <li class="hidden md:block mb-1 md:mb-3 lg:mb-8"><a href="index.html" target="_top" class="hvr-forward">Home</a></li>
+                      <li class="block mb-1 md:mb-3 lg:mb-8"><a href="about.html" target="_self" class="hvr-forward">About</a></li>
+                      <li class="block"><a href="portfolio.html" target="_self" class="hvr-forward">Portfolio</a></li>
+                      <li class="block mt-1 md:mt-3 lg:mt-8"><a href="index.html#abu-dhabi-plan" target="_self" class="hvr-forward">Case Studies</a></li>
+                    </ul>
+                  </div>
+                  <div class="pt-6 lg:pt-0 self-center w-full lg:w-5/12 ml-0 lg:pl-16 text-sm md:text-base">
+                    <ul>
+                      <li class="mb-3 md:mb-4 block"><div class="text-white nunito-bold">
+                        Double Exposure Productions (DXP)<br>
+                        <div class="underline link-3"><a href="mailto:contact@dxp.ae">contact@dxp.ae</a></div></div>
+                      </li>
+                      <li class="mb-3 md:mb-4 block"><div class="text-sm text-white nunito-light">
+                        Business Village<br>
+                        <span class="hidden md:inline-block">PO Box 75578<br></span>
+                        Dubai | UAE<br>
+                        <div class="text-sm underline link-3"><a href="tel:97143758985">+971 4 3758985</a></div></div>
+                      </li>
+                      <li class="block"><div class="text-sm text-white nunito-light">
+                        twofour54 Media Zone<br>
+                        <span class="hidden md:inline-block">PO Box 769917<br></span>
+                        Abu Dhabi | UAE<br>
+                        <div class="underline text-sm link-3"><a href="tel:97120000000">+971 2 0000000</a></div></div>
+                      </li>
+                      <li class="mt-6 md:mt-8 -ml-1">
+                        <a href="https://www.facebook.com/doublexposureproductions" target="_blank" class="hvr-float inline-block"><img class="mr-4" src="assets/icon/facebook.svg" width="25"></a>
+                        <a href="https://www.instagram.com/dxpae/" target="_blank" class="hvr-float inline-block"><img class="mr-4" src="assets/icon/instagram.svg" width="25"></a>
+                        <a href="https://www.vimeo.com/dxpae" target="_blank" class="hvr-float inline-block"><img class="mr-4" src="assets/icon/vimeo.svg" width="25"></a>
+                        <a href="https://www.youtube.com/user/DXPae" target="_blank" class="hvr-float inline-block"><img class="mr-4" src="assets/icon/youtube.svg" width="25"></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </nav>
+            </div>
+          <!-- END Hamburger Menu -->
+
+    </div>
+    <div class="hidden md:block circle-cursor circle-cursor--inner"></div>
+    <div class="hidden md:block circle-cursor circle-cursor--outer"></div>
+  </div>
+    <script>
+        var myVar;
+
+        function myFunction() {
+        myVar = setTimeout(showPage, 1000);
+        }
+
+        function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("showbox").style.display = "none";
+        document.getElementById("main").style.display = "block";
+        }
+    </script>
+          <script>
+            /* JavaScript Media Queries */
+            if (matchMedia) {
+              const mq = window.matchMedia("(min-width: 767px)");
+              mq.addListener(WidthChange);
+              WidthChange(mq);
+            }
+            // media query change
+            function WidthChange(mq) {
+            if (mq.matches) {
+              document.getElementById("showreel_mp4").src = "assets/video/DXP_web_desktop_showreel_small_280520.mp4";
+              document.getElementById("showreel").load();
+
+              document.getElementById("abu-dhabi-plan_mp4").src = "assets/video/Case_Study_The_Abu_Dhabi_Plan_Prev.mp4";
+              document.getElementById("abu-dhabi-plan").load();
+
+              document.getElementById("invest-in-sharjah_mp4").src = "assets/video/Case_Study_Invest_In_Sharjah_Prev.mp4";
+              document.getElementById("invest-in-sharjah").load();
+
+              document.getElementById("time-to-care_mp4").src = "assets/video/Case_Study_Time_To_Care_Prev.mp4";
+              document.getElementById("time-to-care").load();
+
+              document.getElementById("business-excellence-awards_mp4").src = "assets/video/Case_Study_Business_Excellence_Prev.mp4";
+              document.getElementById("business-excellence-awards").load();
+              // document.getElementById("showreel_mp4").src = "assets/video/mobile/DXP_web_mobile_showreel_small_280520_30secs.mp4";
+              // document.getElementById("showreel").load();
+
+              // document.getElementById("abu-dhabi-plan_mp4").src = "assets/video/mobile/Abu-Dhabi-Plan_Vertical.mp4";
+              // document.getElementById("abu-dhabi-plan").load();
+
+              // document.getElementById("invest-in-sharjah_mp4").src = "assets/video/mobile/Invest-In-Sharjah_Vertical.mp4";
+              // document.getElementById("invest-in-sharjah").load();
+
+              // document.getElementById("time-to-care_mp4").src = "assets/video/mobile/Time-To-Care_Vertical.mp4";
+              // document.getElementById("time-to-care").load();
+
+              // document.getElementById("business-excellence-awards_mp4").src = "assets/video/mobile/Business-Excellence-Award_Vertical.mp4";
+              // document.getElementById("business-excellence-awards").load();
+            }
+            }
+          </script>
+    <!-- SwiperJS Example -->
+    <script src="assets/js/swiper.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js'></script> -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+      $('#toggle').click(function() {
+      $(this).toggleClass('active');
+      $('#overlay').toggleClass('open');
+    });
+    </script>
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+      parallax: true,
+      hashNavigation: {
+      watchState: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      keyboard: {
+      enabled: true,
+      onlyInViewport: false,
+      },
+      mousewheel: {
+      invert: false,
+      forceToAxis: true,
+      sensitivity: 1,
+      },
+      parallax: true,
+      speed: 600,
+      loop: true,
+      observer: true,
+      observeParents: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (1 + '0' + index).slice(-2) + '</span>';
+        },
+      },
+    });
+    </script>
+    </body>
+</html>
