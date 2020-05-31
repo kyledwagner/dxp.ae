@@ -529,6 +529,16 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     font-weight: bold;
   }
 
+  #case-study .swiper-button-next {
+    position: absolute;
+    right: 40%;
+  }
+
+  #case-study .swiper-button-prev {
+    position: absolute;
+    left: 40%;
+  }
+
   #home .swiper-button-next {
     position: absolute;
     top: 47% !important;
