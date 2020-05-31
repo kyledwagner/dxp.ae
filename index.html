@@ -144,6 +144,49 @@
                 <div class="swiper-button-prev absolute pr-12 xl:pr-16"><img src="assets/icon/prev.svg" class="max-w-none" width="50"></div>
               </div>
             </div>
+
+            <script>
+              /* JavaScript Media Queries */
+              if (matchMedia) {
+                const mq = window.matchMedia("(max-width: 767px)");
+                mq.addListener(WidthChange);
+                WidthChange(mq);
+              }
+              // media query change
+              function WidthChange(mq) {
+              if (mq.matches) {
+                document.getElementById("showreel_mp4").src = "assets/video/mobile/DXP_web_mobile_showreel_small_280520_30secs.mp4";
+                document.getElementById("showreel").load();
+
+                document.getElementById("abu-dhabi-plan_mp4").src = "assets/video/mobile/Abu-Dhabi-Plan_Vertical.mp4";
+                document.getElementById("abu-dhabi-plan").load();
+
+                document.getElementById("invest-in-sharjah_mp4").src = "assets/video/mobile/Invest-In-Sharjah_Vertical.mp4";
+                document.getElementById("invest-in-sharjah").load();
+
+                document.getElementById("time-to-care_mp4").src = "assets/video/mobile/Time-To-Care_Vertical.mp4";
+                document.getElementById("time-to-care").load();
+
+                document.getElementById("business-excellence-awards_mp4").src = "assets/video/mobile/Business-Excellence-Award_Vertical.mp4";
+                document.getElementById("business-excellence-awards").load();
+              } else {
+                document.getElementById("showreel_mp4").src = "assets/video/DXP_web_desktop_showreel_small_280520.mp4";
+                document.getElementById("showreel").load();
+
+                document.getElementById("abu-dhabi-plan_mp4").src = "assets/video/Case_Study_The_Abu_Dhabi_Plan_Prev.mp4";
+                document.getElementById("abu-dhabi-plan").load();
+
+                document.getElementById("invest-in-sharjah_mp4").src = "assets/video/Case_Study_Invest_In_Sharjah_Prev.mp4";
+                document.getElementById("invest-in-sharjah").load();
+
+                document.getElementById("time-to-care_mp4").src = "assets/video/Case_Study_Time_To_Care_Prev.mp4";
+                document.getElementById("time-to-care").load();
+
+                document.getElementById("business-excellence-awards_mp4").src = "assets/video/Case_Study_Business_Excellence_Prev.mp4";
+                document.getElementById("business-excellence-awards").load();
+              }
+              }
+            </script>
           <!-- Hamburger Menu -->
           <div class="button_container z-20 hvr-grow" id="toggle">
             <span class="top"></span>
@@ -210,48 +253,6 @@
         document.getElementById("showbox").style.display = "none";
         document.getElementById("main").style.display = "block";
         }
-    </script>
-    <script>
-      /* JavaScript Media Queries */
-      if (matchMedia) {
-        const mq = window.matchMedia("(max-width: 767px)");
-        mq.addListener(WidthChange);
-        WidthChange(mq);
-      }
-      // media query change
-      function WidthChange(mq) {
-      if (mq.matches) {
-        document.getElementById("showreel_mp4").src = "assets/video/mobile/DXP_web_mobile_showreel_small_280520_30secs.mp4";
-        document.getElementById("showreel").load();
-
-        document.getElementById("abu-dhabi-plan_mp4").src = "assets/video/mobile/Abu-Dhabi-Plan_Vertical.mp4";
-        document.getElementById("abu-dhabi-plan").load();
-
-        document.getElementById("invest-in-sharjah_mp4").src = "assets/video/mobile/Invest-In-Sharjah_Vertical.mp4";
-        document.getElementById("invest-in-sharjah").load();
-
-        document.getElementById("time-to-care_mp4").src = "assets/video/mobile/Time-To-Care_Vertical.mp4";
-        document.getElementById("time-to-care").load();
-
-        document.getElementById("business-excellence-awards_mp4").src = "assets/video/mobile/Business-Excellence-Award_Vertical.mp4";
-        document.getElementById("business-excellence-awards").load();
-      } else {
-        document.getElementById("showreel_mp4").src = "assets/video/DXP_web_desktop_showreel_small_280520.mp4";
-        document.getElementById("showreel").load();
-
-        document.getElementById("abu-dhabi-plan_mp4").src = "assets/video/Case_Study_The_Abu_Dhabi_Plan_Prev.mp4";
-        document.getElementById("abu-dhabi-plan").load();
-
-        document.getElementById("invest-in-sharjah_mp4").src = "assets/video/Case_Study_Invest_In_Sharjah_Prev.mp4";
-        document.getElementById("invest-in-sharjah").load();
-
-        document.getElementById("time-to-care_mp4").src = "assets/video/Case_Study_Time_To_Care_Prev.mp4";
-        document.getElementById("time-to-care").load();
-
-        document.getElementById("business-excellence-awards_mp4").src = "assets/video/Case_Study_Business_Excellence_Prev.mp4";
-        document.getElementById("business-excellence-awards").load();
-      }
-      }
     </script>
     <!-- SwiperJS Example -->
     <script src="assets/js/swiper.min.js"></script>
