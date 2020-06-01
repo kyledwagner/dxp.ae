@@ -732,6 +732,25 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     top: 22px;
   }
 
+  .overlay-wipe {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100vh;
+    background: rgb(255, 255, 255);
+    width: 0%;
+    opacity: 1;
+    -webkit-transition: width .2s ease-in-out;
+    transition: width .2s ease-in-out;
+  }
+
+  .overlay-wipe.open {
+    opacity: 1;
+    /* visibility: visible; */
+    width: 100vw;
+  }
+
   .overlay {
     position: fixed;
     background: rgb(21,40,55);
