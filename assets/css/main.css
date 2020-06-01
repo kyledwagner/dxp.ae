@@ -755,7 +755,7 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
   }
   .overlay nav {
     position: absolute;
-    top: 50%;
+    top: 51%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
