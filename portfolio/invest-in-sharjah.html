@@ -184,7 +184,15 @@
       </div>
       <div class="hidden md:block circle-cursor circle-cursor--inner"></div>
       <div class="hidden md:block circle-cursor circle-cursor--outer"></div>
+      <script>
+        const setVh = () => {
+        const vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+      };
 
+      window.addEventListener('load', setVh);
+      window.addEventListener('resize', setVh);
+      </script>
     <!-- <script>
         var myVar;
 
