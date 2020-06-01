@@ -720,7 +720,10 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     top: 0;
     right: 0;
     width: 0%;
-    height: 100vh;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    min-height: -moz-fill-available;
+    min-height: fill-available;
     /* opacity: 0; */
     opacity: 1;
     /* -webkit-transition: opacity .35s, visibility .35s, width .35s ease;
@@ -753,12 +756,8 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
             animation-delay: .50s;
   }
   .overlay nav {
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
-    min-height: -moz-fill-available;
-    min-height: fill-available;
     position: absolute;
-    top: 50%;
+    top: 48%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
