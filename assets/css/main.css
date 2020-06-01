@@ -753,7 +753,11 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
             animation-delay: .50s;
   }
   .overlay nav {
-    position: relative;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    min-height: -moz-fill-available;
+    min-height: fill-available;
+    position: absolute;
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
@@ -764,20 +768,6 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
   }
 } */
 
-.mob-contact {
-  top: 52%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-  @media only screen and (max-width: 768px) {
-  .mob-contact {
-    position: relative;
-    top: 37%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-  }
-
-}
   .overlay ul {
     list-style: none;
     padding: 0;
