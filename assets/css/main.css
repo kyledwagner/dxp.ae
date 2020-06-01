@@ -492,7 +492,8 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
   }
 
   #home .swiper-slide .container {
-    margin-bottom: 5rem !important;
+    position: absolute;
+    top: 35% !important;
   }
 
   #home .swiper-slide video {
