@@ -485,7 +485,7 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     scroll-snap-stop: always;
   }
 
-  #case-study .container {
+  #case-study .test {
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
   }
