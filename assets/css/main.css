@@ -1162,3 +1162,55 @@ input[type='checkbox'] {
       -webkit-transition: all ease 0.2s;
       transition: all ease 0.2s;
     }
+
+/* Scroll Down Animation */
+.scroll-down .scrolling {
+	position: relative;
+	display: inline-block;
+	outline: none;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.scroll-down span {
+    position: relative;
+  	display: inline-block;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+    animation-name: scrolly;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+	  -webkit-transition: -webkit-transform 0.3s;
+	  -moz-transition: -moz-transform 0.3s;
+	  transition: transform 0.3s;
+}
+
+.scroll-down .scrolling {
+	overflow: hidden;
+	/* padding: 0 4px; */
+	height: 1em;
+}
+
+span::before {
+  position: absolute;
+	top: -100%;
+	content: attr(data-hover);
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+@keyframes scrolly {
+  0% {
+    transform: translatey(0%);
+  }
+  40% {
+    transform: translatey(100%);
+  }
+  100% {
+    transform: translatey(100%);
+   }
+}
