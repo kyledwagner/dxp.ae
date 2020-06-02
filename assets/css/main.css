@@ -1,7 +1,4 @@
 /* Main CSS file for DXP.ae */
-* {
-  outline: 1px solid purple;
-}
 html { /* body won't work for Chrome, Firefox ¯\_(ツ)_/¯ */
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
