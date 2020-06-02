@@ -1,5 +1,7 @@
 /* Main CSS file for DXP.ae */
-
+* {
+  outline: 1px solid purple;
+}
 html { /* body won't work for Chrome, Firefox ¯\_(ツ)_/¯ */
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
@@ -12,6 +14,7 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
   min-height: -moz-fill-available;
   min-height: fill-available;
   overscroll-behavior-y: none;
+  cursor: none;
 }
 
 @font-face {

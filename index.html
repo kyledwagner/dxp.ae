@@ -12,105 +12,107 @@
         <link rel="icon" href="assets/favicon/favicon.svg">
         <link rel=”mask-icon” href=”assets/favicon/mask-icon.svg” color=”#152837">
         <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
+        <!-- <link rel="stylesheet" href="assets/css/loader.css"> -->
+      <link rel="stylesheet" href="assets/css/tailwind.min.css">
       <style>
-      #preloader {
-          z-index: -1;
-          background: rgb(21,40,55);
-          background: radial-gradient(circle, rgba(21,40,55,1) 0%, rgba(13,21,28,1) 100%);
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          cursor: none;
-      }
-      #loader {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          cursor: none;
-      }
-      /* Circle Loader */
-        .showbox {
-          z-index: -1;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          cursor: none;
+        #preloader {
+            z-index: -1;
+            background: rgb(21,40,55);
+            background: radial-gradient(circle, rgba(21,40,55,1) 0%, rgba(13,21,28,1) 100%);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            cursor: none !important;
         }
-        .loader {
-          position: relative;
-          margin: 0px auto;
-          width: 210px;
+        #loader {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            cursor: none !important;
         }
-        .loader:before {
-          content: '';
-          display: block;
-          padding-top: 100%;
-        }
-        .circular {
-          animation: rotate 2s linear infinite;
-          height: 100%;
-          transform-origin: center center;
-          width: 100%;
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          margin: auto;
-        }
-        .path {
-          stroke-dasharray: 1,200;
-          stroke-dashoffset: 0;
-          animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
-          stroke-linecap: round;
-        }
-        @keyframes rotate {
-          100% {
-            transform: rotate(360deg);
+        /* Circle Loader */
+          .showbox {
+            z-index: -1;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            cursor: none !important;
           }
-        }
-        @keyframes dash {
-          0% {
+          .loader {
+            position: relative;
+            margin: 0px auto;
+            width: 210px;
+            cursor: none !important;
+          }
+          .loader:before {
+            content: '';
+            display: block;
+            padding-top: 100%;
+          }
+          .circular {
+            animation: rotate 2s linear infinite;
+            height: 100%;
+            transform-origin: center center;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            cursor: none !important;
+          }
+          .path {
             stroke-dasharray: 1,200;
             stroke-dashoffset: 0;
+            animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+            stroke-linecap: round;
           }
-          50% {
-            stroke-dasharray: 89,200;
-            stroke-dashoffset: -35px;
+          @keyframes rotate {
+            100% {
+              transform: rotate(360deg);
+            }
           }
-          100% {
-            stroke-dasharray: 89,200;
-            stroke-dashoffset: -124px;
+          @keyframes dash {
+            0% {
+              stroke-dasharray: 1,200;
+              stroke-dashoffset: 0;
+            }
+            50% {
+              stroke-dasharray: 89,200;
+              stroke-dashoffset: -35px;
+            }
+            100% {
+              stroke-dasharray: 89,200;
+              stroke-dashoffset: -124px;
+            }
           }
-        }
-        @keyframes color {
-          100%, 0% {
-            stroke: #0069A7;
+          @keyframes color {
+            100%, 0% {
+              stroke: #0069A7;
+            }
+            40% {
+              stroke: #0069A7;
+            }
+            66% {
+              stroke: #0069A7;
+            }
+            80%, 90% {
+              stroke: #0069A7;
+            }
           }
-          40% {
-            stroke: #0069A7;
+          #main {
+            display: none;
           }
-          66% {
-            stroke: #0069A7;
-          }
-          80%, 90% {
-            stroke: #0069A7;
-          }
-        }
-        #main {
-          display: none;
-        }
-      </style>
-        <!-- <link rel="stylesheet" href="assets/css/loader.css"> -->
-        <link rel="stylesheet" href="assets/css/tailwind.min.css">
-        <link rel="stylesheet" href="assets/css/main.css">
-        <link rel="stylesheet" href="assets/css/swiper.min.css">
+        </style>
+      <link rel="stylesheet" href="assets/css/main.css">
+      <link rel="stylesheet" href="assets/css/swiper.min.css">
     </head>
-    <body onload="myFunction()">
+    <body onload="myFunction()" style="cursor: none">
 
     <div id="preloader">
         <img src="assets/preloader/DXP-animation.gif" class="mx-auto my-auto h-100" width="500" id="loader">
