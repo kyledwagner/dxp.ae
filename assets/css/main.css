@@ -485,6 +485,11 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     scroll-snap-stop: always;
   }
 
+  #case-study .swiper-container {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+  }
+
   .sharjah-reel video {
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
