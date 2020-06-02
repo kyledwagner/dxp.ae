@@ -388,32 +388,23 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     width: 3rem;
   }
 
-  #portfolio .swiper-slide-active video {
-    filter: brightness(100%) !important;
-    box-shadow: 0px 0px 0 rgba(255, 255, 255, 0.25), 0 0 80rem 0.25rem rgba(255, 255, 255, 0.25), inset 2px 2px 0 rgba(255, 255, 255, 0.25);
-    -webkit-transition: filter 0.75s ease;
-    transition: filter 0.75s ease;
-    -webkit-transition: box-shadow 2s ease;
-    transition: box-shadow 2s ease;
-  }
-
   #portfolio .swiper-slide-active img {
     filter: brightness(100%) !important;
-    box-shadow: 0px 0px 0 rgba(255, 255, 255, 0.25), 0 0 80rem 0.25rem rgba(255, 255, 255, 0.25), inset 2px 2px 0 rgba(255, 255, 255, 0.25);
+    box-shadow: 0px 0px 0 rgba(255, 255, 255, 0.25), 0 0 10rem 1rem rgba(255, 255, 255, 0.25), inset 2px 2px 0 rgba(255, 255, 255, 0.25);
     -webkit-transition: filter 0.75s ease;
     transition: filter 0.75s ease;
-    -webkit-transition: box-shadow 2s ease;
-    transition: box-shadow 2s ease;
+    -webkit-transition: box-shadow 2.5s ease-in-out;
+    transition: box-shadow 2.5s ease-in-out;
   }
 
   @media only screen and (max-width: 767px) {
   #portfolio .swiper-slide-active img {
       filter: brightness(75%) !important;
-      box-shadow: 0px 0px 0 rgba(255, 255, 255, 0.25), 0 0 80rem 0.25rem rgba(255, 255, 255, 0.25), inset 2px 2px 0 rgba(255, 255, 255, 0.25);
+      box-shadow: 0px 0px 0 rgba(255, 255, 255, 0.25), 0 0 10rem 1rem rgba(255, 255, 255, 0.25), inset 2px 2px 0 rgba(255, 255, 255, 0.25);
       -webkit-transition: filter 0.75s ease;
       transition: filter 0.75s ease;
-      -webkit-transition: box-shadow 2s ease;
-      transition: box-shadow 2s ease;
+      -webkit-transition: box-shadow 2s ease-in-out;
+      transition: box-shadow 2.5s ease-in-out;
     }
   }
 
@@ -424,7 +415,7 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
   }
 
   #portfolio .swiper-slide {
-    pointer-events: none;
+    pointer-events: none !important;
   }
 
   #portfolio .swiper-slide-active {
@@ -453,13 +444,6 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     opacity: 1;
     -webkit-transition: opacity 0.75s ease;
     transition: opacity 0.75s ease;
-  }
-
-
-  #portfolio .swiper-slide video {
-    filter: brightness(20%);
-    -webkit-transition: filter 0.5s ease;
-    transition: filter 0.5s ease;
   }
 
   #portfolio .swiper-slide img {
@@ -674,7 +658,7 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     opacity: 0.4;
     height: 5rem;
     position: absolute;
-    top: 44.75% !important;
+    top: 45.15% !important;
     right: 0rem !important;
     -webkit-transition: opacity 0.75s ease;
     transition: opacity 0.75s ease;
@@ -684,7 +668,7 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     opacity: 0.4;
     height: 5rem;
     position: absolute;
-    top: 44.75% !important;
+    top: 45.15% !important;
     left: 10.3rem !important;
     -webkit-transition: opacity 0.75s ease;
     transition: opacity 0.75s ease;
