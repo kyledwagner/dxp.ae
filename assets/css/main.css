@@ -485,11 +485,6 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     scroll-snap-stop: always;
   }
 
-  .sharjah-reel .case-study-top {
-    height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
-  }
-
   .sharjah-reel video {
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
