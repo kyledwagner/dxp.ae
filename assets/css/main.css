@@ -486,30 +486,22 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
   }
 
   .sharjah-reel video {
-    height: 100vh !important;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     width: 100% !important;
     object-fit: cover;
     pointer-events: none !important;
   }
 
   .sharjah-reel img {
-    height: 100vh !important;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     width: 100% !important;
     object-fit: cover;
     pointer-events: none !important;
   }
 
   #home .swiper-slide {
-    height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
-  }
-
-  .sharjah-reel {
-    height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
-  }
-
-  .sharjah-reel .h-screen {
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
   }
