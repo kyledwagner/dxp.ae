@@ -563,13 +563,35 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
   }
 
   #case-study .swiper-button-next {
+    opacity: 0.2;
     position: absolute;
     right: 40%;
+    -webkit-transition: opacity 0.75s ease;
+    transition: opacity 0.75s ease;
+  }
+
+  #case-study .swiper-button-next:hover {
+    opacity: 1;
+    position: absolute;
+    right: 40%;
+    -webkit-transition: opacity 0.75s ease;
+    transition: opacity 0.75s ease;
   }
 
   #case-study .swiper-button-prev {
+    opacity: 0.2;
     position: absolute;
     left: 40%;
+    -webkit-transition: opacity 0.75s ease;
+    transition: opacity 0.75s ease;
+  }
+
+  #case-study .swiper-button-prev:hover {
+    opacity: 1;
+    position: absolute;
+    left: 40%;
+    -webkit-transition: opacity 0.75s ease;
+    transition: opacity 0.75s ease;
   }
 
   #home .swiper-button-next {
