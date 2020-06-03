@@ -1154,6 +1154,7 @@ input[type='checkbox'] {
 
 /* Scroll Down Animation */
 .scroll-down .scrolling {
+  margin-bottom: -0.14rem;
 	position: relative;
 	display: inline-block;
 	outline: none;
@@ -1169,7 +1170,7 @@ input[type='checkbox'] {
     -webkit-user-select: none;
     user-select: none;
     animation-name: scrolly;
-    animation-duration: 1000ms;
+    animation-duration: 1500ms;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 	  -webkit-transition: -webkit-transform 0.3s;
@@ -1196,7 +1197,7 @@ span::before {
   0% {
     transform: translatey(0%);
   }
-  40% {
+  20% {
     transform: translatey(100%);
   }
   100% {
