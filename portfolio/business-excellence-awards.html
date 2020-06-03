@@ -16,7 +16,7 @@
         <!-- <link rel="stylesheet" href="../assets/css/loader.css"> -->
         <link rel="stylesheet" href="../assets/css/tailwind.min.css">
         <link rel="stylesheet" href="../assets/css/main.css">
-        <link rel="stylesheet" href="../assets/css/mediabox.min.css">
+        <link rel="stylesheet" href="../assets/css/glightbox.min.css">
         <!-- <link rel="stylesheet" href="../assets/css/swiper.min.css"> -->
     </head>
     <!-- <body onload="myFunction()" style="margin:0;"> -->
@@ -176,7 +176,7 @@
           <!-- <div class="hidden md:block mx-8 slider-scroll-down"><span class="bounce-line"></span></div> -->
         </div>
         <div class="video-player w-full relative flex justify-center items-center lg:w-3/4 pb-2 md:pb-4 px-8">
-        <a href="https://vimeo.com/391947832" class="mediabox">
+        <a href="https://vimeo.com/391947832" class="glightbox" data-gallery="gallery1">
           <img class="absolute play-button" src="../assets/icon/play.svg" alt="Play Button">
           <video autoplay playsinline muted loop>
             <source src="../assets/video/Case_Study_Business_Excellence_Prev.mp4" type="video/mp4">
@@ -184,7 +184,7 @@
         </a>
         </div>
         <div class="w-full flex justify-end">
-        <div class="nunito-light text-base text-right tracking-normal text-white px-8"><span class="nunito-semibold"><a href="https://vimeo.com/391947832" class="mediabox">Arabic</a></span> | <a href="https://vimeo.com/391948317" class="mediabox">English</a></div>
+        <div class="nunito-light text-base text-right tracking-normal text-white px-8"><span class="nunito-semibold"><a href="https://vimeo.com/391947832" class="glightbox" data-gallery="gallery2">Arabic</a></span> | <a href="https://vimeo.com/391948317" class="glightbox" data-gallery="gallery2">English</a></div>
         </div>
         </div>
         </div>
@@ -233,9 +233,28 @@
       $('#overlay').toggleClass('open');
     });
     </script>
-    <script src="../assets/js/mediabox.min.js"></script>
-    <script>
-      MediaBox('.mediabox');
+    <script src='../assets/js/glightbox.min.js'></script>
+    <script type="text/javascript">
+      const lightbox = GLightbox({
+        touchNavigation: true,
+        autoplayVideos: true,
+        closeOnOutsideClick: true,
+        svg: {},
+        plyr: {
+        config: {
+            ratio: '16:9',
+            muted: false,
+            hideControls: true,
+            vimeo: {
+                byline: false,
+                portrait: false,
+                title: false,
+                speed: true,
+                transparent: false
+            }
+        }
+    }
+      });
     </script>
     </body>
 </html>
