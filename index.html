@@ -372,7 +372,7 @@
     </script>
     <script>
     var swiper = new Swiper('.swiper-container', {
-      parallax: true,
+      direction: getDirection(),
       hashNavigation: {
       watchState: true,
       },
@@ -401,7 +401,19 @@
           return '<span class="' + className + '">' + (1 + '0' + index).slice(-2) + '</span>';
         },
       },
+      on: {
+        resize: function () {
+          swiper.changeDirection(getDirection());
+        }
+      }
     });
+
+    function getDirection() {
+      var windowWidth = window.innerWidth;
+      var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+      return direction;
+    }
     </script>
     </body>
 </html>
