@@ -545,7 +545,7 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     font-weight: bold;
   }
 
-  #case-study .swiper-button-next {
+  #case-study .swiper-button-next, #case-study-arrows .swiper-button-next {
     opacity: 0.2;
     position: absolute;
     top: 50%;
@@ -554,14 +554,14 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     transition: opacity 0.75s ease;
   }
 
-  #case-study .swiper-button-next:hover {
+  #case-study .swiper-button-next:hover, #case-study-arrows .swiper-button-next:hover {
     opacity: 1;
     position: absolute;
     -webkit-transition: opacity 0.75s ease;
     transition: opacity 0.75s ease;
   }
 
-  #case-study .swiper-button-prev {
+  #case-study .swiper-button-prev, #case-study-arrows .swiper-button-prev {
     opacity: 0.2;
     position: absolute;
     top: 50%;
@@ -570,7 +570,7 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     transition: opacity 0.75s ease;
   }
 
-  #case-study .swiper-button-prev:hover {
+  #case-study .swiper-button-prev:hover, #case-study-arrows .swiper-button-prev:hover {
     opacity: 1;
     position: absolute;
     -webkit-transition: opacity 0.75s ease;
@@ -588,15 +588,15 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     right: 10.3rem !important;
   }
 
-  #sky-dome .swiper-button-next {
+  #gallery-arrows .swiper-button-next {
     position: absolute;
-    top: 47% !important;
-    right: 5rem !important;
+    top: 43% !important;
+    right: 3rem !important;
   }
-  #sky-dome .swiper-button-prev {
+  #gallery-arrows .swiper-button-prev {
     position: absolute;
-    top: 47% !important;
-    left: 5rem !important;
+    top: 43% !important;
+    left: 3rem !important;
   }
 
   #sky-dome .swiper-container {
