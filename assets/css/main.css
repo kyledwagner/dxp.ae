@@ -864,6 +864,10 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     }
   }
 
+.fancybox-bg {
+  background: #000 !important;
+}
+
 .hvr-grow {
   display: inline-block;
   vertical-align: middle;
