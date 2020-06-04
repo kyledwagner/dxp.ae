@@ -143,20 +143,20 @@
     <!-- Swiper Home -->
     <div class="swiper-container" id="home">
               <div class="swiper-wrapper">
-                <div class="swiper-slide" data-hash="welcome">
+                <div class="swiper-slide showreel-iframe" data-hash="welcome">
                   <div class="h-screen w-screen flex items-center absolute overflow-hidden">
                   </div>
-                  <!-- <iframe class="block md:hidden max-w-none" src="https://player.vimeo.com/video/424629069?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
+                  <iframe class="block md:hidden max-w-none"  allow="autoplay; fullscreen" src="https://player.vimeo.com/video/424629069?background=1&playsinline=1&quality=720p&autoplay=1&loop=1&byline=0&title=0&muted=1"
                   frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                  <iframe class="hidden md:block max-w-none" src="https://player.vimeo.com/video/424628977?background=1&quality=1080p&autoplay=1&loop=1&byline=0&title=0&muted=1"
-                  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
+                  <iframe class="hidden md:block max-w-none"  allow="autoplay; fullscreen" src="https://player.vimeo.com/video/424628977?background=1&quality=1080p&autoplay=1&loop=1&byline=0&title=0&muted=1"
+                  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                   <!-- Showing Mobile Version vs Desktop -->
                   <!-- <video class="block md:hidden max-w-none" autoplay playsinline muted loop>
                     <source src="assets/video/mobile/DXP_web_mobile_showreel_XS_310520.mp4" type="video/mp4">
                   </video> -->
-                  <video id="showreel" class="max-w-none" autoplay playsinline muted loop>
+                  <!-- <video id="showreel" class="max-w-none" autoplay playsinline muted loop>
                     <source id="showreel_mp4" src="assets/video/mobile/DXP_web_mobile_showreel_small_280520_30secs.mp4" type="video/mp4">
-                  </video>
+                  </video> -->
                 </div>
                 <div class="swiper-slide" data-hash="abu-dhabi-plan">
                   <div class="h-screen w-screen flex flex-wrap items-center absolute overflow-hidden">
@@ -318,8 +318,8 @@
             // media query change
             function WidthChange(mq) {
             if (mq.matches) {
-              document.getElementById("showreel_mp4").src = "assets/video/DXP_web_desktop_showreel_small_280520.mp4";
-              document.getElementById("showreel").load();
+              // document.getElementById("showreel_mp4").src = "assets/video/DXP_web_desktop_showreel_small_280520.mp4";
+              // document.getElementById("showreel").load();
 
               document.getElementById("abu-dhabi-plan_mp4").src = "assets/video/Case_Study_The_Abu_Dhabi_Plan_Prev.mp4";
               document.getElementById("abu-dhabi-plan").load();
