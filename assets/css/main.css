@@ -1410,3 +1410,57 @@ span::before {
             transform: translateY(calc(-100vh + -100%)) rotate(20deg);
   }
 }
+
+/* Swipe Right Animation */
+.swipe-right {
+  transform: rotate(-90deg);
+}
+
+.swipe-right .swiping {
+ position: relative;
+ display: block;
+ /* margin-bott: 0 */
+}
+
+.swipe-right span {
+
+   position: relative;
+   display: inline-block;
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   user-select: none;
+   animation-name: swiping;
+   animation-duration: 1500ms;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in-out;
+   -webkit-transition: -webkit-transform 0.3s;
+   -moz-transition: -moz-transform 0.3s;
+   transition: transform 0.3s;
+}
+
+.swipe-right .swiping {
+ overflow-y: hidden;
+ /* padding: 0 4px; */
+ /* height: 1em; */
+}
+
+span::before {
+ position: absolute;
+ top: -100%;
+ content: attr(data-hover);
+ -webkit-transform: translate3d(0,0,0);
+ -moz-transform: translate3d(0,0,0);
+ transform: translate3d(0,0,0);
+}
+
+@keyframes swiping {
+ 0% {
+   transform: translatey(100%);
+ }
+ 20% {
+   transform: translatey(0%);
+ }
+ 100% {
+   transform: translatey(0%);
+  }
+}
