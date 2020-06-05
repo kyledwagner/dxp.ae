@@ -500,6 +500,19 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     pointer-events: none !important;
   }
 
+  #case-studies .swiper-slide {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+  }
+
+  #case-studies .swiper-slide video {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    width: 100% !important;
+    object-fit: cover;
+    pointer-events: none !important;
+  }
+
   .video-responsive {
     position: relative;
     display: block;
@@ -597,6 +610,17 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     right: 0rem !important;
   }
   #home .swiper-button-prev {
+    position: absolute;
+    top: 47% !important;
+    right: 10.3rem !important;
+  }
+
+  #case-studies .swiper-button-next {
+    position: absolute;
+    top: 47% !important;
+    right: 0rem !important;
+  }
+  #case-studies .swiper-button-prev {
     position: absolute;
     top: 47% !important;
     right: 10.3rem !important;

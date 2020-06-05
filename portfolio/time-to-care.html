@@ -17,7 +17,8 @@
         <link rel="stylesheet" href="../assets/css/tailwind.min.css">
         <link rel="stylesheet" href="../assets/css/main.css">
         <link rel="stylesheet" href="../assets/css/glightbox.min.css">
-        <link rel="stylesheet" href="../assets/css/jquery.fancybox.min.css">
+        <link rel="stylesheet" href="../assets/css/mediabox.min.css">
+        <!-- <link rel="stylesheet" href="../assets/css/jquery.fancybox.min.css"> -->
         <!-- <link rel="stylesheet" href="../assets/css/swiper.min.css"> -->
     </head>
     <!-- <body onload="myFunction()" style="margin:0;"> -->
@@ -184,7 +185,7 @@
           <!-- <div class="hidden md:block mx-8 slider-scroll-down"><span class="bounce-line"></span></div> -->
         </div>
         <div class="video-player w-full relative flex justify-center items-center lg:w-3/4 pb-2 md:pb-4 px-8">
-        <a id="lightbox" href="https://vimeo.com/326292144" data-fancybox class="glightbox" data-gallery="gallery1">
+        <a id="lightbox" href="https://vimeo.com/326292144" class="glightbox" data-gallery="gallery1">
           <img class="absolute play-button" src="../assets/icon/play.svg" alt="Play Button">
           <video autoplay playsinline muted loop>
             <source src="../assets/video/Case_Study_Time_To_Care_Prev.mp4" type="video/mp4">
@@ -192,7 +193,7 @@
         </a>
         </div>
         <div class="w-full flex justify-end">
-        <div class="nunito-light text-base text-right tracking-normal text-white px-8"><span class="nunito-semibold"><a id="lightbox2" href="https://vimeo.com/326292144" data-fancybox class="glightbox" data-gallery="gallery2">Arabic</a></span> | <a id="lightbox3" href="https://vimeo.com/326285655" data-fancybox class="glightbox" data-gallery="gallery2">English</a></div>
+        <div class="nunito-light text-base text-right tracking-normal text-white px-8"><span class="nunito-semibold"><a id="lightbox2" href="https://vimeo.com/326292144" class="glightbox" data-gallery="gallery2">Arabic</a></span> | <a id="lightbox3" href="https://vimeo.com/326285655" class="glightbox" data-gallery="gallery2">English</a></div>
         </div>
         </div>
         <div class="hidden md:block relative">
@@ -227,7 +228,7 @@
         }
     </script> -->
     <script src='../assets/js/jquery-3.5.1.slim.min.js'></script>
-    <script src='../assets/js/jquery.fancybox.min.js'></script>
+    <!-- <script src='../assets/js/jquery.fancybox.min.js'></script> -->
     <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js'></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.min.js"></script>
     <script src="../assets/js/script.js"></script>
@@ -250,9 +251,9 @@
           // media query change
           function WidthChange(mq) {
           if (mq.matches) {
-            lightbox.classList.replace("glightbox", "foo");
-            lightbox2.classList.replace("glightbox", "foo");
-            lightbox3.classList.replace("glightbox", "foo");
+            lightbox.classList.replace("glightbox", "mediabox");
+            lightbox2.classList.replace("glightbox", "mediabox");
+            lightbox3.classList.replace("glightbox", "mediabox");
           }
           }
   </script>
@@ -280,4 +281,8 @@
       });
     </script>
     </body>
+    <script src="../assets/js/mediabox.min.js"></script>
+    <script>
+      MediaBox('.mediabox');
+    </script>
 </html>
