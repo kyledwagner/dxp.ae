@@ -111,12 +111,27 @@
       <link rel="stylesheet" href="assets/css/tailwind.min.css">
       <link rel="stylesheet" href="assets/css/main.css">
       <link rel="stylesheet" href="assets/css/swiper.min.css">
+      <script src="assets/js/anime.min.js"></script>
     </head>
     <body onload="myFunction()" style="cursor: none">
 
     <div id="preloader">
-        <img src="assets/preloader/DXP-animation.gif" class="mx-auto my-auto h-100" width="500" id="loader">
-        <div id="loader"></div>
+        <div id="loader">
+          <svg version="1.1" width="140" class="dxp-animate" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          viewBox="0 0 367.9 225.9" style="enable-background:new 0 0 367.9 225.9;" xml:space="preserve">
+          <style type="text/css">
+          .DXP_D, .DXP_X1, .DXP_X2, .DXP_P{fill:none;stroke:#fff;stroke-width:5.75;stroke-miterlimit:10;}
+          .DXP_X1{clip-path: inset(0.3rem 0);}
+          .DXP_X2{clip-path: inset(0.25rem 0);}
+          </style>
+          <path class="DXP_D" d="M41,141.9V65v0h33.7c3.2,0,6.7,0.2,10.7,0.5c4,0.3,7.9,1.2,11.9,2.2c4,1.2,7.8,2.8,11.4,4.9
+          c3.7,2.1,7,5.1,9.8,8.9c2.9,3.7,5.1,8.3,7,13.8c1.7,5.4,2.7,12,2.7,19.6c0,9.7-1.5,17.8-4.6,24.3c-3.1,6.4-7.2,11.6-12.1,15.4
+          c-5,3.8-10.5,6.5-16.7,8.2c-6.1,1.6-12.2,2.5-18.3,2.5H37.9h3.5"/>
+          <line class="DXP_X1" x1="132.2" y1="35.9" x2="247" y2="193.9"/>
+          <line class="DXP_X2" x1="146.7" y1="171.1" x2="227.1" y2="58.6"/>
+          <path class="DXP_P" d="M256.5,167.4v-37.8h31.2c26.3,0,41.1-11.9,41.1-32.7c0.1-20.3-14.7-31.9-41-31.9h-33.9"/>
+          </svg>
+        </div>
         <div class="showbox" id="showbox">
           <div class="loader">
             <svg class="circular" viewBox="25 25 50 50">
@@ -125,13 +140,53 @@
           </div>
         </div>
     </div>
+    <script>
+      anime({
+        targets: '.dxp-animate path, .dxp-animate line',
+        strokeDashoffset: [anime.setDashoffset, 0],
+        easing: 'easeInOutCubic',
+        direction: 'reverse',
+        duration: 750,
+        delay: anime.stagger(100, {start: 250}),
+        direction: 'alternate',
+        loop: true,
+        endDelay: 300
+      });
+    </script>
 
     <div class="page">
     <div style="display:none;" id="main">
     <!-- HUD -->
         <div class="z-20 fixed top-0 left-0 p-6 xl:pl-12 xl:pt-10 xl:ml-1">
-          <a href="index.html" target="_self"><img class="hvr-grow" src="assets/img/dxp-logo.svg" width="121" height="64.68" alt="DXP Logo"></a>
+          <a href="index.html" target="_self">
+            <svg version="1.1" width="121" class="hvr-grow dxp-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 367.9 225.9" style="enable-background:new 0 0 367.9 225.9;" xml:space="preserve">
+            <style type="text/css">
+            .DXP_D, .DXP_X1, .DXP_X2, .DXP_P{fill:none;stroke:#fff;stroke-width:5.75;stroke-miterlimit:10;}
+            .DXP_X1{clip-path: inset(0.3rem 0);}
+            .DXP_X2{clip-path: inset(0.25rem 0);}
+            </style>
+            <path class="DXP_D" d="M41,141.9V65v0h33.7c3.2,0,6.7,0.2,10.7,0.5c4,0.3,7.9,1.2,11.9,2.2c4,1.2,7.8,2.8,11.4,4.9
+            c3.7,2.1,7,5.1,9.8,8.9c2.9,3.7,5.1,8.3,7,13.8c1.7,5.4,2.7,12,2.7,19.6c0,9.7-1.5,17.8-4.6,24.3c-3.1,6.4-7.2,11.6-12.1,15.4
+            c-5,3.8-10.5,6.5-16.7,8.2c-6.1,1.6-12.2,2.5-18.3,2.5H37.9h3.5"/>
+            <line class="DXP_X1" x1="132.2" y1="35.9" x2="247" y2="193.9"/>
+            <line class="DXP_X2" x1="146.7" y1="171.1" x2="227.1" y2="58.6"/>
+            <path class="DXP_P" d="M256.5,167.4v-37.8h31.2c26.3,0,41.1-11.9,41.1-32.7c0.1-20.3-14.7-31.9-41-31.9h-33.9"/>
+            </svg>
+          </a>
         </div>
+        <!-- <script>
+          anime({
+            targets: '.dxp-logo',
+            strokeDashoffset: [anime.setDashoffset, 0],
+            easing: 'easeInOutCubic',
+            direction: 'reverse',
+            duration: 750,
+            delay: anime.stagger(100, {start: 250}),
+            loop: true,
+            endDelay: 5000
+          });
+        </script> -->
         <div class="z-20 nunito-bold hidden md:inline-block text-sm text-white tracking-wider fixed top-0 right-0 p-12 xl:pr-16 xl:pt-12 xl:mt-1">Double Exposure Productions<div class="ml-4 slider-scroll-down"><span class="bounce-line"></span></div></div>
         <div class="z-20 nunito-light fixed bottom-0 left-0 md:right-0 md:bottom-0 md:left-auto text-sm text-white pl-8 pb-10 md:pr-12 md:pl-12 md:pb-12 xl:p-16">All rights reserved.</div>
         <div class="z-10 swipe-right fixed uppercase block md:hidden bottom-0 right-0 text-white text-left tracking-widest leading-none pb-6 overflow-hidden" style="padding-left: 8rem; padding-bottom: 0px; border-bottom-width: -5rem; border-bottom-width: -5rem; margin-bottom: 0px; margin-right: -2.5rem;">
