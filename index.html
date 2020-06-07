@@ -358,7 +358,7 @@
         var myVar;
 
         function myFunction() {
-        myVar = setTimeout(showSwipe, 1950);
+        myVar = setTimeout(showSwipe, 1300);
         myVar = setTimeout(showPage, 2000);
         }
 
@@ -472,6 +472,12 @@
           return '<span class="' + className + '">' + (1 + '0' + index).slice(-2) + '</span>';
         },
       },
+      // other parameters
+      on: {
+        slideChangeTransitionStart: function () {
+        // Do Something
+        },
+      }
     });
     </script>
     </body>
