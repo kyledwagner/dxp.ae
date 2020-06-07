@@ -556,6 +556,8 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
   }
 
   .swiper-pagination-bullet {
+    display: inline-block;
+    vertical-align: middle;
     width: 2rem;
     height: 2rem;
     text-align: center;
@@ -564,6 +566,19 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     opacity: 0.5;
     font-family: NunitoSans-Light;
     font-weight: light;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+
+  .swiper-pagination-bullet:hover, .swiper-pagination-bullet:focus, .swiper-pagination-bullet:active {
+    opacity: 1;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
   }
 
   .swiper-pagination-bullet-active {
@@ -901,15 +916,6 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
       left: 0;
     }
   }
-
-.fancybox-bg {
-  background: #000 !important;
-}
-
-.fancybox-content {
-  width: 100vw !important;
-  height: auto;
-}
 
 .hvr-grow {
   display: inline-block;
