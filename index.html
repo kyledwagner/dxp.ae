@@ -112,6 +112,34 @@
       <link rel="stylesheet" href="assets/css/main.css">
       <link rel="stylesheet" href="assets/css/swiper.min.css">
       <script src="assets/js/anime.min.js"></script>
+      <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+      <script src="assets/js/SwupJsPlugin.min.js"></script>
+      <script>
+          const options = [
+            {
+              from: '(.*)',
+              to: '(.*)',
+              in: function(next) {
+                document.querySelector('#swup').style.opacity = 0;
+                TweenLite.to(document.querySelector('#swup'), 0.5, {
+                  opacity: 1,
+                  onComplete: next
+                });
+              },
+              out: (next) => {
+                document.querySelector('#swup').style.opacity = 1;
+                TweenLite.to(document.querySelector('#swup'), 0.5, {
+                  opacity: 0,
+                  onComplete: next
+                });
+              }
+            }
+          ];
+
+          const swup = new Swup({
+            plugins: [new SwupJsPlugin(options)]
+          });
+      </script>
     </head>
     <body onload="myFunction()" style="cursor: none">
 
@@ -177,21 +205,6 @@
             </svg>
           </a>
         </div>
-        <script>
-          var elemets = document.querySelector('svg').children;
-
-          anime({
-            targets: 'line',
-            strokeDashoffset: [anime.setDashoffset, 0],
-            easing: 'easeInOutCubic',
-            direction: 'reverse',
-            duration: 750,
-            delay: anime.stagger(100, {start: 250}),
-            direction: 'alternate',
-            loop: true,
-            endDelay: 300
-          });
-        </script>
         <div class="z-20 nunito-bold hidden md:inline-block text-sm text-white tracking-wider fixed top-0 right-0 p-12 xl:pr-16 xl:pt-12 xl:mt-1">Double Exposure Productions<div class="ml-4 slider-scroll-down"><span class="bounce-line"></span></div></div>
         <div class="z-20 nunito-light fixed bottom-0 left-0 md:right-0 md:bottom-0 md:left-auto text-sm text-white pl-8 pb-10 md:pr-12 md:pl-12 md:pb-12 xl:p-16">All rights reserved.</div>
         <div class="z-10 swipe-right fixed uppercase block md:hidden bottom-0 right-0 text-white text-left tracking-widest leading-none pb-6 overflow-hidden" style="padding-left: 8rem; padding-bottom: 0px; border-bottom-width: -5rem; border-bottom-width: -5rem; margin-bottom: 0px; margin-right: -2.5rem;">
@@ -203,6 +216,8 @@
             <div class="showme text-white pl-4 pr-10 inline-block">To discover how we could work together, just send us an <a href="mailto:contact@dxp.ae" class="underline">email</a>.</div>
           </div>
         </div>
+    <main id="swup" class="transition-fade">
+
     <!-- Swiper Home -->
     <div class="swiper-container" id="home">
               <div class="swiper-wrapper">
@@ -222,7 +237,7 @@
                     <div class="w-full container md:w-1/2 mx-auto" style="margin-bottom: 4rem;">
                       <div class="nunito-bold block md:mr-auto pl-8 md:pl-1 text-xl text-white text-left tracking-widest leading-none" data-swiper-parallax="-25%" data-swiper-parallax-opacity="0" data-swiper-parallax-duration="750">Abu Dhabi Executive Council</div>
                       <div class="nunito-bold block w-full md:w-3/4 md:mr-auto pl-8 md:pl-0 text-7xl text-white pt-2 text-left tracking-tight leading-none" data-swiper-parallax="-50%" data-swiper-parallax-scale="1.25" data-swiper-parallax-duration="750">Abu Dhabi <br>Plan</div>
-                      <div class="nunito-semibold md:mr-auto pl-8 md:pl-1 pt-4 text-xl text-white text-left tracking-normal leading-none" data-swiper-parallax="-70" data-swiper-parallax-opacity="0" data-swiper-parallax-duration="750"><a href="portfolio/abu-dhabi-plan.html" target="_self" class="link-2">View Case</a></div>
+                      <div class="nunito-semibold md:mr-auto pl-8 md:pl-1 pt-4 text-xl text-white text-left tracking-normal leading-none" data-swiper-parallax="-70" data-swiper-parallax-opacity="0" data-swiper-parallax-duration="750"><a href="/portfolio/abu-dhabi-plan.html" target="_self" class="link-2">View Case</a></div>
                     </div>
                   </div>
                   <!-- Showing Mobile Version vs Desktop -->
@@ -238,7 +253,7 @@
                     <div class="w-full container md:w-1/2 mx-auto" style="margin-bottom: 4rem;">
                       <div class="nunito-bold block md:mr-auto pl-8 md:pl-1 text-xl text-white text-left tracking-widest leading-none" data-swiper-parallax="-25%" data-swiper-parallax-opacity="0" data-swiper-parallax-duration="750">Sharjah Investment &amp; Development Authority</div>
                       <div class="nunito-bold block w-3/4 md:mr-auto pl-8 md:pl-0 text-7xl text-white pt-2 text-left tracking-tight leading-none" data-swiper-parallax="-50%" data-swiper-parallax-scale="1.25" data-swiper-parallax-duration="750">Invest in <br>Sharjah</div>
-                      <div class="nunito-semibold md:mr-auto pl-8 md:pl-1 pt-4 text-xl text-white text-left tracking-normal leading-none" data-swiper-parallax="-70%" data-swiper-parallax-opacity="0" data-swiper-parallax-duration="750"><a href="portfolio/invest-in-sharjah.html" target="_self" class="link-2">View Case</a></div>
+                      <div class="nunito-semibold md:mr-auto pl-8 md:pl-1 pt-4 text-xl text-white text-left tracking-normal leading-none" data-swiper-parallax="-70%" data-swiper-parallax-opacity="0" data-swiper-parallax-duration="750"><a href="/portfolio/invest-in-sharjah.html" target="_self" class="link-2">View Case</a></div>
                     </div>
                   </div>
                   <!-- Showing Mobile Version vs Desktop -->
@@ -354,6 +369,8 @@
     <div class="hidden md:block circle-cursor circle-cursor--inner"></div>
     <div class="hidden md:block circle-cursor circle-cursor--outer"></div>
   </div>
+
+  </main>
     <script>
         var myVar;
 
