@@ -22,14 +22,6 @@
         <!-- <link rel="stylesheet" href="../assets/css/swiper.min.css"> -->
         <!-- <script src="https://unpkg.com/scrollreveal@4"></script> -->
         <script src="../assets/js/anime.min.js"></script>
-        <script src="../assets/js/swup.min.js"></script>
-        <script src="assets/js/SwupOverlayTheme.min.js"></script>
-        <!-- <script src="../assets/js/swupjsplugin.min.js"></script> -->
-        <script>
-            const swup = new Swup({
-            plugins: [new SwupOverlayTheme()]
-          });
-        </script>
     </head>
     <!-- <body onload="myFunction()" style="margin:0;"> -->
     <body>
@@ -54,7 +46,7 @@
 
     <!-- HUD -->
     <div class="z-20 fixed top-0 left-0 p-6 xl:pl-12 xl:pt-10 xl:ml-1">
-      <a href="/index.html" target="_self">
+      <a href="../index.html" target="_self">
         <svg version="1.1" width="125" class="hvr-grow dxp-animate" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         viewBox="0 0 367.9 225.9" style="enable-background:new 0 0 367.9 225.9;" xml:space="preserve">
         <style type="text/css">
@@ -244,6 +236,47 @@
       <div class="hidden md:block circle-cursor circle-cursor--inner"></div>
       <div class="hidden md:block circle-cursor circle-cursor--outer"></div>
     </main>
+    <script src="../assets/js/swup.min.js"></script>
+    <!-- <script src="assets/js/SwupOverlayTheme.min.js"></script> -->
+    <script src="../assets/js/swupjsplugin.min.js"></script>
+    <script>
+      const options = [
+        {
+          from: '(.*)',
+          to: '(.*)',
+          in: function(next) {
+              anime({
+              targets: '.bg-white',
+              width: '100%', // -> from '28px' to '100%',
+              easing: 'easeInOutCirc',
+              direction: 'reverse',
+              loop: 1,
+              translateX: {
+              value: '100%',
+              duration: 1200
+              },
+            });
+          },
+          out: (next) => {
+              anime({
+              targets: '.bg-white',
+              width: '50%', // -> from '28px' to '100%',
+              easing: 'easeInOutCirc',
+              direction: 'reverse',
+              loop: 1,
+              translateX: {
+              value: '20%',
+              duration: 1200
+              },
+            });
+          }
+        }
+      ];
+
+      const swup = new Swup({
+        plugins: [new SwupJsPlugin(options)]
+      });
+  </script>
       <script>
         const setVh = () => {
         const vh = window.innerHeight * 0.01;
