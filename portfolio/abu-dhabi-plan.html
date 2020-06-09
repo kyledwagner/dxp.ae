@@ -22,8 +22,8 @@
         <!-- <link rel="stylesheet" href="../assets/css/swiper.min.css"> -->
         <script src="https://unpkg.com/scrollreveal@4"></script>
         <script src="../assets/js/anime.min.js"></script>
-        <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
-        <script src="../assets/js/SwupJsPlugin.min.js"></script>
+        <script src="../assets/js/swup.min.js"></script>
+        <script src="../assets/js/swupjsplugin.min.js"></script>
         <script>
             const options = [
               {
@@ -163,7 +163,7 @@
         </nav>
       </div>
       <!-- END Hamburger Menu -->
-
+    <main id="swup" class="transition-fade">
       <div class="swiper-container">
       <div class="sharjah-reel" id=“top”>
       <div class="film-top h-screen w-screen flex flex-wrap items-center absolute">
@@ -264,6 +264,7 @@
       </div>
       <div class="hidden md:block circle-cursor circle-cursor--inner"></div>
       <div class="hidden md:block circle-cursor circle-cursor--outer"></div>
+    </main>
       <script>
         const setVh = () => {
         const vh = window.innerHeight * 0.01;
