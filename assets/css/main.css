@@ -543,7 +543,7 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     transform: translateY(-50%);
   }
 
-  #future-plans img {
+  #home .swiper-slide img {
     height: 100vh !important;
     width: 100% !important;
     object-fit: cover;
