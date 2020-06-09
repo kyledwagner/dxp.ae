@@ -112,36 +112,9 @@
       <link rel="stylesheet" href="assets/css/main.css">
       <link rel="stylesheet" href="assets/css/swiper.min.css">
       <script src="assets/js/anime.min.js"></script>
-      <script src="assets/js/swup.min.js"></script>
-      <script src="assets/js/swupjsplugin.min.js"></script>
-      <script>
-          const options = [
-            {
-              from: '(.*)',
-              to: '(.*)',
-              in: function(next) {
-                document.querySelector('#swup').style.opacity = 0;
-                TweenLite.to(document.querySelector('#swup'), 0.5, {
-                  opacity: 1,
-                  onComplete: next
-                });
-              },
-              out: (next) => {
-                document.querySelector('#swup').style.opacity = 1;
-                TweenLite.to(document.querySelector('#swup'), 0.5, {
-                  opacity: 0,
-                  onComplete: next
-                });
-              }
-            }
-          ];
-
-          const swup = new Swup({
-            plugins: [new SwupJsPlugin(options)]
-          });
-      </script>
     </head>
     <body onload="myFunction()" style="cursor: none">
+    <main id="swup" class="transition-fade">
 
     <div id="preloader">
         <div id="loader">
@@ -216,7 +189,6 @@
             <div class="showme text-white pl-4 pr-10 inline-block">To discover how we could work together, just send us an <a href="mailto:contact@dxp.ae" class="underline">email</a>.</div>
           </div>
         </div>
-    <main id="swup" class="transition-fade">
 
     <!-- Swiper Home -->
     <div class="swiper-container" id="home">
@@ -237,7 +209,7 @@
                     <div class="w-full container md:w-1/2 mx-auto" style="margin-bottom: 4rem;">
                       <div class="nunito-bold block md:mr-auto pl-8 md:pl-1 text-xl text-white text-left tracking-widest leading-none" data-swiper-parallax="-25%" data-swiper-parallax-opacity="0" data-swiper-parallax-duration="750">Abu Dhabi Executive Council</div>
                       <div class="nunito-bold block w-full md:w-3/4 md:mr-auto pl-8 md:pl-0 text-7xl text-white pt-2 text-left tracking-tight leading-none" data-swiper-parallax="-50%" data-swiper-parallax-scale="1.25" data-swiper-parallax-duration="750">Abu Dhabi <br>Plan</div>
-                      <div class="nunito-semibold md:mr-auto pl-8 md:pl-1 pt-4 text-xl text-white text-left tracking-normal leading-none" data-swiper-parallax="-70" data-swiper-parallax-opacity="0" data-swiper-parallax-duration="750"><a href="/portfolio/abu-dhabi-plan.html" target="_self" class="link-2">View Case</a></div>
+                      <div class="transition-fade nunito-semibold md:mr-auto pl-8 md:pl-1 pt-4 text-xl text-white text-left tracking-normal leading-none" data-swiper-parallax="-70" data-swiper-parallax-opacity="0" data-swiper-parallax-duration="750"><a href="/portfolio/abu-dhabi-plan.html" target="_self" class="link-2">View Case</a></div>
                     </div>
                   </div>
                   <!-- Showing Mobile Version vs Desktop -->
@@ -371,6 +343,14 @@
   </div>
 
   </main>
+  <script src="assets/js/swup.min.js"></script>
+  <script src="assets/js/SwupOverlayTheme.min.js"></script>
+  <!-- <script src="assets/js/swupjsplugin.min.js"></script> -->
+  <script>
+      const swup = new Swup({
+      plugins: [new SwupOverlayTheme()]
+    });
+  </script>
     <script>
         var myVar;
 
@@ -463,7 +443,6 @@
     </script>
     <script>
     var swiper = new Swiper('.swiper-container', {
-      hashNavigation: true,
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',

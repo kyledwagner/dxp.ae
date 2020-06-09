@@ -20,37 +20,16 @@
         <!-- <link rel="stylesheet" href="../assets/css/jquery.fancybox.min.css"> -->
         <link rel="stylesheet" href="../assets/css/mediabox.min.css">
         <!-- <link rel="stylesheet" href="../assets/css/swiper.min.css"> -->
-        <script src="https://unpkg.com/scrollreveal@4"></script>
+        <!-- <script src="https://unpkg.com/scrollreveal@4"></script> -->
         <script src="../assets/js/anime.min.js"></script>
         <script src="../assets/js/swup.min.js"></script>
-        <script src="../assets/js/swupjsplugin.min.js"></script>
+        <script src="assets/js/SwupOverlayTheme.min.js"></script>
+        <!-- <script src="../assets/js/swupjsplugin.min.js"></script> -->
         <script>
-            const options = [
-              {
-                from: '(.*)',
-                to: '(.*)',
-                in: function(next) {
-                  document.querySelector('#swup').style.opacity = 0;
-                  TweenLite.to(document.querySelector('#swup'), 0.5, {
-                    opacity: 1,
-                    onComplete: next
-                  });
-                },
-                out: (next) => {
-                  document.querySelector('#swup').style.opacity = 1;
-                  TweenLite.to(document.querySelector('#swup'), 0.5, {
-                    opacity: 0,
-                    onComplete: next
-                  });
-                }
-              }
-            ];
-
             const swup = new Swup({
-              plugins: [new SwupJsPlugin(options)]
-            });
+            plugins: [new SwupOverlayTheme()]
+          });
         </script>
-
     </head>
     <!-- <body onload="myFunction()" style="margin:0;"> -->
     <body>
@@ -66,6 +45,7 @@
           </div>
         </div>
     </div> -->
+    <main id="swup" class="transition-fade">
 
     <div class="page" id="case-study">
 
@@ -75,7 +55,7 @@
 
     <!-- HUD -->
     <div class="z-20 fixed top-0 left-0 p-6 xl:pl-12 xl:pt-10 xl:ml-1">
-      <a href="../index.html" target="_self">
+      <a href="/index.html" target="_self">
         <svg version="1.1" width="125" class="hvr-grow dxp-animate" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         viewBox="0 0 367.9 225.9" style="enable-background:new 0 0 367.9 225.9;" xml:space="preserve">
         <style type="text/css">
@@ -163,7 +143,6 @@
         </nav>
       </div>
       <!-- END Hamburger Menu -->
-    <main id="swup" class="transition-fade">
       <div class="swiper-container">
       <div class="sharjah-reel" id=“top”>
       <div class="film-top h-screen w-screen flex flex-wrap items-center absolute">
