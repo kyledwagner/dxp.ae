@@ -161,7 +161,7 @@
     <!-- HUD -->
         <div class="z-20 fixed top-0 left-0 p-6 xl:pl-12 xl:pt-10 xl:ml-1">
           <a href="index.html" target="_self">
-            <svg version="1.1" width="121" class="dxp-animate-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            <svg version="1.1" width="121" class="hvr-grow dxp-animate-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             viewBox="0 0 367.9 225.9" style="enable-background:new 0 0 367.9 225.9;" xml:space="preserve">
             <style type="text/css">
             .DXP_D, .DXP_X1, .DXP_X2, .DXP_P{fill:none;stroke:#fff;stroke-width:5.75;stroke-miterlimit:10;}
@@ -472,10 +472,10 @@
           </script>
     <!-- SwiperJS Example -->
     <script src="assets/js/swiper.min.js"></script>
-    <script src='assets/js/jquery-3.5.1.slim.min.js'></script>
+    <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
     <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js'></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.min.js"></script>
-    <script src="assets/js/script.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.min.js"></script>
+    <script defer src="assets/js/script.js"></script>
     <script>
       $('#toggle').click(function() {
       $(this).toggleClass('active');
@@ -509,12 +509,6 @@
           return '<span class="' + className + '">' + (1 + '0' + index).slice(-2) + '</span>';
         },
       },
-      // other parameters
-      on: {
-        slideChangeTransitionStart: function () {
-        // Do Something
-        },
-      }
     });
     </script>
     </body>
