@@ -4,7 +4,9 @@
   "description": "A repository for Double Exposure Production's new website.",
   "main": "index.js",
   "scripts": {
-    "build:css": "tailwind build src/style.css -o dist/style.css"
+    "build:css": "tailwind build src/tailwind.css -o dist/tailwind.css",
+    "build": "postcss src/tailwind.css -o dist/tailwind-min.css",
+    "watch": "watch 'npm run build:css' ./"
   },
   "repository": {
     "type": "git",
@@ -17,8 +19,13 @@
   },
   "homepage": "https://github.com/kyledwagner/dxp.ae#readme",
   "dependencies": {
+    "@fullhuman/postcss-purgecss": "^2.2.0",
+    "autoprefixer": "^9.8.0",
+    "cssnano": "^4.1.10",
     "modernizr": "^3.10.0",
-    "tailwindcss": "^1.4.6"
+    "postcss-cli": "^7.1.1",
+    "tailwindcss": "^1.4.6",
+    "watch": "^1.0.2"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
