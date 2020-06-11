@@ -20,7 +20,7 @@ class Demo {
     ease: Power1.easeOut,
   });
 
-  })
+  });
 });
   }
 
