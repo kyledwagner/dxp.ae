@@ -394,8 +394,9 @@
 
       const swup = new Swup({
         plugins: [new SwupJsPlugin(options)],
-        plugins: [new SwupScriptsPlugin()]
+        plugins: [new SwupScriptsPlugin()],
       });
+      swup.on('contentReplaced', init);
   </script>
     <script>
         var myVar;
