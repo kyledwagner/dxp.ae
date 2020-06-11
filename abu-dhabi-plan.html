@@ -277,6 +277,7 @@
       const swup = new Swup({
         plugins: [new SwupJsPlugin(options)]
       });
+      swup.on('contentReplaced', init);
   </script>
       <script>
         const setVh = () => {
