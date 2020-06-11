@@ -1275,7 +1275,6 @@ span::before {
   height: 20vh;
   background-color: none;
 }
-
 .squares {
   height: 100%;
   display: -webkit-box;
@@ -1283,7 +1282,6 @@ span::before {
   justify-content: space-around;
   overflow: hidden;
 }
-
 .square {
   -webkit-animation: squares 30s linear infinite;
           animation: squares 30s linear infinite;
