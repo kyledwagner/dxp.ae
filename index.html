@@ -108,7 +108,7 @@
             display: none;
           }
         </style>
-      <link defer rel="stylesheet" href="assets/css/tailwind.min.css">
+      <link defer rel="stylesheet" href="assets/css/tailwind.css">
       <link rel="stylesheet" href="assets/css/main.css">
       <link rel="stylesheet" href="assets/css/swiper.min.css">
       <script src="assets/js/anime.min.js"></script>
@@ -456,6 +456,17 @@
       $('#overlay').toggleClass('open');
     });
     </script>
+    <!-- <script>
+      const el = document.querySelector('#toggle');
+      const handleToggle = () => el.classList.toggle('active');
+
+      el.onclick = () => handleToggle();
+      el.addEventListener('#overlay', (event) => {
+        if(event.keyCode === 13 || event.keyCode === 32) {
+          handleToggle();
+        }
+      });
+    </script> -->
     <script>
     var swiper = new Swiper('.swiper-container', {
       navigation: {
