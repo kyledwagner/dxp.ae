@@ -246,12 +246,15 @@
                    <!-- <div class="video-responsive"><iframe class="video-responsive-item block md:hidden max-w-none" allow="autoplay; fullscreen" src="https://player.vimeo.com/video/424629069?background=1&playsinline=1&autoplay=1&loop=1&byline=0&title=0&muted=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div> -->
                    <!-- <div class="video-responsive"><iframe class="video-responsive-item hidden md:block max-w-none" allow="autoplay; fullscreen" src="https://player.vimeo.com/video/424628977?background=1&quality=1080p&autoplay=1&loop=1&byline=0&title=0&muted=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div> -->
                   <!-- Showing Mobile Version vs Desktop -->
-                  <video id="showreel" poster="assets/img/case-study/showreel-desktop.jpg" class="block md:hidden max-w-none" autoplay playsinline muted loop>
+                  <video id="showreel" poster="assets/img/case-study/showreel-desktop.jpg" class="max-w-none" autoplay playsinline muted loop>
+                    <source id="showreel_mp4" src="assets/video/mobile/DXP_web_mobile_showreel_small_280520_30secs.mp4" type="video/mp4">
+                  </video>
+                  <!-- <video id="showreel" poster="assets/img/case-study/showreel-desktop.jpg" class="block md:hidden max-w-none" autoplay playsinline muted loop>
                     <source id="showreel_mp4" src="assets/video/mobile/DXP_web_mobile_showreel_small_280520_30secs.mp4" type="video/mp4">
                   </video>
                   <video id="showreel" poster="assets/img/case-study/mobile/showreel-mobile.jpg" class="hidden md:block max-w-none" autoplay playsinline muted loop>
                     <source id="showreel_mp4" src="assets/video/DXP_web_desktop_showreel_small_280520.mp4" type="video/mp4">
-                  </video>
+                  </video> -->
                 </div>
                 <div class="swiper-slide" data-hash="abu-dhabi-plan">
                   <div class="h-screen w-screen flex flex-wrap items-center absolute overflow-hidden">
@@ -420,7 +423,7 @@
       });
         }
     </script>
-          <!-- <script>
+          <script>
             /* JavaScript Media Queries */
             if (matchMedia) {
               const mq = window.matchMedia("(min-width: 767px)");
@@ -434,7 +437,7 @@
               document.getElementById("showreel").load();
             }
             }
-          </script> -->
+          </script>
           <script>
             const setVh = () => {
             const vh = window.innerHeight * 0.01;
