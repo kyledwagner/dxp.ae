@@ -240,7 +240,7 @@
     </main>
     <script src="assets/js/swup.min.js"></script>
     <script src="assets/js/swupjsplugin.min.js"></script>
-    <script src="assets/js/SwupScriptsPlugin.min.js"></script>
+    <!-- <script src="assets/js/SwupScriptsPlugin.min.js"></script> -->
     <script>
       const options = [
         {
@@ -277,7 +277,7 @@
 
       const swup = new Swup({
         plugins: [new SwupJsPlugin(options)],
-        plugins: [new SwupScriptsPlugin()]
+     // plugins: [new SwupScriptsPlugin()],
       });
       swup.on('contentReplaced', init);
   </script>
