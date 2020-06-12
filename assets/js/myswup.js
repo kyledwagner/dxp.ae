@@ -35,7 +35,8 @@ const options = [
   const swup = new Swup({
     plugins: [
       new SwupJsPlugin(options),
-      new SwupScriptsPlugin()
+      new SwupScriptsPlugin(),
+      new SwupScrollPlugin()
     ],
   });
 
