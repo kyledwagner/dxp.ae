@@ -814,8 +814,9 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     position: fixed;
     background: rgb(21,40,55);
     background: radial-gradient(circle, rgba(21,40,55,1) 0%, rgba(13,21,28,1) 100%);
+    border-left: 10vw solid white;
     top: 0;
-    right: 0;
+    right: -10vw;
     width: 0%;
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
@@ -830,7 +831,7 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
   .overlay.open {
     opacity: 1;
     /* visibility: visible; */
-    width: 100vw;
+    width: 120vw;
   }
   .overlay.open li {
     -webkit-animation: fadeInRight .5s ease forwards;
