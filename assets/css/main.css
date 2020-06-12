@@ -8,6 +8,8 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
   scroll-snap-type: y mandatory;
   overscroll-behavior-y: none;
   cursor: none;
+  background: rgb(21,40,55);
+  background: radial-gradient(circle, rgba(21,40,55,1) 0%, rgba(13,21,28,1) 100%);
 }
 
 @font-face {
@@ -282,7 +284,7 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     background: linear-gradient(
       rgba(0, 0, 0, 0.45),
       rgba(0, 0, 0, 0.25)
-    ),url(../img/bg-sharjah-task-2.jpg);
+    ),url(../img/bg-invest-in-sharjah-task.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
