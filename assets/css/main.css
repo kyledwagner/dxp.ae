@@ -1477,3 +1477,45 @@ span::before {
 html.is-animating .transition-fade {
   opacity: 0;
 }
+
+/* Scroll Down Effect on Hover */
+.link-4 a {
+	position: relative;
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+}
+
+.link-4 a:hover,
+.link-4 a:focus {
+	outline: none;
+}
+
+.link-4 a {
+	overflow: hidden;
+}
+
+.link-4 a span {
+	position: relative;
+	display: inline-block;
+	-webkit-transition: -webkit-transform 0.3s;
+	-moz-transition: -moz-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.link-4 a span::before {
+	position: absolute;
+	top: 100%;
+	content: attr(data-hover);
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.link-4 a:hover span,
+.link-4 a:focus span {
+	-webkit-transform: translateY(-100%);
+	-moz-transform: translateY(-100%);
+	transform: translateY(-100%);
+}
