@@ -17,6 +17,7 @@
         <link rel="stylesheet" href="assets/css/main.css">
         <link rel="stylesheet" href="assets/css/glightbox.min.css">
         <link rel="stylesheet" href="assets/css/mediabox.min.css">
+        <script src="https://unpkg.com/scrollreveal@4"></script>
         <script src="assets/js/anime.min.js"></script>
 
     </head>
@@ -145,9 +146,9 @@
         <div class="h-screen w-screen flex items-center bg-gradient-light">
         <div class="flex flex-wrap container pl-0 md:pl-24 lg:pl-40 mx-auto">
           <div class="w-full lg:w-1/6 pt-1 pb-2 md:pb-4">
-            <div class="nunito-semibold uppercase text-sm md:text-md tracking-widest text-white px-8">The Client</div>
+            <div class="client-sr nunito-semibold uppercase text-sm md:text-md tracking-widest text-white px-8">The Client</div>
           </div>
-          <div class="w-full lg:w-4/6">
+          <div class="descript-sr w-full lg:w-4/6">
             <div class="nunito-bold pb-2 md:pb-4 text-xl md:text-2xl tracking-normal text-white leading-tight md:leading-normal px-8">The International Business Excellence Awards enables businesses to tell and get recognition for their stories.</div>
             <div class="nunito-light hidden md:block text-base tracking-normal text-white leading-tight md:leading-normal px-8">The program is supported by the Dubai Economy along with Academic Institutions and respected thought‐leaders from across the world.</div>
             <div class="short-line"><hr class="mt-4 md:mt-8 mb-1 mx-8"></div>
@@ -174,9 +175,9 @@
         <div class="h-screen w-screen bg-business-excellence-awards flex items-center">
           <div class="flex flex-wrap container pl-0 md:pl-24 lg:pl-40 mx-auto">
           <div class="w-full lg:w-1/6 pt-1 pb-2 md:pb-4">
-            <div class="nunito-semibold uppercase text-sm md:text-md tracking-widest text-white px-8">The Task</div>
+            <div class="task-sr nunito-semibold uppercase text-sm md:text-md tracking-widest text-white px-8">The Task</div>
           </div>
-          <div class="w-full lg:w-7/12 pb-2 md:pb-4">
+          <div class="descript-sr w-full lg:w-7/12 pb-2 md:pb-4">
             <div class="nunito-bold pb-2 md:pb-4 text-2xl md:text-4xl tracking-normal text-white leading-tight px-8">We aimed to create an engaging and entertaining award film experience, taking the audience into another world with the best use of the large screen set up.</div>
             <div class="nunito-light text-base tracking-normal text-white leading-normal px-8">With main focus is visual storytelling and delivering a bold message, leaving the the target audience with memorable key messages for what the Business Excellence Award stands for.</div>
           </div>
@@ -187,7 +188,7 @@
         <div class="z-50 absolute left-0 bg-white h-screen"></div>
         <div class="flex flex-wrap container pl-0 md:px-16 mx-auto">
         <div class="w-full lg:w-1/4 pb-2 md:pb-4">
-          <div class="nunito-bold uppercase md:normal-case pb-2 md:pb-4 text-sm md:text-4xl tracking-widest text-black px-8 md:tracking-normal text-white leading-none">The Film</div>
+          <div class="film-sr nunito-bold uppercase md:normal-case pb-2 md:pb-4 text-sm md:text-4xl tracking-widest text-black px-8 md:tracking-normal text-white leading-none">The Film</div>
           <hr class="hidden md:block mx-8">
           <!-- <div class="hidden md:block mx-8 slider-scroll-down"><span class="bounce-line"></span></div> -->
         </div>
@@ -199,7 +200,7 @@
           </video>
         </a>
         </div>
-        <div class="w-full flex justify-end">
+        <div class="language-sr w-full flex justify-end">
         <div class="nunito-light text-base text-right tracking-normal text-white px-8"><span class="nunito-semibold"><a id="lightbox2" ref="https://vimeo.com/391947832" class="glightbox" data-gallery="gallery2">Arabic</a></span> | <a id="lightbox3" href="https://vimeo.com/391948317" class="glightbox" data-gallery="gallery2">English</a></div>
         </div>
         </div>
@@ -260,6 +261,18 @@
           }
           }
   </script>
+    <script type="text/javascript">
+        ScrollReveal({ distance: '1rem' }).reveal('.client-sr', { delay: 100 }, { interval: 50 }, { origin: 'bottom' });
+        ScrollReveal({ distance: '1rem' }).reveal('.task-sr', { delay: 100 }, { interval: 50 }, { origin: 'bottom' });
+
+        ScrollReveal({ distance: '1rem' }).reveal('.descript-sr', { delay: 200 }, { interval: 50 }, { origin: 'bottom' },);
+        ScrollReveal({ distance: '1rem' }).reveal('.services-sr', { delay: 300 }, { interval: 50 }, { origin: 'bottom' });
+        ScrollReveal({ distance: '1rem' }).reveal('.awards-sr', { delay: 400 }, { interval: 50 }, { origin: 'bottom' });
+
+        ScrollReveal({ distance: '1rem' }).reveal('.film-sr', { delay: 100 }, { interval: 50 }, { origin: 'bottom' });
+        ScrollReveal({ distance: '1rem' }).reveal('.video-player', { delay: 200 }, { interval: 50 }, { origin: 'bottom' });
+        ScrollReveal({ distance: '1rem' }).reveal('.language-sr', { delay: 600 }, { interval: 50 }, { origin: 'bottom' });
+    </script>
     <script src='assets/js/glightbox.min.js'></script>
     <script type="text/javascript">
       const lightbox = GLightbox({
