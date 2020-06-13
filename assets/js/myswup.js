@@ -36,7 +36,7 @@ const options = [
     plugins: [
       new SwupJsPlugin(options),
       new SwupScriptsPlugin(),
-      // new SwupScrollPlugin()
+      new SwupScrollPlugin()
     ],
   });
 
