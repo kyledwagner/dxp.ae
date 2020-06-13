@@ -1500,3 +1500,73 @@ html.is-animating .transition-fade {
 	-moz-transform: translateY(-100%);
 	transform: translateY(-100%);
 }
+
+/* Loading Swiper Slides in Portfolio View */
+/* @keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+#portfolio .swiper-img-sr {
+  animation: slideInFromRight;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
+} */
+
+@keyframes slideinAbuDhabi {
+  0% {
+    transform: translateX(80%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+#portfolio .slideinAbuDhabi {
+  animation: slideinAbuDhabi;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+@keyframes slideinInvestinSharjah {
+  0% {
+    transform: translateX(40%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+#portfolio .slideinInvestinSharjah {
+  animation: slideinInvestinSharjah;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+@keyframes slideinDubaiEconomy {
+  0% {
+    transform: translateX(-30%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+#portfolio .swiper-slide-duplicate .slideinDubaiEconomy {
+  animation: slideinDubaiEconomy;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(0.5, 1, 0.89, 1);
+}
