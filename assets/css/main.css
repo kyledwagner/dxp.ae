@@ -1533,7 +1533,7 @@ html.is-animating .transition-fade {
 
 #portfolio .slideinAbuDhabi {
   animation: slideinAbuDhabi;
-  animation-duration: 1.5s;
+  animation-duration: 1s;
   animation-timing-function: cubic-bezier(0.5, 1, 0.89, 1);
 }
 
@@ -1550,7 +1550,7 @@ html.is-animating .transition-fade {
 
 #portfolio .slideinInvestinSharjah {
   animation: slideinInvestinSharjah;
-  animation-duration: 1.5s;
+  animation-duration: 1s;
   animation-timing-function: cubic-bezier(0.5, 1, 0.89, 1);
 }
 
@@ -1567,6 +1567,6 @@ html.is-animating .transition-fade {
 
 #portfolio .swiper-slide-duplicate .slideinDubaiEconomy {
   animation: slideinDubaiEconomy;
-  animation-duration: 1.5s;
+  animation-duration: 1s;
   animation-timing-function: cubic-bezier(0.5, 1, 0.89, 1);
 }
