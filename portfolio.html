@@ -140,7 +140,7 @@
               <!-- <video autoplay playsinline muted loop>
                 <source src="assets/video/Case_Study_Invest_In_Sharjah_Prev.mp4" type="video/mp4">
               </video> -->
-              <img src="assets/img/film-invest-in-sharjah.jpg">
+              <img class="swiper-img-sr" src="assets/img/film-invest-in-sharjah.jpg">
             <div class="portfolio-mob-text">
               <hr class="block md:hidden portfolio-mob-line absolute top-0 ml-4 pt-4">
               <div class="block md:hidden absolute top-0 nunito-bold text-white text-left text-3xl leading-none pl-16 pt-16">Invest in<br>Sharjah</div>
@@ -161,7 +161,7 @@
               <!-- <video autoplay playsinline muted loop>
                 <source src="assets/video/Case_Study_The_Abu_Dhabi_Plan_Prev.mp4" type="video/mp4">
               </video> -->
-              <img src="assets/img/film-abu-dhabi-plan.jpg">
+              <img class="swiper-img-sr" src="assets/img/film-abu-dhabi-plan.jpg">
             <div class="portfolio-mob-text">
               <hr class="block md:hidden portfolio-mob-line absolute top-0 ml-4 pt-4">
               <div class="block md:hidden absolute top-0 nunito-bold text-white text-left text-3xl leading-none pl-16 pt-16">Abu Dhabi<br>Plan</div>
@@ -255,10 +255,16 @@
 
       <script>
         anime({
-          targets: '.swiper-slide',
-          translateX: '-200px',
-          duration: 4000,
-          easing: 'easeOutElastic(1, .8)',
+          targets: '.swiper-img-sr',
+          keyframes: [
+            {opacity: 0},
+            {translateX: 1000},
+            {opacity: 1},
+            {translateX: 0},
+          ],
+          duration: 1000,
+          delay: anime.stagger(100, {start: 500}),
+          easing: 'easeInQuint',
           loop: 1
         });
       </script>

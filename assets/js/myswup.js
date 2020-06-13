@@ -40,22 +40,22 @@ const options = [
     ],
   });
 
-  document.addEventListener("DOMContentLoaded", () => {
-    function init() {
-      if (document.querySelector('#case-study-link')) {
-        const swup = new Swup();
-        MediaBox('.mediabox');
-        // run once
-        init();
-        // this event runs for every page view after initial load
-        swup.on('contentReplaced', init);
-      }
-    }
-    function unload() {
-      if (document.querySelector('#case-study-link')) {
-          // carousel.destroy()
-      }
-      // ...
-  }
-    swup.on('willReplaceContent', unload);
-});
+//   document.addEventListener("DOMContentLoaded", () => {
+//     function init() {
+//       if (document.querySelector('#case-study-link')) {
+//         const swup = new Swup();
+//         MediaBox('.mediabox');
+//         // run once
+//         init();
+//         // this event runs for every page view after initial load
+//         swup.on('contentReplaced', init);
+//       }
+//     }
+//     function unload() {
+//       if (document.querySelector('#case-study-link')) {
+//           // carousel.destroy()
+//       }
+//       // ...
+//   }
+//     swup.on('willReplaceContent', unload);
+// });
