@@ -756,8 +756,9 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
   }
 
 @media only screen and (max-width: 767px) {
-  #portfolio .swiper-wrapper {
-    margin-top: -3rem;
+  #portfolio .swiper-wrapper, .swiper-container-vertical {
+    height: 100vh !important;
+    height: calc(var(--vh, 1vh) * 100) !important;
   }
 }
 
