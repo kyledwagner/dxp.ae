@@ -1084,8 +1084,8 @@ input[type='checkbox'] {
 .lbl-toggle {
   display: block;
   color: #fff;
-  /* cursor: pointer; */
-  transition: all 0.25s ease-out;
+  -webkit-transition: all 1s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transition: all 1s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .lbl-toggle:hover {
@@ -1095,14 +1095,14 @@ input[type='checkbox'] {
 .lbl-toggle::before {
   content: ' ';
   display: inline-block;
-
   border-top: 7px solid transparent;
   border-bottom: 7px solid transparent;
   border-left: 7px solid currentColor;
   vertical-align: middle;
   margin-right: 1rem;
   transform: translateY(-2px);
-  transition: transform .2s ease-out;
+  -webkit-transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .toggle:checked + .lbl-toggle::before {
@@ -1112,16 +1112,21 @@ input[type='checkbox'] {
 .collapsible-content {
   max-height: 0px;
   overflow: hidden;
-  transition: max-height .25s ease-in-out;
+  -webkit-transition: max-height 0.75s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transition: max-height 0.75s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .toggle:checked + .lbl-toggle + .collapsible-content {
   max-height: 100vh;
+  -webkit-transition: max-height 2s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transition: max-height 2s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .toggle:checked + .lbl-toggle {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
+  -webkit-transition: max-height 2s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transition: max-height 2s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .bg-film a {
