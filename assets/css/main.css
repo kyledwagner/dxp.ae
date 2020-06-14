@@ -409,13 +409,6 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     }
   }
 
-  @media only screen and (max-width: 767px) {
-    #portfolio .swiper-container {
-      height: 103vh !important;
-      bottom: 3vh !important;
-    }
-  }
-
   #portfolio .swiper-slide {
     pointer-events: none !important;
   }
