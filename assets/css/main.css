@@ -714,7 +714,7 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     opacity: 0.4;
     height: 5rem;
     position: absolute;
-    top: 45.15% !important;
+    top: 45.6% !important;
     right: 0rem !important;
     -webkit-transition: opacity 0.75s ease;
     transition: opacity 0.75s ease;
@@ -724,11 +724,22 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     opacity: 0.4;
     height: 5rem;
     position: absolute;
-    top: 45.15% !important;
+    top: 45.6% !important;
     left: 10.3rem !important;
     -webkit-transition: opacity 0.75s ease;
     transition: opacity 0.75s ease;
   }
+
+  #portfolio .gnext.gbtn {
+    display: none !important;
+    pointer-events: none;
+  }
+
+  #portfolio .gprev.gbtn {
+    display: none !important;
+    pointer-events: none;
+  }
+
 
   #portfolio .swiper-button-prev:hover {
     opacity: 1;
