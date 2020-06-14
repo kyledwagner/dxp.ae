@@ -755,10 +755,11 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     transition: opacity 0.75s ease;
   }
 
-  #portfolio .swiper-slide {
-    height: 33.33vh;
-    height: calc(var(--vh, 1vh) * 33.33);
+@media only screen and (max-width: 767px) {
+  #portfolio .swiper-wrapper {
+    margin-top: -3rem;
   }
+}
 
   /* Hammburger Menu */
   .button_container {
