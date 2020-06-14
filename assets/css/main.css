@@ -411,7 +411,8 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
 
   @media only screen and (max-width: 767px) {
     #portfolio .swiper-container {
-      height: none;
+      height: 103vh !important;
+      bottom: 3vh !important;
     }
   }
 
