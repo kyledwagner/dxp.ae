@@ -824,13 +824,23 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     top: 22px;
   }
 
+  @media only screen and (max-width: 767px) {
+    .overlay {
+      border-left: 25vw solid white !important;
+      right: -25vw !important;
+    }
+    .overlay.open {
+      width: 150vw !important;
+    }
+  }
+
   .overlay {
     position: fixed;
     background: rgb(21,40,55);
     background: radial-gradient(circle, rgba(21,40,55,1) 0%, rgba(13,21,28,1) 100%);
-    border-left: 10vw solid white;
+    border-left: 12vw solid white;
     top: 0;
-    right: -10vw;
+    right: -12vw;
     width: 0%;
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
@@ -845,7 +855,7 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
   .overlay.open {
     opacity: 1;
     /* visibility: visible; */
-    width: 120vw;
+    width: 124vw;
   }
   .overlay.open li {
     -webkit-animation: fadeInRight .5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
