@@ -236,7 +236,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.min.js"></script>
     <script src="assets/js/script.js"></script>
     <script>
+      function menuswipe() {
+          anime({
+          targets: '.bg-white',
+          width: '100%', // -> from '28px' to '100%',
+          easing: 'easeInOutCirc',
+          direction: 'reverse',
+          loop: 1,
+          translateX: {
+          value: '100%',
+          duration: 250
+          },
+        });
+          }
+    </script>
+    <script>
       $('#toggle').click(function() {
+      function menuswipe();
       $(this).toggleClass('active');
       $('#overlay').toggleClass('open');
     });

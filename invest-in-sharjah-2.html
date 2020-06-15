@@ -210,111 +210,21 @@
         </div>
         <div class="relative">
           <div class="nunito-light block md:hidden absolute bottom-0 left-0 text-sm text-white pl-8 pb-10">All rights reserved.</div>
-          <div class="transition-fade nunito-semibold w-screen hidden lg:block absolute uppercase text-center tracking-widest bottom-0 text-sm pb-12 mb-2 link-4"><a href="http://type-c.studio/dxpwebsite/time-to-care.html#main">Next Case Study</a></div>
+          <div class="transition-fade nunito-semibold w-screen hidden lg:block absolute uppercase text-center tracking-widest bottom-0 text-sm pb-12 mb-2 link-4"><a href="http://localhost/dxp.ae/time-to-care.html#main">Next Case Study</a></div>
         </div>
       </div>
       <div class="hidden md:block circle-cursor circle-cursor--inner"></div>
       <div class="hidden md:block circle-cursor circle-cursor--outer"></div>
 
   </main>
-    <script src="assets/js/swup.min.js" type="text/javascript"></script>
-    <script src="assets/js/SwupJsPlugin.min.js" type="text/javascript"></script>
-    <script src="assets/js/SwupScriptsPlugin.min.js" type="text/javascript"></script>
-    <script src="assets/js/SwupScrollPlugin.min.js" type="text/javascript"></script>
-    <script src="assets/js/myswup.js" type="text/javascript"></script>
-      <script>
-        const setVh = () => {
-        const vh = window.innerHeight * 0.01;
-        document.documentElement.style.setProperty('--vh', `${vh}px`);
-      };
-
-      window.addEventListener('load', setVh);
-      window.addEventListener('resize', setVh);
-      </script>
-    <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.min.js"></script>
-    <script src="assets/js/script.js"></script>
-    <script>
-      function menuswipe() {
-          anime({
-          targets: '.bg-white',
-          width: '100%', // -> from '28px' to '100%',
-          easing: 'easeInOutCirc',
-          direction: 'reverse',
-          loop: 1,
-          translateX: {
-          value: '100%',
-          duration: 250
-          },
-        });
-          }
-    </script>
-    <script>
-      $('#toggle').click(function() {
-      function menuswipe();
-      $(this).toggleClass('active');
-      $('#overlay').toggleClass('open');
-    });
-    $('#overlay li a').on('click', function(){
-        // $("overlay").hide();
-        $("#toggle").toggleClass("active");
-        $("#overlay").toggleClass("open");
-    });
-    </script>
-    <script type="text/javascript">
-      ScrollReveal({ distance: '1rem' }).reveal('.client-sr', { delay: 100, interval: 50, origin: 'bottom' });
-      ScrollReveal({ distance: '1rem' }).reveal('.task-sr', { delay: 100, interval: 50, origin: 'bottom' });
-
-      ScrollReveal({ distance: '1rem' }).reveal('.descript-sr', { delay: 200, interval: 50, origin: 'bottom' },);
-
-      ScrollReveal({ distance: '1rem' }).reveal('.film-sr', { delay: 100, interval: 50, origin: 'bottom' });
-      ScrollReveal({ distance: '1rem' }).reveal('.video-player', { delay: 200, interval: 50, origin: 'bottom' });
-      ScrollReveal({ distance: '1rem' }).reveal('.language-sr', { delay: 600, interval: 50, origin: 'bottom' });
-
-      ScrollReveal({ distance: '6rem' }).reveal('.line-sr', { delay: 200, interval: 50, origin: 'left' });
-    </script>
-    <script>
-          if (matchMedia) {
-            const mq = window.matchMedia("(max-width: 767px)");
-            mq.addListener(WidthChange);
-            WidthChange(mq);
-          }
-          // media query change
-          function WidthChange(mq) {
-          if (mq.matches) {
-            lightbox.classList.replace("glightbox", "mediabox");
-            lightbox2.classList.replace("glightbox", "mediabox");
-            lightbox3.classList.replace("glightbox", "mediabox");
-          }
-          }
-  </script>
-    <script src="assets/js/glightbox.min.js"></script>
-    <script type="text/javascript">
-      const lightbox = GLightbox({
-        touchNavigation: true,
-        autoplayVideos: true,
-        closeOnOutsideClick: true,
-        svg: {},
-        plyr: {
-          css: 'assets/css/plyr.css', // Custom Colored Version
-        config: {
-            ratio: '16:9',
-            muted: false,
-            hideControls: true,
-            vimeo: {
-                byline: false,
-                portrait: false,
-                title: false,
-                speed: true,
-                transparent: false
-            }
-        }
-    }
-      });
-    </script>
-    <script src="assets/js/mediabox.min.js"></script>
-    <script>
-      MediaBox('.mediabox');
-    </script>
+      <script src="assets/js/swup.min.js" type="text/javascript"></script>
+      <script src="assets/js/SwupJsPlugin.min.js" type="text/javascript"></script>
+      <script src="assets/js/SwupScriptsPlugin.min.js" type="text/javascript"></script>
+      <script src="assets/js/SwupScrollPlugin.min.js" type="text/javascript"></script>
+      <script src="assets/js/jquery-3.5.1.slim.min.js" type="text/javascript"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.min.js" type="text/javascript"></script>
+      <script src="assets/js/glightbox.min.js" type="text/javascript"></script>
+      <script src="assets/js/mediabox.min.js" type="text/javascript"></script>
+      <script src="assets/js/myswup.js" type="text/javascript"></script>
     </body>
 </html>
