@@ -1530,7 +1530,8 @@ html.is-animating .transition-fade {
 	display: inline-block;
 	-webkit-transition: -webkit-transform 0.3s;
 	-moz-transition: -moz-transform 0.3s;
-	transition: transform 0.3s;
+  transition: transform 0.3s;
+  padding-bottom: 0.15rem;
 }
 
 .link-4 a span::before {
