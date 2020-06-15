@@ -4,6 +4,11 @@ html { /* body won't work for Chrome, Firefox ¯\_(ツ)_/¯ */
   scroll-behavior: smooth;
 }
 
+/* Fixing Scrollreveal issue */
+html.sr .load-hidden {
+  visibility: hidden;
+}
+
 body { /* html won't work for Safari ¯\_(ツ)_/¯ */
   scroll-snap-type: y mandatory;
   overscroll-behavior-y: none;
