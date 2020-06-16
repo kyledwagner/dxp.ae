@@ -1455,7 +1455,6 @@ span::before {
 .swipe-right .swiping {
  position: relative;
  display: block;
- /* margin-bott: 0 */
 }
 
 .swipe-right span {
@@ -1502,15 +1501,10 @@ span::before {
 }
 
 /* Scroll Down Effect on Hover */
-.link-4 {
-    margin-bottom: 0.10rem !important;
-}
 .link-4 a {
 	position: relative;
 	display: inline-block;
 	color: #fff;
-	text-decoration: none;
-	text-shadow: 0 0 1px rgba(255,255,255,0.3);
 }
 
 .link-4 a:hover,
