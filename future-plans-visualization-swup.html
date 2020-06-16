@@ -69,18 +69,18 @@
     </div>
 
       <!-- Hamburger Menu -->
-      <div class="button_container z-30 hvr-grow" id="toggle">
+      <div class="button_container z-30 hvr-grow toggle" id="toggle">
         <span class="top"></span>
         <span class="middle"></span>
         <span class="bottom"></span>
       </div>
-      <div class="overlay z-20" id="overlay">
+      <div class="overlay z-20 overlay" id="overlay">
         <nav class="overlay-menu">
           <div class="h-screen w-screen flex items-center px-8">
             <div class="flex flex-wrap container pl-0 md:pl-32 lg:pl-40 mx-auto">
               <div class="w-full md:pt-0 lg:w-7/12 pt-1 nunito-bold text-8xl text-left tracking-tight leading-none">
                 <ul>
-                  <li class="transition-fade hidden md:block mb-1 md:mb-3 lg:mb-8"><a href="http://type-c.studio/dxpwebsite/index.html" target="_top" class="hvr-forward">Home</a></li>
+                  <li class="hidden md:block mb-1 md:mb-3 lg:mb-8"><a href="index.html" target="_top" class="hvr-forward">Home</a></li>
                   <li class="transition-fade block mb-1 md:mb-3 lg:mb-8"><a href="http://type-c.studio/dxpwebsite/about.html" target="_self" class="hvr-forward">About</a></li>
                   <li class="transition-fade block"><a href="http://type-c.studio/dxpwebsite/portfolio.html" target="_self" class="hvr-forward">Portfolio</a></li>
                   <li class="transition-fade block mt-1 md:mt-3 lg:mt-8"><a href="http://type-c.studio/dxpwebsite/case-studies.html" target="_self" class="hvr-forward">Case Studies</a></li>
@@ -170,7 +170,7 @@
         </div>
         </div>
         <!-- Film Section -->
-        <div class="h-screen w-screen bg-film relative flex items-center">
+        <div class="h-screen w-screen bg-film relative flex items-center" id="case-study">
         <div class="z-50 absolute left-0 bg-white h-screen"></div>
         <div class="flex flex-wrap container pl-0 md:px-16 mx-auto">
         <div class="w-full lg:w-1/4 pb-2 md:pb-4">
@@ -225,7 +225,7 @@
     <script src="assets/js/SwupJsPlugin.min.js" type="text/javascript"></script>
     <script src="assets/js/SwupScriptsPlugin.min.js" type="text/javascript"></script>
     <script src="assets/js/SwupScrollPlugin.min.js" type="text/javascript"></script>
-    <script src="assets/js/myswup-old.js" type="text/javascript"></script>
+    <script src="assets/js/myswup.js" type="text/javascript"></script>
       <script>
         const setVh = () => {
         const vh = window.innerHeight * 0.01;
@@ -239,7 +239,7 @@
     <script src="assets/js/swiper.min.js"></script>
     <script src='assets/js/jquery-3.5.1.slim.min.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.min.js"></script>
-    <script src="assets/js/script.js"></script>
+
     <script>
       var swiper = new Swiper('.swiper-container', {
         navigation: {
@@ -262,6 +262,7 @@
 
       ScrollReveal({ distance: '6rem' }).reveal('.line-sr', { delay: 200, interval: 50, origin: 'left' });
     </script>
+    <!--
     <script>
       $('#toggle').click(function() {
       $(this).toggleClass('active');
@@ -272,7 +273,7 @@
         $("#toggle").toggleClass("active");
         $("#overlay").toggleClass("open");
     });
-    </script>
+    </script> -->
     <script src='assets/js/glightbox.min.js'></script>
     <script type="text/javascript">
       const lightbox = GLightbox({

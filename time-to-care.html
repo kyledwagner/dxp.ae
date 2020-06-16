@@ -17,8 +17,8 @@
         <link rel="stylesheet" href="assets/css/main.css">
         <link rel="stylesheet" href="assets/css/glightbox.min.css">
         <link rel="stylesheet" href="assets/css/mediabox.min.css">
-        <script src="https://unpkg.com/scrollreveal@4"></script>
-        <script src="assets/js/anime.min.js"></script>
+        <script src="https://unpkg.com/scrollreveal@4" type="text/javascript"></script>
+        <script src="assets/js/anime.min.js" type="text/javascript"></script>
 
     </head>
 
@@ -70,20 +70,20 @@
     </div>
 
           <!-- Hamburger Menu -->
-          <div class="button_container z-20 hvr-grow toggle" id="toggle">
+          <div class="button_container z-20 hvr-grow" id="toggle">
             <span class="top"></span>
             <span class="middle"></span>
             <span class="bottom"></span>
           </div>
-          <div class="overlay z-10 overlay" id="overlay">
+          <div class="overlay z-10" id="overlay">
             <nav class="overlay-menu">
               <div class="h-screen w-screen flex items-center px-8">
                 <div class="flex flex-wrap container pl-0 md:pl-32 lg:pl-40 mx-auto">
                   <div class="w-full md:pt-0 lg:w-7/12 pt-1 nunito-bold text-8xl text-left tracking-tight leading-none">
                     <ul>
-                      <li class="hidden md:block mb-1 md:mb-3 lg:mb-8"><a href="index.html" target="_top" class="hvr-forward">Home</a></li>
-                      <li class="transition-fade block mb-1 md:mb-3 lg:mb-8"><a href="http://type-c.studio/dxpwebsite/about.html" target="_self" class="hvr-forward">About</a></li>
-                      <li class="transition-fade block"><a href="http://type-c.studio/dxpwebsite/portfolio.html" target="_self" class="hvr-forward">Portfolio</a></li>
+                      <li class="transition-fade hidden md:block mb-1 md:mb-3 lg:mb-8"><a href="index.html" target="_top" class="hvr-forward">Home</a></li>
+                      <li class="transition-fade block mb-1 md:mb-3 lg:mb-8"><a href="about.html" target="_self" class="hvr-forward">About</a></li>
+                      <li class="transition-fade block"><a href="portfolio.html" target="_self" class="hvr-forward">Portfolio</a></li>
                       <li class="transition-fade block mt-1 md:mt-3 lg:mt-8"><a href="case-studies.html" target="_self" class="hvr-forward">Case Studies</a></li>
                     </ul>
                   </div>
@@ -120,14 +120,12 @@
           </div>
           <!-- END Hamburger Menu -->
 
-    <main id="swup" class="transition-fade">
       <div class="swiper-container">
       <div class="sharjah-reel">
       <div class="film-top h-screen w-screen flex flex-wrap items-center absolute">
         <div class="w-full container md:w-1/2 mx-auto" id=“top”>
             <div class="nunito-bold block md:mr-auto pl-8 md:pl-1 text-xl text-white text-left tracking-widest leading-none">Ministry of Health &amp; Prevention UAE</div>
             <div class="nunito-bold block w-3/4 md:mr-auto pl-8 md:pl-0 text-7xl text-white pt-2 text-left tracking-tight leading-none">Time to Care</div>
-            <!-- NOTE: There seems to be an issue on scroll-snap if I add line animation onto the HR here -->
             <div class="nunito-semibold inline-block md:mr-auto pl-8 md:pl-1 pt-4 text-xl text-white text-left tracking-normal leading-none">Case Study<hr class="hidden md:inline-block mx-4 mb-1"></div>
             <div class="scroll-down uppercase block absolute bottom-0 mb-10 pl-8 md:pl-0 md:mb-auto md:relative md:inline-block text-white text-left tracking-widest leading-none">
               <div class="scrolling"><span data-hover="SCROLL DOWN">SCROLL DOWN</span></div>
@@ -192,13 +190,12 @@
         </div>
         </div>
         <!-- Film Section -->
-        <div class="h-screen w-screen bg-film relative flex items-center" id="case-study">
+        <div class="h-screen w-screen bg-film relative flex items-center">
         <div class="z-50 absolute left-0 bg-white h-screen"></div>
         <div class="flex flex-wrap container pl-0 md:px-16 mx-auto">
         <div class="w-full lg:w-1/4 pb-2 md:pb-4">
           <div class="film-sr nunito-bold uppercase md:normal-case pb-2 md:pb-4 text-sm md:text-4xl tracking-widest text-black px-8 md:tracking-normal text-white leading-none">The Film</div>
           <hr class="line-sr hidden md:block mx-8">
-          <!-- <div class="hidden md:block mx-8 slider-scroll-down"><span class="bounce-line"></span></div> -->
         </div>
         <div class="video-player w-full relative flex justify-center items-center lg:w-3/4 pb-2 md:pb-4 px-8">
         <a id="lightbox" href="https://vimeo.com/326292144" class="glightbox" data-gallery="gallery1">
@@ -213,24 +210,18 @@
         </div>
         </div>
         <div class="transition-fade hidden md:block relative">
-          <a href="http://type-c.studio/dxpwebsite/business-excellence-awards.html#main" target="_self"><div class="swiper-button-next nunito-light text-white right-0 pr-10 xl:pr-16 p-5"><img src="assets/icon/next.svg" class="max-w-none" width="50"></div></a>
-          <a href="http://type-c.studio/dxpwebsite/invest-in-sharjah.html#main" target="_self"><div class="swiper-button-prev nunito-light text-white text-white right-0 pr-10 xl:pr-16 p-5"><img src="assets/icon/prev.svg" class="max-w-none" width="50"></div></a>
+          <a href="business-excellence-awards.html#main" target="_self"><div class="swiper-button-next nunito-light text-white right-0 pr-10 xl:pr-16 p-5"><img src="assets/icon/next.svg" class="max-w-none" width="50"></div></a>
+          <a href="invest-in-sharjah.html#main" target="_self"><div class="swiper-button-prev nunito-light text-white text-white right-0 pr-10 xl:pr-16 p-5"><img src="assets/icon/prev.svg" class="max-w-none" width="50"></div></a>
         </div>
         </div>
         <div class="relative">
           <!-- <div class="nunito-light block md:hidden absolute bottom-0 left-0 text-sm text-white pl-8 pb-10">All rights reserved.</div> -->
-          <div class="transition-fade nunito-semibold block md:hidden lg:block w-screen absolute uppercase text-left md:text-center tracking-widest bottom-0 text-sm pl-8 lg:pl-0 pb-6 md:pb-6 lg:pb-8 xl:pb-10 mb-0 lg:mb-0 xl:mb-2 link-4"><a href="http://type-c.studio/dxpwebsite/business-excellence-awards.html#main"><span data-hover="NEXT CASE STUDY">Next Case Study</span></a></div>
+          <div class="transition-fade nunito-semibold block md:hidden lg:block w-screen absolute uppercase text-left md:text-center tracking-widest bottom-0 text-sm pl-8 lg:pl-0 pb-6 md:pb-6 lg:pb-8 xl:pb-10 mb-0 lg:mb-0 xl:mb-2 link-4"><a href="business-excellence-awards.html#main"><span data-hover="NEXT CASE STUDY">Next Case Study</span></a></div>
         </div>
       </div>
       <div class="hidden md:block circle-cursor circle-cursor--inner"></div>
       <div class="hidden md:block circle-cursor circle-cursor--outer"></div>
 
-  </main>
-    <script src="assets/js/swup.min.js" type="text/javascript"></script>
-    <script src="assets/js/SwupJsPlugin.min.js" type="text/javascript"></script>
-    <script src="assets/js/SwupScriptsPlugin.min.js" type="text/javascript"></script>
-    <script src="assets/js/SwupScrollPlugin.min.js" type="text/javascript"></script>
-    <script src="assets/js/myswup.js" type="text/javascript"></script>
       <script>
         const setVh = () => {
         const vh = window.innerHeight * 0.01;
@@ -242,18 +233,17 @@
       </script>
     <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.min.js"></script>
-    <!--
+    <script src="assets/js/script.min.js"></script>
     <script>
       $('#toggle').click(function() {
       $(this).toggleClass('active');
       $('#overlay').toggleClass('open');
     });
     $('#overlay li a').on('click', function(){
-        // $("overlay").hide();
         $("#toggle").toggleClass("active");
         $("#overlay").toggleClass("open");
     });
-    </script> -->
+    </script>
     <script type="text/javascript">
       ScrollReveal({ distance: '1rem' }).reveal('.client-sr', { delay: 100, interval: 50, origin: 'bottom' });
       ScrollReveal({ distance: '1rem' }).reveal('.task-sr', { delay: 100, interval: 50, origin: 'bottom' });

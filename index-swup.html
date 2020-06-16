@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>DXP | Case Studies</title>
+        <title>DXP | Double Exposure Productions</title>
         <meta name="description" content="Double Exposure enhances visual storytelling with a unique combination of creativity, professionalism, teamwork, and our deep understanding of local Emirati culture, making us adept at meeting the demand and growth of international markets.">
         <meta name="keywords" content="UAE production, Dubai production, Abu Dhabi production, Sharjah production, Dubai filmmaker, storytelling, brand stories, content marketing, commercial, corporate film, feature film, animation, documentary">
         <meta name="author" content="Double Exposure Productions (DXP)">
@@ -109,6 +109,7 @@
           }
         </style>
       <link defer rel="stylesheet" href="assets/css/tailwind.min.css">
+      <link rel="stylesheet" href="assets/css/glightbox.min.css">
       <link rel="stylesheet" href="assets/css/main.css">
       <link rel="stylesheet" href="assets/css/swiper.min.css">
       <script src="assets/js/anime.min.js"></script>
@@ -141,6 +142,8 @@
         </div>
     </div>
     <script>
+      var elementExists = document.getElementsByClassName("dxp-animate");
+      if ( elementExists ) {
       anime({
         targets: '.dxp-animate path, .dxp-animate line',
         strokeDashoffset: [anime.setDashoffset, 0],
@@ -152,6 +155,7 @@
         loop: true,
         endDelay: 300
       });
+    }
     </script>
 
     <div class="page">
@@ -189,21 +193,21 @@
           </div>
         </div>
         <!-- Hamburger Menu -->
-          <div class="button_container z-20 hvr-grow" id="toggle">
+          <div class="button_container z-20 hvr-grow toggle" id="toggle">
             <span class="top"></span>
             <span class="middle"></span>
             <span class="bottom"></span>
           </div>
-          <div class="overlay z-10" id="overlay">
+          <div class="overlay z-10 overlay" id="overlay">
             <nav class="overlay-menu">
               <div class="h-screen w-screen flex items-center px-8">
                 <div class="flex flex-wrap container pl-0 md:pl-32 lg:pl-40 mx-auto">
                   <div class="w-full md:pt-0 lg:w-7/12 pt-1 nunito-bold text-8xl text-left tracking-tight leading-none">
                     <ul>
-                      <li class="hidden md:block mb-1 md:mb-3 lg:mb-8"><a href="http://type-c.studio/dxpwebsite/index.html" target="_top" class="hvr-forward">Home</a></li>
+                      <li class="hidden md:block mb-1 md:mb-3 lg:mb-8"><a href="index.html" target="_top" class="hvr-forward">Home</a></li>
                       <li class="transition-fade block mb-1 md:mb-3 lg:mb-8"><a href="http://type-c.studio/dxpwebsite/about.html" target="_self" class="hvr-forward">About</a></li>
                       <li class="transition-fade block"><a href="http://type-c.studio/dxpwebsite/portfolio.html" target="_self" class="hvr-forward">Portfolio</a></li>
-                      <li class="transition-fade block mt-1 md:mt-3 lg:mt-8"><a href="#" target="_self" class="hvr-forward">Case Studies</a></li>
+                      <li class="transition-fade block mt-1 md:mt-3 lg:mt-8"><a href="http://type-c.studio/dxpwebsite/case-studies.html" target="_self" class="hvr-forward">Case Studies</a></li>
                     </ul>
                   </div>
                   <div class="mob-address pt-6 lg:pt-0 self-center w-full lg:w-5/12 ml-0 lg:pl-16 text-sm md:text-base">
@@ -242,12 +246,26 @@
     <!-- Swiper Home -->
     <div class="swiper-container" id="home">
               <div class="swiper-wrapper">
+                <div class="swiper-slide" data-hash="welcome">
+                   <!-- <div class="video-responsive"><iframe class="video-responsive-item block md:hidden max-w-none" allow="autoplay; fullscreen" src="https://player.vimeo.com/video/424629069?background=1&playsinline=1&autoplay=1&loop=1&byline=0&title=0&muted=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div> -->
+                   <!-- <div class="video-responsive"><iframe class="video-responsive-item hidden md:block max-w-none" allow="autoplay; fullscreen" src="https://player.vimeo.com/video/424628977?background=1&quality=1080p&autoplay=1&loop=1&byline=0&title=0&muted=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div> -->
+                  <!-- Showing Mobile Version vs Desktop -->
+                  <video rel="preload" id="showreel" poster="assets/img/case-study/showreel-desktop.jpg" class="max-w-none" autoplay playsinline muted loop>
+                    <source id="showreel_mp4" src="assets/video/mobile/DXP_web_mobile_showreel_small_280520_30secs.mp4" type="video/mp4">
+                  </video>
+                  <!-- <video id="showreel" poster="assets/img/case-study/showreel-desktop.jpg" class="block md:hidden max-w-none" autoplay playsinline muted loop>
+                    <source id="showreel_mp4" src="assets/video/mobile/DXP_web_mobile_showreel_small_280520_30secs.mp4" type="video/mp4">
+                  </video>
+                  <video id="showreel" poster="assets/img/case-study/mobile/showreel-mobile.jpg" class="hidden md:block max-w-none" autoplay playsinline muted loop>
+                    <source id="showreel_mp4" src="assets/video/DXP_web_desktop_showreel_small_280520.mp4" type="video/mp4">
+                  </video> -->
+                </div>
                 <div class="swiper-slide" data-hash="abu-dhabi-plan">
                   <div class="h-screen w-screen flex flex-wrap items-center absolute overflow-hidden">
                     <div class="z-10 w-full container md:w-1/2 mx-auto">
                       <div class="nunito-bold block md:mr-auto pl-8 md:pl-1 text-xl text-white text-left tracking-widest leading-none" data-swiper-parallax="-25%" data-swiper-parallax-opacity="0" data-swiper-parallax-duration="750">Abu Dhabi Executive Council</div>
                       <div class="nunito-bold block w-full md:w-3/4 md:mr-auto pl-8 md:pl-0 text-7xl text-white pt-2 text-left tracking-tight leading-none" data-swiper-parallax="-50%" data-swiper-parallax-scale="1.25" data-swiper-parallax-duration="750">Abu Dhabi <br>Plan</div>
-                      <div id="case-study-link" class="transition-fade nunito-semibold md:mr-auto pl-8 md:pl-1 pt-4 text-xl text-white text-left tracking-normal leading-none" data-swiper-parallax="-70" data-swiper-parallax-opacity="0" data-swiper-parallax-duration="750"><a href="http://type-c.studio/dxpwebsite/abu-dhabi-plan.html" target="_self" class="link-2">View Case</a></div>
+                      <div class="nunito-semibold md:mr-auto pl-8 md:pl-1 pt-4 text-xl text-white text-left tracking-normal leading-none" data-swiper-parallax="-70" data-swiper-parallax-opacity="0" data-swiper-parallax-duration="750"><a onclick="loadinglogo()" href="http://type-c.studio/dxpwebsite/abu-dhabi-plan.html" target="_self" class="transition-fade link-2">View Case</a></div>
                     </div>
                   </div>
                   <!-- Showing Mobile Version vs Desktop -->
@@ -265,7 +283,7 @@
                     <div class="z-10 w-full container md:w-1/2 mx-auto">
                       <div class="nunito-bold block md:mr-auto pl-8 md:pl-1 text-xl text-white text-left tracking-widest leading-none" data-swiper-parallax="-25%" data-swiper-parallax-opacity="0" data-swiper-parallax-duration="750">Sharjah Investment &amp; Development Authority</div>
                       <div class="nunito-bold block w-3/4 md:mr-auto pl-8 md:pl-0 text-7xl text-white pt-2 text-left tracking-tight leading-none" data-swiper-parallax="-50%" data-swiper-parallax-scale="1.25" data-swiper-parallax-duration="750">Invest in <br>Sharjah</div>
-                      <div class="transition-fade nunito-semibold md:mr-auto pl-8 md:pl-1 pt-4 text-xl text-white text-left tracking-normal leading-none" data-swiper-parallax="-70%" data-swiper-parallax-opacity="0" data-swiper-parallax-duration="750"><a href="http://type-c.studio/dxpwebsite/invest-in-sharjah.html" target="_self" class="link-2">View Case</a></div>
+                      <div class="nunito-semibold md:mr-auto pl-8 md:pl-1 pt-4 text-xl text-white text-left tracking-normal leading-none" data-swiper-parallax="-70%" data-swiper-parallax-opacity="0" data-swiper-parallax-duration="750"><a onclick="loadinglogo()" href="http://type-c.studio/dxpwebsite/invest-in-sharjah.html" target="_self" class="transition-fade link-2">View Case</a></div>
                     </div>
                   </div>
                   <!-- Showing Mobile Version vs Desktop -->
@@ -283,7 +301,7 @@
                     <div class="w-full container md:w-1/2 mx-auto">
                       <div class="nunito-bold block md:mr-auto pl-8 md:pl-1 text-xl text-white text-left tracking-widest leading-none" data-swiper-parallax="-25%" data-swiper-parallax-opacity="0" data-swiper-parallax-duration="750">Ministry of Health &amp; Prevention UAE</div>
                       <div class="nunito-bold block w-full md:mr-auto pl-8 md:pl-0 text-7xl text-white pt-2 text-left tracking-tight leading-none" data-swiper-parallax="-50%" data-swiper-parallax-scale="1.25" data-swiper-parallax-duration="750">Time To Care</div>
-                      <div class="transition-fade nunito-semibold md:mr-auto pl-8 md:pl-1 pt-4 text-xl text-white text-left tracking-normal leading-none" data-swiper-parallax="-70%" data-swiper-parallax-opacity="0" data-swiper-parallax-duration="750"><a href="http://type-c.studio/dxpwebsite/time-to-care.html" target="_self" class="link-2">View Case</a></div>
+                      <div class="nunito-semibold md:mr-auto pl-8 md:pl-1 pt-4 text-xl text-white text-left tracking-normal leading-none" data-swiper-parallax="-70%" data-swiper-parallax-opacity="0" data-swiper-parallax-duration="750"><a onclick="loadinglogo()" href="http://type-c.studio/dxpwebsite/time-to-care.html" target="_self" class="transition-fade link-2">View Case</a></div>
                     </div>
                   </div>
                   <!-- Showing Mobile Version vs Desktop -->
@@ -301,7 +319,7 @@
                     <div class="z-10 w-full container md:w-1/2 mx-auto">
                       <div class="nunito-bold block md:mr-auto pl-8 md:pl-1 text-xl text-white text-left tracking-widest leading-none" data-swiper-parallax="-25%" data-swiper-parallax-opacity="0" data-swiper-parallax-duration="750">Dubai Economy</div>
                       <div class="nunito-bold block w-3/4 md:mr-auto pl-8 md:pl-0 text-7xl text-white pt-2 text-left tracking-tight leading-none" data-swiper-parallax="-50%" data-swiper-parallax-scale="1.25" data-swiper-parallax-duration="750">Business Excellence Awards</div>
-                      <div class="transition-fade nunito-semibold md:mr-auto pl-8 md:pl-1 pt-4 text-xl text-white text-left tracking-normal leading-none" data-swiper-parallax="-70%" data-swiper-parallax-opacity="0" data-swiper-parallax-duration="750"><a href="http://type-c.studio/dxpwebsit/business-excellence-awards.html" target="_self" class="link-2">View Case</a></div>
+                      <div class="nunito-semibold md:mr-auto pl-8 md:pl-1 pt-4 text-xl text-white text-left tracking-normal leading-none" data-swiper-parallax="-70%" data-swiper-parallax-opacity="0" data-swiper-parallax-duration="750"><a onclick="loadinglogo()" href="http://type-c.studio/dxpwebsite/business-excellence-awards.html" target="_self" class="transition-fade link-2">View Case</a></div>
                     </div>
                   </div>
                   <!-- Showing Mobile Version vs Desktop -->
@@ -319,7 +337,7 @@
                     <div class="z-10 w-full container md:w-1/2 mx-auto">
                       <div class="nunito-bold block md:mr-auto pl-8 md:pl-1 text-lg md:text-xl text-white text-left tracking-widest leading-none" data-swiper-parallax="-25%" data-swiper-parallax-opacity="0" data-swiper-parallax-duration="750">Dubai Civil Aviation Authority</div>
                       <div class="nunito-bold block w-full pl-8 md:pl-0 text-7xl-future text-white pt-2 text-left tracking-tight leading-none" data-swiper-parallax="-50%" data-swiper-parallax-scale="1.25" data-swiper-parallax-duration="750">Future Plans Visualization</div>
-                      <div class="transition-fade nunito-semibold md:mr-auto pl-8 md:pl-1 pt-4 text-xl text-white text-left tracking-normal leading-none" data-swiper-parallax="-70%" data-swiper-parallax-opacity="0" data-swiper-parallax-duration="750"><a href="http://type-c.studio/dxpwebsite/future-plans-visualization.html" target="_self" class="link-2">View Case</a></div>
+                      <div class="nunito-semibold md:mr-auto pl-8 md:pl-1 pt-4 text-xl text-white text-left tracking-normal leading-none" data-swiper-parallax="-70%" data-swiper-parallax-opacity="0" data-swiper-parallax-duration="750"><a onclick="loadinglogo()" href="http://type-c.studio/dxpwebsite/future-plans-visualization.html" target="_self" class="transition-fade link-2">View Case</a></div>
                     </div>
                   </div>
                   <img src="assets/img/case-study/future-plans-visualization-desktop.jpg" class="mr-auto h-screen w-screen">
@@ -340,9 +358,12 @@
   </div>
 
   </main>
+  <script src="assets/js/glightbox.min.js" type="text/javascript"></script>
+  <!-- <script src="https://unpkg.com/scrollreveal@4"></script> -->
   <script src="assets/js/swup.min.js" type="text/javascript"></script>
   <script src="assets/js/SwupJsPlugin.min.js" type="text/javascript"></script>
   <script src="assets/js/SwupScriptsPlugin.min.js" type="text/javascript"></script>
+  <script src="assets/js/SwupScrollPlugin.min.js" type="text/javascript"></script>
   <script src="assets/js/myswup.js" type="text/javascript"></script>
     <script>
         var myVar;
@@ -359,18 +380,25 @@
         }
 
         function showSwipe() {
-        anime({
-        targets: '.bg-white',
-        width: '100%', // -> from '28px' to '100%',
-        easing: 'easeInOutCirc',
-        direction: 'reverse',
-        loop: 1,
-        translateX: {
-        value: '100%',
-        duration: 1200
-        },
-      });
+            anime({
+              targets: '.bg-white',
+              width: '100%', // -> from '28px' to '100%',
+              easing: 'easeInOutCirc',
+              direction: 'reverse',
+              loop: 1,
+              translateX: {
+              value: '100%',
+              duration: 1200
+              },
+          });
         }
+    </script>
+    <script>
+      function loadinglogo() {
+        // alert();
+        document.getElementById("loader").style.display = "block";
+        document.getElementById("showbox").style.display = "block";
+      }
     </script>
           <script>
             /* JavaScript Media Queries */
@@ -382,14 +410,16 @@
             // media query change
             function WidthChange(mq) {
             if (mq.matches) {
+              if(document.getElementById("showreel_mp4") != null){
               document.getElementById("showreel_mp4").src = "assets/video/DXP_web_desktop_showreel_small_280520.mp4";
               document.getElementById("showreel").load();
+              }
             }
             }
           </script>
           <script>
-            const setVh = () => {
-            const vh = window.innerHeight * 0.01;
+            var setVh = () => {
+            var vh = window.innerHeight * 0.01;
             document.documentElement.style.setProperty('--vh', `${vh}px`);
           };
 
@@ -401,18 +431,18 @@
     <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
     <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js'></script> -->
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.min.js"></script>
-    <script defer src="assets/js/script.js"></script>
+    <!--
     <script>
-      $('#toggle').click(function() {
+      $('.toggle').click(function() {
       $(this).toggleClass('active');
-      $('#overlay').toggleClass('open');
+      $('.overlay').toggleClass('open');
     });
-    $('#overlay li a').on('click', function(){
+    $('.overlay li a').on('click', function(){
         // $("overlay").hide();
-        $("#toggle").toggleClass("active");
-        $("#overlay").toggleClass("open");
+        $(".toggle").toggleClass("active");
+        $(".overlay").toggleClass("open");
     });
-    </script>
+    </script> -->
     <!-- <script>
       const el = document.querySelector('#toggle');
       const handleToggle = () => el.classList.toggle('active');
@@ -425,7 +455,7 @@
       });
     </script> -->
     <script>
-    var swiper = new Swiper('.swiper-container', {
+    var swiper = new Swiper('#home', {
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -448,7 +478,7 @@
         el: '.swiper-pagination',
         clickable: true,
         renderBullet: function (index, className) {
-          return '<span class="' + className + '">' + ('0' +(1 +index)).slice(-2) + '</span>';
+          return '<span class="' + className + '">' + (1 + '0' + index).slice(-2) + '</span>';
         },
       },
     });
