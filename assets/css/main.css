@@ -538,6 +538,11 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     height: calc(var(--vh, 1vh) * 100);
   }
 
+  #case-studies .swiper-slide .items-center {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+  }
+
   #case-studies .swiper-slide img {
     filter: saturate(140%);
     -webkit-filter: saturate(140%);
