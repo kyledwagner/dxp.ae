@@ -15,13 +15,11 @@
 
         <!-- <link rel="stylesheet" href="assets/css/loader.css"> -->
         <link rel="stylesheet" href="assets/css/tailwind.min.css">
-        <link rel="stylesheet" href="assets/css/glightbox.min.css">
         <link rel="stylesheet" href="assets/css/main.css">
         <link rel="stylesheet" href="assets/css/glightbox.min.css">
         <link rel="stylesheet" href="assets/css/mediabox.min.css">
         <!-- <link rel="stylesheet" href="assets/css/swiper.min.css"> -->
         <link rel="stylesheet" href="assets/css/swiper.min.css">
-        
         <script src="assets/js/anime.min.js"></script>
 
     </head>
@@ -60,7 +58,6 @@
         </svg>
       </a>
     </div>
-    <!--
     <script>
       anime({
         targets: '.dxp-animate path, .dxp-animate line',
@@ -72,7 +69,7 @@
         loop: true,
         endDelay: 5000
       });
-    </script> -->
+    </script>
     <div class="z-20 nunito-bold hidden md:inline-block text-sm text-white tracking-wider fixed top-0 right-0 p-12 xl:pr-16 xl:pt-12 xl:mt-1">Double Exposure Productions<div class="ml-4 slider-scroll-down"><span class="bounce-line"></span></div></div>
     <div class="z-20 nunito-light fixed bottom-0 left-0 md:right-0 md:bottom-0 md:left-auto text-sm text-white pl-8 pb-10 md:pr-12 md:pl-12 md:pb-10 xl:pr-16 xl:pb-16 mb-0 xl:-mb-2">All rights reserved.</div>
     <div class="z-20 nunito-semibold hidden md:block fixed bottom-0 left-0 p-12 xl:p-16">
@@ -83,21 +80,21 @@
     </div>
 
           <!-- Hamburger Menu -->
-          <div class="button_container z-20 hvr-grow toggle" id="toggle">
+          <div class="button_container z-20 hvr-grow" id="toggle">
             <span class="top"></span>
             <span class="middle"></span>
             <span class="bottom"></span>
           </div>
-          <div class="overlay z-10 overlay" id="overlay">
+          <div class="overlay z-10" id="overlay">
             <nav class="overlay-menu">
               <div class="h-screen w-screen flex items-center px-8">
                 <div class="flex flex-wrap container pl-0 md:pl-32 lg:pl-40 mx-auto">
                   <div class="w-full md:pt-0 lg:w-7/12 pt-1 nunito-bold text-8xl text-left tracking-tight leading-none">
                     <ul>
-                      <li class="hidden md:block mb-1 md:mb-3 lg:mb-8"><a href="index.html" target="_top" class="hvr-forward">Home</a></li>
-                      <li class="transition-fade block mb-1 md:mb-3 lg:mb-8"><a href="http://type-c.studio/dxpwebsite/about.html" target="_self" class="hvr-forward">About</a></li>
-                      <li class="transition-fade block"><a href="http://type-c.studio/dxpwebsite/portfolio.html" target="_self" class="hvr-forward">Portfolio</a></li>
-                      <li class="transition-fade block mt-1 md:mt-3 lg:mt-8"><a href="http://type-c.studio/dxpwebsite/case-studies.html" target="_self" class="hvr-forward">Case Studies</a></li>
+                      <li class="hidden md:block mb-1 md:mb-3 lg:mb-8"><a href="index.html" target="_self" class="hvr-forward">Home</a></li>
+                      <li class="block mb-1 md:mb-3 lg:mb-8"><a href="about.html" target="_self" class="hvr-forward">About</a></li>
+                      <li class="block"><a href="portfolio.html" target="_self" class="hvr-forward">Portfolio</a></li>
+                      <li class="block mt-1 md:mt-3 lg:mt-8"><a href="case-studies.html" target="_self" class="hvr-forward">Case Studies</a></li>
                     </ul>
                   </div>
                   <div class="mob-address pt-6 lg:pt-0 self-center w-full lg:w-5/12 ml-0 lg:pl-16 text-sm md:text-base">
@@ -132,12 +129,10 @@
           </div>
       <!-- END Hamburger Menu -->
 
-      <main id="swup" class="transition-fade">
-
       <!-- Portfolio -->
-      <div class="h-screen w-screen bg-film" id="portfolio">
+      <div class="h-screen w-screen bg-film">
       <!-- Swiper Desktop -->
-      <div class="swiper-container" id="swiper-container-portfolio">
+      <div class="swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="flex flex-col portfolio-video px-4 md:px-0">
@@ -248,8 +243,8 @@
 
         <!-- Add Arrows -->
         <div class="hidden lg:block">
-          <div id="swiper-button-next-portfolio" class="swiper-button-next absolute p-16 -mr-4 xl:-mr-2 -mt-8"><img src="assets/icon/next.svg" class="max-w-none" width="50"></div>
-          <div id="swiper-button-prev-portfolio" class="swiper-button-prev absolute p-16 -ml-16 xl:-ml-12 -mt-8"><img src="assets/icon/prev.svg" class="max-w-none" width="50"></div>
+          <div class="swiper-button-next absolute p-16 -mr-4 xl:-mr-2 -mt-8"><img src="assets/icon/next.svg" class="max-w-none" width="50"></div>
+          <div class="swiper-button-prev absolute p-16 -ml-16 xl:-ml-12 -mt-8"><img src="assets/icon/prev.svg" class="max-w-none" width="50"></div>
         </div>
 
         </div>
@@ -258,30 +253,13 @@
       <div class="hidden md:block circle-cursor circle-cursor--inner"></div>
       <div class="hidden md:block circle-cursor circle-cursor--outer"></div>
 
-    <!-- <script>
-        var myVar;
-
-        function myFunction() {
-        myVar = setTimeout(showPage, 2000);
-        }
-
-        function showPage() {
-        document.getElementById("loader").style.display = "none";
-        document.getElementById("showbox").style.display = "none";
-        document.getElementById("main").style.display = "block";
-        document.getElementById("particles-js").style.display = "block";
-
-        }
-    </script> -->
-    <!-- <script src="assets/js/swiper.min.js"></script> -->
     <script src="assets/js/swup.min.js" type="text/javascript"></script>
     <script src="assets/js/SwupJsPlugin.min.js" type="text/javascript"></script>
     <script src="assets/js/SwupScriptsPlugin.min.js" type="text/javascript"></script>
-    <script src="assets/js/SwupScrollPlugin.min.js" type="text/javascript"></script>
-    
+    <script src="assets/js/myswup.js" type="text/javascript"></script>
     <script>
-      var setVh = () => {
-      var vh = window.innerHeight * 0.01;
+      const setVh = () => {
+      const vh = window.innerHeight * 0.01;
       document.documentElement.style.setProperty('--vh', `${vh}px`);
     };
 
@@ -292,80 +270,42 @@
     <script src='assets/js/jquery-3.5.1.slim.min.js'></script>
     <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js'></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.min.js"></script>
-   <!--
-   <script>
-    $('.toggle').click(function() {
+    <script src="assets/js/script.js"></script>
+    <script>
+      $('#toggle').click(function() {
       $(this).toggleClass('active');
-      $('.overlay').toggleClass('open');
+      $('#overlay').toggleClass('open');
     });
-    $('.overlay li a').on('click', function(){
-        // $("overlay").hide();
-        $(".toggle").toggleClass("active");
-        $(".overlay").toggleClass("open");
-    });
-    </script> -->
-    <!--
-        <script src='assets/js/glightbox.min.js'></script>
-        <script type="text/javascript">
-          var lightbox = GLightbox({
-            touchNavigation: true,
-            autoplayVideos: true,
-            closeOnOutsideClick: true,
-            svg: {},
-            plyr: {
-              css: 'assets/css/plyr.css', // Custom Colored Version
-            config: {
-                ratio: '16:9',
-                muted: false,
-                hideControls: true,
-                vimeo: {
-                    byline: false,
-                    portrait: false,
-                    title: false,
-                    speed: true,
-                    transparent: false
-                }
-            }
-        }
-          });
-        </script> -->
-        <!--
-        <script src="assets/js/mediabox.min.js"></script>
-        <script>
-          MediaBox('.mediabox');
-          
-        </script>
+    </script>
           <script>
             if (matchMedia) {
-              var mq = window.matchMedia("(max-width: 767px)");
+              const mq = window.matchMedia("(max-width: 767px)");
               mq.addListener(WidthChange);
               WidthChange(mq);
             }
             // media query change
             function WidthChange(mq) {
             if (mq.matches) {
-              lightbox.classList.replace("glightbox", "mediabox");
-              lightbox1.classList.replace("glightbox", "mediabox");
-              lightbox2.classList.replace("glightbox", "mediabox");
-              lightbox3.classList.replace("glightbox", "mediabox");
-              lightbox4.classList.replace("glightbox", "mediabox");
-              lightbox5.classList.replace("glightbox", "mediabox");
-              lightbox6.classList.replace("glightbox", "mediabox");
-              lightbox7.classList.replace("glightbox", "mediabox");
-              lightbox8.classList.replace("glightbox", "mediabox");
-              lightbox9.classList.replace("glightbox", "mediabox");
-              lightbox10.classList.replace("glightbox", "mediabox");
-              lightbox11.classList.replace("glightbox", "mediabox");
-              lightbox12.classList.replace("glightbox", "mediabox");
-              lightbox13.classList.replace("glightbox", "mediabox");
-              lightbox14.classList.replace("glightbox", "mediabox");
-              lightbox15.classList.replace("glightbox", "mediabox");
+              document.getElementById("lightbox").className = "mediabox";
+              document.getElementById("lightbox2").className = "mediabox";
+              document.getElementById("lightbox3").className = "mediabox";
+              document.getElementById("lightbox4").className = "mediabox";
+              document.getElementById("lightbox5").className = "mediabox";
+              document.getElementById("lightbox6").className = "mediabox";
+              document.getElementById("lightbox7").className = "mediabox";
+              document.getElementById("lightbox8").className = "mediabox";
+              document.getElementById("lightbox9").className = "mediabox";
+              document.getElementById("lightbox10").className = "mediabox";
+              document.getElementById("lightbox11").className = "mediabox";
+              document.getElementById("lightbox12").className = "mediabox";
+              document.getElementById("lightbox13").className = "mediabox";
+              document.getElementById("lightbox14").className = "mediabox";
+              document.getElementById("lightbox15").className = "mediabox";
             }
             }
-    </script> -->
+    </script>
     <script>
-    if($('#swiper-container-portfolio').length){
-      var swiper = new Swiper('#swiper-container-portfolio', {
+      var swiper = new Swiper('.swiper-container', {
         slidesPerView: '2.5',
         direction: getDirection(),
         spaceBetween: 31,
@@ -373,8 +313,8 @@
         centeredSlides: true,
         centerInsufficientSlides: true,
         navigation: {
-          nextEl: '#swiper-button-next-portfolio',
-          prevEl: '#swiper-button-prev-portfolio',
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
         },
         keyboard: {
         enabled: true,
@@ -401,7 +341,6 @@
         }
       }
     });
-  }
 
     function getDirection() {
       var windowWidth = window.innerWidth;
@@ -410,8 +349,33 @@
       return direction;
     }
     </script>
-    <script src="https://unpkg.com/scrollreveal@4"></script>
-    <script src="assets/js/glightbox.min.js" type="text/javascript"></script>
-    <script src="assets/js/myswup.js" type="text/javascript"></script>
+    <script src='assets/js/glightbox.min.js'></script>
+    <script type="text/javascript">
+      const lightbox = GLightbox({
+        touchNavigation: true,
+        autoplayVideos: true,
+        closeOnOutsideClick: true,
+        svg: {},
+        plyr: {
+          css: 'assets/css/plyr.css', // Custom Colored Version
+        config: {
+            ratio: '16:9',
+            muted: false,
+            hideControls: true,
+            vimeo: {
+                byline: false,
+                portrait: false,
+                title: false,
+                speed: true,
+                transparent: false
+            }
+        }
+    }
+      });
+    </script>
+    <script src="assets/js/mediabox.min.js"></script>
+    <script>
+      MediaBox('.mediabox');
+    </script>
     </body>
 </html>
