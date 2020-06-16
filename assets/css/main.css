@@ -1497,16 +1497,6 @@ span::before {
   }
 }
 
-.transition-fade {
-  transition: 0.25s;
-  transition-delay: 0.7s;
-  opacity: 1;
-}
-
-html.is-animating .transition-fade {
-  opacity: 0;
-}
-
 /* Scroll Down Effect on Hover */
 .link-4 a {
 	position: relative;
