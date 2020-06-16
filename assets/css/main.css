@@ -1501,10 +1501,12 @@ span::before {
 }
 
 /* Scroll Down Effect on Hover */
+
 .link-4 a {
 	position: relative;
 	display: inline-block;
-	color: #fff;
+  color: #fff;
+  /* padding-top: 0.15rem; */
 }
 
 .link-4 a:hover,
