@@ -480,6 +480,11 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     height: calc(var(--vh, 1vh) * 100) !important;
   }
 
+  #case-study .bg-film {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100) !important;
+  }
+
   /* SwiperJS */
   .swiper-container {
     overflow-x: hidden;
