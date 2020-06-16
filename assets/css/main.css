@@ -1,4 +1,8 @@
 /* Main CSS file for DXP.ae */
+*:focus {
+  outline: none;
+}
+
 html { /* body won't work for Chrome, Firefox ¯\_(ツ)_/¯ */
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
@@ -1498,6 +1502,9 @@ span::before {
 }
 
 /* Scroll Down Effect on Hover */
+.link-4 {
+    margin-bottom: 0.10rem !important;
+}
 .link-4 a {
 	position: relative;
 	display: inline-block;
@@ -1521,7 +1528,6 @@ span::before {
 	-webkit-transition: -webkit-transform 0.3s;
 	-moz-transition: -moz-transform 0.3s;
   transition: transform 0.3s;
-  padding-bottom: 0.15rem;
 }
 
 .link-4 a span::before {
