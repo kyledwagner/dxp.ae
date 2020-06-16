@@ -525,6 +525,11 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     height: calc(var(--vh, 1vh) * 100);
   }
 
+  #sky-dome .swiper-container .items-center {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+  }
+
   #home .swiper-slide video {
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
