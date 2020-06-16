@@ -346,7 +346,7 @@ document.addEventListener("DOMContentLoaded", () => {
       plugins: [
         new SwupJsPlugin(options),
         new SwupScriptsPlugin(),
-        //new SwupScrollPlugin()
+        new SwupScrollPlugin()
       ],
     });
 
