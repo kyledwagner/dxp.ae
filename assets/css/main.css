@@ -742,12 +742,12 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     transition: opacity 0.75s ease;
   }
 
-  #portfolio .gnext.gbtn {
+  .gnext.gbtn {
     display: none !important;
     pointer-events: none;
   }
 
-  #portfolio .gprev.gbtn {
+  .gprev.gbtn {
     display: none !important;
     pointer-events: none;
   }
