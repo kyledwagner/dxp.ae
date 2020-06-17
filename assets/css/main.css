@@ -1555,9 +1555,11 @@ span::before {
 @media only screen and (max-width: 767px) {
   .link-4 {
     max-height: auto !important;
+    padding: 0.5rem !important;
   }
   .link-4 a {
     max-height: auto !important;
+    padding: 0.5rem !important;
   }
 }
 
