@@ -3,9 +3,9 @@
   outline: none;
 }
 
-/* * {
+* {
   outline: 1px solid purple;
-} */
+}
 
 .all-rights-reserved {
   padding-bottom: 3.75rem;
@@ -17,6 +17,15 @@
   }
 }
 
+.next-case-study {
+  margin-bottom: 0.55rem;
+}
+
+@media only screen and (max-width: 640px) {
+  .next-case-study {
+    margin-bottom: 1.25rem;
+  }
+}
 
 html { /* body won't work for Chrome, Firefox ¯\_(ツ)_/¯ */
   scroll-snap-type: y mandatory;
