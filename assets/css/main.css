@@ -8,7 +8,7 @@
 } */
 
 .all-rights-reserved {
-  padding-bottom: 3.75rem;
+  padding-bottom: 3.72rem;
 }
 
 @media only screen and (max-width: 1280px) {
@@ -1550,6 +1550,15 @@ span::before {
 .link-4 a:hover,
 .link-4 a:focus {
 	outline: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .link-4 {
+    max-height: auto !important;
+  }
+  .link-4 a {
+    max-height: auto !important;
+  }
 }
 
 .link-4 {
