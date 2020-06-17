@@ -3,6 +3,21 @@
   outline: none;
 }
 
+* {
+  outline: 1px solid purple;
+}
+
+.all-rights-reserved {
+  padding-bottom: 3.75rem;
+}
+
+@media only screen and (max-width: 1280px) {
+  .all-rights-reserved {
+    padding-bottom: 2.7rem;
+  }
+}
+
+
 html { /* body won't work for Chrome, Firefox ¯\_(ツ)_/¯ */
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
@@ -1534,8 +1549,13 @@ span::before {
 	outline: none;
 }
 
+.link-4 {
+  max-height:0.8rem !important;
+}
+
 .link-4 a {
-	overflow: hidden;
+  overflow: hidden;
+  max-height:0.7rem !important;
 }
 
 .link-4 a span {
@@ -1552,7 +1572,7 @@ span::before {
 	content: attr(data-hover);
 	-webkit-transform: translate3d(0,0,0);
 	-moz-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
 }
 
 .link-4 a:hover span,
