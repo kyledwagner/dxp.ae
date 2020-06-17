@@ -18,13 +18,7 @@
 }
 
 .next-case-study {
-  margin-bottom: 0.55rem;
-}
-
-@media only screen and (max-width: 640px) {
-  .next-case-study {
-    margin-bottom: 1.25rem;
-  }
+  margin-bottom: 0.65rem !important;
 }
 
 html { /* body won't work for Chrome, Firefox ¯\_(ツ)_/¯ */
