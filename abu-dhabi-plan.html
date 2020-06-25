@@ -19,11 +19,6 @@
         <link rel="stylesheet" href="assets/css/mediabox.min.css">
         <script src="https://unpkg.com/scrollreveal@4"></script>
         <script rel="stylesheet" src="assets/js/anime.min.js"></script>
-        <script type="text/javascript">
-window.onbeforeunload = function () {
-  window.scrollTo(0, 0);
-}
-        </script>
     </head>
     <body>
     <div class="z-50 absolute left-0 bg-white h-screen"></div>
@@ -251,6 +246,11 @@ window.onbeforeunload = function () {
         $("#overlay").toggleClass("open");
     });
     </script>
+            <script type="text/javascript">
+              $(window).on('beforeunload', function(){
+                $(window).scrollTop(0);
+              });
+                      </script>
     <script type="text/javascript">
             if (matchMedia) {
               const mq = window.matchMedia("(max-width: 767px)");
