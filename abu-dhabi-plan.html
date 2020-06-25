@@ -20,7 +20,9 @@
         <script src="https://unpkg.com/scrollreveal@4"></script>
         <script rel="stylesheet" src="assets/js/anime.min.js"></script>
         <script type="text/javascript">
-          document.body.scrollTop = 0; // For Safari
+          window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
         </script>
     </head>
     <body>
