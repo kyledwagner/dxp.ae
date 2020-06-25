@@ -226,9 +226,16 @@
 
       <script>
         function myFunction() {
-          setTimeout(() => {
-    window.scrollTo(0, 0);
-}, 0);
+          setTimeout(function () {
+        window.scroll({
+                        top: 0,
+                        left: 0,
+                        behavior: 'smooth'
+                    });
+
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+
+}, 15);
       }
       </script>
       <script type="text/javascript">
