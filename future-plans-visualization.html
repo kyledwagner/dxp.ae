@@ -215,7 +215,7 @@
 
       </div>
       <div class="relative">
-        <div class="next-case-study nunito-semibold block md:hidden lg:block w-screen h-auto absolute leading-none uppercase text-left md:text-center tracking-widest bottom-0 text-sm pl-8 lg:pl-0 pb-8 lg:pb-12 xl:pb-16 link-4"><a onClick="window.scrollTo(0,0)" id="next-case-study-link" href="abu-dhabi-plan.html#main"><span data-hover="NEXT CASE STUDY">Next Case Study</span></a></div>
+        <div class="next-case-study nunito-semibold block md:hidden lg:block w-screen h-auto absolute leading-none uppercase text-left md:text-center tracking-widest bottom-0 text-sm pl-8 lg:pl-0 pb-8 lg:pb-12 xl:pb-16 link-4"><a onClick="window.scrollTo(0,0)" href="abu-dhabi-plan.html#main"><span data-hover="NEXT CASE STUDY">Next Case Study</span></a></div>
       </div>
       <div class="hidden md:block circle-cursor circle-cursor--inner"></div>
       <div class="hidden md:block circle-cursor circle-cursor--outer"></div>
@@ -270,15 +270,6 @@
     $('#overlay li a').on('click', function(){
         $("#toggle").toggleClass("active");
         $("#overlay").toggleClass("open");
-    });
-    </script>
-    <script>
-    $(document).ready(function(){
-        $("#next-case-study-link").click(function(){
-            $('html, body').animate({
-                scrollTop: $("#top").offset().top,
-            }, 400);
-        });
     });
     </script>
     <script src='assets/js/glightbox.min.js'></script>
