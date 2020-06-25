@@ -245,6 +245,9 @@
         $("#toggle").toggleClass("active");
         $("#overlay").toggleClass("open");
     });
+    $(window).on('beforeunload', function() {
+    $(window).scrollTop(0);
+    });
     </script>
     <script type="text/javascript">
             if (matchMedia) {
