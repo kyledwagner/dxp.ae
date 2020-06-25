@@ -20,10 +20,10 @@
         <script src="https://unpkg.com/scrollreveal@4"></script>
         <script rel="stylesheet" src="assets/js/anime.min.js"></script>
         <script type="text/javascript">
-          window.onbeforeunload = function () {
-  window.scrollTo(0, 0);
-}
-document.querySelector('html').style.scrollBehavior = '';
+        window.onbeforeunload = function () {
+            if(window.scrollTo) window.scrollTo(0,0);
+        };
+          if(history && history.scrollRestoration) history.scrollRestoration = "manual";
         </script>
     </head>
     <body>
