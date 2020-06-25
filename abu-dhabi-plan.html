@@ -247,13 +247,15 @@
     });
     </script>
     <script>
-    //Reset scroll top
-
-    history.scrollRestoration = "manual"
-
-    $(window).on('beforeunload', function(){
-          $(window).scrollTop(0);
-    });
+      $(document).ready(function() {
+var url = window.location.href;
+console.log(url);
+if( url.indexOf('#') < 0 ) {
+    window.location.replace(url + "#");
+} else {
+    window.location.replace(url);
+}
+});
     </script>
     <script type="text/javascript">
             if (matchMedia) {
