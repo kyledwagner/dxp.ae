@@ -759,6 +759,7 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
 @media (min-width: 769px){
 .gslide-image img {
   max-width: 75% !important;
+  pointer-events: none !important;
   }
 }
 
