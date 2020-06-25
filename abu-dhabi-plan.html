@@ -251,6 +251,9 @@
         $("#toggle").toggleClass("active");
         $("#overlay").toggleClass("open");
     });
+    $('html, body').animate({
+    scrollTop: $("#top").offset().top
+    }, 400);
     </script>
     <script type="text/javascript">
     history.scrollRestoration = "manual"
