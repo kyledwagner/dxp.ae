@@ -20,7 +20,7 @@
         <script src="https://unpkg.com/scrollreveal@4"></script>
         <script rel="stylesheet" src="assets/js/anime.min.js"></script>
     </head>
-    <body>
+    <body onload="myFunction()">
     <div class="z-50 absolute left-0 bg-white h-screen"></div>
 
     <div class="page" id="case-study">
@@ -224,6 +224,11 @@
       <div class="hidden md:block circle-cursor circle-cursor--inner"></div>
       <div class="hidden md:block circle-cursor circle-cursor--outer"></div>
 
+      <script>
+        function myFunction() {
+          window.scrollTo(0, 0);
+        }
+      </script>
       <script type="text/javascript">
         const setVh = () => {
         const vh = window.innerHeight * 0.01;
