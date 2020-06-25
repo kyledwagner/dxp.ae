@@ -756,6 +756,12 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
   }
 }
 
+@media (min-width: 769px){
+.gslide-image img {
+  max-width: 75% !important;
+  }
+}
+
 @media only screen and (min-width: 767px) {
   #sky-dome #glightbox-slider {
     width: 75vw;
@@ -784,12 +790,12 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     transition: opacity 0.75s ease;
   }
 
-  .gnext.gbtn {
+  #portfolio .gnext.gbtn {
     display: none !important;
     pointer-events: none;
   }
 
-  .gprev.gbtn {
+  #portfolio .gprev.gbtn {
     display: none !important;
     pointer-events: none;
   }
