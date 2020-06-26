@@ -24,7 +24,7 @@
 html { /* body won't work for Chrome, Firefox ¯\_(ツ)_/¯ */
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
-  backgrond-color: black !important;
+  background-color: black !important;
 }
 
 /* Fixing Scrollreveal issue */
