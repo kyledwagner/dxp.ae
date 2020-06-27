@@ -3,9 +3,9 @@
   outline: none;
 }
 
-/* * {
+* {
   outline: 1px solid purple;
-} */
+}
 
 .all-rights-reserved {
   padding-bottom: 3.72rem;
@@ -610,7 +610,7 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     }
   }
   .swiper-pagination {
-    top: 49%;
+    top: 47.5%;
     transform: translateY(-50%);
     padding-right: 3.2rem;
   }
@@ -682,20 +682,34 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
   }
 
   #case-studies .case-study-nav {
+    z-index: 1;
     position: absolute;
-    top: 54% !important;
-    right: 7.25rem !important;
+    letter-spacing: 0.25em;
+    top: 32.75% !important;
+    right: -2.27rem !important;
+  }
+  @media only screen and (max-width: 1280px) {
+    #case-studies .case-study-nav {
+      right: -3.27rem !important;
+    }
   }
 
   #home .case-study-nav {
+    z-index: 1;
     position: absolute;
-    top: 54% !important;
-    right: 7.25rem !important;
+    letter-spacing: 0.25em;
+    top: 32.75% !important;
+    right: -2.27rem !important;
+  }
+  @media only screen and (max-width: 1280px) {
+    #home .case-study-nav {
+      right: -3.27rem !important;
+    }
   }
 
   #home .swiper-button-next {
     position: absolute;
-    top: 44.25% !important;
+    top: 42.7% !important;
     right: -0.35rem !important;
   }
   @media only screen and (max-width: 1280px) {
@@ -705,7 +719,7 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
   }
   #home .swiper-button-prev {
     position: absolute;
-    top: 44.25% !important;
+    top: 42.7% !important;
     right: 10rem !important;
   }
   @media only screen and (max-width: 1280px) {
@@ -731,7 +745,7 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
 
   #case-studies .swiper-button-next {
     position: absolute;
-    top: 44.25% !important;
+    top: 42.25% !important;
     right: -0.35rem !important;
   }
   @media only screen and (max-width: 1280px) {
@@ -741,7 +755,7 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
   }
   #case-studies .swiper-button-prev {
     position: absolute;
-    top: 44.25% !important;
+    top: 42.25% !important;
     right: 10rem !important;
   }
   @media only screen and (max-width: 1280px) {
@@ -1687,8 +1701,8 @@ span::before {
   transform: translate3d(0,0,0);
 }
 
-.link-4 a:hover span,
-.link-4 a:focus span {
+.link-4:hover span,
+.link-4:focus span {
 	-webkit-transform: translateY(-100%);
 	-moz-transform: translateY(-100%);
 	transform: translateY(-100%);
