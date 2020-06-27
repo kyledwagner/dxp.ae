@@ -3,6 +3,10 @@
   outline: none;
 }
 
+/* * {
+  outline: 1px solid purple;
+} */
+
 .all-rights-reserved {
   padding-bottom: 3.72rem;
 }
@@ -600,9 +604,15 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     pointer-events: none !important;
   }
 
+  @media only screen and (max-width: 1280px) {
+    .swiper-pagination {
+      padding-right: 2.19rem !important;
+    }
+  }
   .swiper-pagination {
     top: 49%;
     transform: translateY(-50%);
+    padding-right: 3.2rem;
   }
 
   .swiper-pagination-bullet {
@@ -623,12 +633,14 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     transition-duration: 0.3s;
     -webkit-transition-property: transform;
     transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
   }
 
   .swiper-pagination-bullet:hover, .swiper-pagination-bullet:focus, .swiper-pagination-bullet:active {
     opacity: 1;
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
   }
 
   .swiper-pagination-bullet-active {
@@ -669,26 +681,73 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     transition: opacity 0.75s ease;
   }
 
+  #case-studies .case-study-nav {
+    position: absolute;
+    top: 54% !important;
+    right: 7.25rem !important;
+  }
+
+  #home .case-study-nav {
+    position: absolute;
+    top: 54% !important;
+    right: 7.25rem !important;
+  }
+
   #home .swiper-button-next {
     position: absolute;
-    top: 47% !important;
-    right: 0rem !important;
+    top: 44.25% !important;
+    right: -0.35rem !important;
+  }
+  @media only screen and (max-width: 1280px) {
+    #home .swiper-button-next {
+      right: -1.37rem !important;
+    }
   }
   #home .swiper-button-prev {
     position: absolute;
-    top: 47% !important;
-    right: 10.3rem !important;
+    top: 44.25% !important;
+    right: 10rem !important;
+  }
+  @media only screen and (max-width: 1280px) {
+    #home .swiper-button-prev {
+      right: 8.9rem !important;
+    }
+  }
+
+  #home .swiper-pagination-bullet {
+    padding-bottom: 2rem !important;
+    padding-right: 2.18rem !important;
+    padding-left: 0.84rem !important;
+    padding-top: 0.25rem !important;
+    margin-left: 0rem !important;
+  }
+  #case-studies .swiper-pagination-bullet {
+    padding-bottom: 2rem !important;
+    padding-right: 2.18rem !important;
+    padding-left: 0.84rem !important;
+    padding-top: 0.25rem !important;
+    margin-left: 0rem !important;
   }
 
   #case-studies .swiper-button-next {
     position: absolute;
-    top: 47% !important;
-    right: 0rem !important;
+    top: 44.25% !important;
+    right: -0.35rem !important;
+  }
+  @media only screen and (max-width: 1280px) {
+    #case-studies .swiper-button-next {
+      right: -1.37rem !important;
+    }
   }
   #case-studies .swiper-button-prev {
     position: absolute;
-    top: 47% !important;
-    right: 10.3rem !important;
+    top: 44.25% !important;
+    right: 10rem !important;
+  }
+  @media only screen and (max-width: 1280px) {
+    #case-studies .swiper-button-prev {
+      right: 8.9rem !important;
+    }
   }
 
   #gallery-arrows .swiper-button-next {
@@ -1010,7 +1069,26 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
   -webkit-transform: translateY(-8px);
   transform: translateY(-8px);
 }
+/* Sink */
+.hvr-sink {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sink:hover, .hvr-sink:focus, .hvr-sink:active {
+  -webkit-transform: translateY(8px);
+  transform: translateY(8px);
+}
 
+/* Forward */
 .hvr-forward {
   display: inline-block;
   vertical-align: middle;
@@ -1025,6 +1103,23 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
 .hvr-forward:hover, .hvr-forward:focus, .hvr-forward:active {
   -webkit-transform: translateX(8px);
   transform: translateX(8px);
+}
+
+/* Backward */
+.hvr-backward {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-backward:hover, .hvr-backward:focus, .hvr-backward:active {
+  -webkit-transform: translateX(-8px);
+  transform: translateX(-8px);
 }
 
 @-webkit-keyframes slide-in-blurred-right {
