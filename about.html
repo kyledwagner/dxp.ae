@@ -79,7 +79,7 @@
                   <div class="w-full md:pt-0 lg:w-7/12 pt-1 nunito-bold text-8xl text-left tracking-tight leading-none">
                     <ul>
                       <li class="transition-fade hidden md:block mb-1 md:mb-3 lg:mb-8"><a onClick="window.scrollTo(0,0)" href="index.html" target="_top" class="hvr-forward">Home</a></li>
-                      <li class="transition-fade block mb-1 md:mb-3 lg:mb-8"><a onClick="window.scrollTo(0,0)" href="#" target="_self" class="hvr-forward">About</a></li>
+                      <li class="nav-close transition-fade block mb-1 md:mb-3 lg:mb-8"><a onClick="window.scrollTo(0,0)" href="#" target="_self" class="hvr-forward">About</a></li>
                       <li class="transition-fade block"><a onClick="window.scrollTo(0,0)" href="portfolio.html" target="_self" class="hvr-forward">Portfolio</a></li>
                       <li class="transition-fade block mt-1 md:mt-3 lg:mt-8"><a onClick="window.scrollTo(0,0)" href="case-studies.html" target="_self" class="hvr-forward">Case Studies</a></li>
                     </ul>
@@ -444,8 +444,7 @@
       $(this).toggleClass('active');
       $('#overlay').toggleClass('open');
     });
-    $('#overlay li a').on('click', function(){
-        // $("overlay").hide();
+    $('.nav-close').on('click', function(){
         $("#toggle").toggleClass("active");
         $("#overlay").toggleClass("open");
     });

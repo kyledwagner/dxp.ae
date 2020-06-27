@@ -199,7 +199,7 @@
                 <div class="flex flex-wrap container pl-0 md:pl-32 lg:pl-40 mx-auto">
                   <div class="w-full md:pt-0 lg:w-7/12 pt-1 nunito-bold text-8xl text-left tracking-tight leading-none">
                     <ul>
-                      <li class="hidden md:block mb-1 md:mb-3 lg:mb-8"><a href="#" target="_top" class="hvr-forward">Home</a></li>
+                      <li class="nav-close hidden md:block mb-1 md:mb-3 lg:mb-8"><a href="#" target="_top" class="hvr-forward">Home</a></li>
                       <li class="block mb-1 md:mb-3 lg:mb-8"><a href="about.html" target="_self" class="hvr-forward">About</a></li>
                       <li class="block"><a href="portfolio.html" target="_self" class="hvr-forward">Portfolio</a></li>
                       <li class="block mt-1 md:mt-3 lg:mt-8"><a href="case-studies.html" target="_self" class="hvr-forward">Case Studies</a></li>
@@ -384,7 +384,7 @@
       $(this).toggleClass('active');
       $('#overlay').toggleClass('open');
     });
-    $('#overlay li a').on('click', function(){
+    $('.nav-close').on('click', function(){
         $("#toggle").toggleClass("active");
         $("#overlay").toggleClass("open");
     });
