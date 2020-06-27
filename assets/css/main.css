@@ -772,12 +772,14 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
 
   #gallery-arrows .swiper-button-next {
     position: absolute;
-    top: 43% !important;
+    top: 47.5% !important;
+    transform: translateY(-50%);
     right: 3rem !important;
   }
   #gallery-arrows .swiper-button-prev {
     position: absolute;
-    top: 43% !important;
+    top: 47.5% !important;
+    transform: translateY(-50%);
     left: 3rem !important;
   }
 
@@ -786,6 +788,10 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
   }
 
   .gclose.gbtn {
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
     right: 3rem !important;
     top: 3.9rem !important;
   }
@@ -795,15 +801,30 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
       top: 2.7rem !important;
     }
   }
+  .gclose.gbtn:hover {
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+    cursor: none;
+  }
 
   .gnext.gbtn {
     top: 46% !important;
     right: 4rem !important;
+    width: 3rem !important;
+    cursor: none;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
   }
   @media only screen and (max-width: 1280px) {
     .gnext.gbtn {
       right: 3rem !important;
     }
+  }
+  .gnext.gbtn:hover {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px);
   }
   @media only screen and (max-width: 767px) {
     .gnext.gbtn {
@@ -813,16 +834,30 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
   .gprev.gbtn {
     top: 46% !important;
     left: 4rem !important;
+    width: 3rem !important;
+    cursor: none;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
   }
   @media only screen and (max-width: 1280px) {
     .gprev.gbtn {
       left: 3rem !important;
     }
   }
+  .gnext.gbtn:hover {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px);
+  }
   @media only screen and (max-width: 767px) {
     .gprev.gbtn {
       display:none !important;
     }
+  }
+  .gprev.gbtn:hover {
+    -webkit-transform: translateX(-8px);
+    transform: translateX(-8px);
   }
 
 @media only screen and (min-width: 767px) {
