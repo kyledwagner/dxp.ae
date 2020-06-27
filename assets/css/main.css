@@ -610,7 +610,7 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     }
   }
   .swiper-pagination {
-    top: 47.5% !important;
+    top: 47.6% !important;
     transform: translateY(-50%);
     padding-right: 3.2rem;
   }
@@ -685,7 +685,7 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     z-index: 1;
     position: absolute;
     letter-spacing: 0.25em;
-    top: 49.5% !important;
+    top: 49.25% !important;
     transform: translateY(-50%);
     right: -2.27rem !important;
   }
@@ -699,7 +699,7 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     z-index: 1;
     position: absolute;
     letter-spacing: 0.25em;
-    top: 49.5% !important;
+    top: 49.25% !important;
     transform: translateY(-50%);
     right: -2.27rem !important;
   }
@@ -711,7 +711,7 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
 
   #home .swiper-button-next {
     position: absolute;
-    top: 45.25% !important;
+    top: 45.45% !important;
     transform: translateY(-50%);
     right: -0.35rem !important;
   }
@@ -722,7 +722,7 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
   }
   #home .swiper-button-prev {
     position: absolute;
-    top: 45.25% !important;
+    top: 45.45% !important;
     transform: translateY(-50%);
     right: 10rem !important;
   }
@@ -749,7 +749,8 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
 
   #case-studies .swiper-button-next {
     position: absolute;
-    top: 42.25% !important;
+    top: 45.45% !important;
+    transform: translateY(-50%);
     right: -0.35rem !important;
   }
   @media only screen and (max-width: 1280px) {
@@ -759,7 +760,8 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
   }
   #case-studies .swiper-button-prev {
     position: absolute;
-    top: 42.25% !important;
+    top: 45.45% !important;
+    transform: translateY(-50%);
     right: 10rem !important;
   }
   @media only screen and (max-width: 1280px) {
