@@ -3,9 +3,9 @@
   outline: none;
 }
 
-* {
+/* * {
   outline: 1px solid purple;
-}
+} */
 
 .all-rights-reserved {
   padding-bottom: 3.72rem;
@@ -610,7 +610,7 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     }
   }
   .swiper-pagination {
-    top: 47.5%;
+    top: 47.5% !important;
     transform: translateY(-50%);
     padding-right: 3.2rem;
   }
@@ -685,7 +685,8 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     z-index: 1;
     position: absolute;
     letter-spacing: 0.25em;
-    top: 32.75% !important;
+    top: 49.5% !important;
+    transform: translateY(-50%);
     right: -2.27rem !important;
   }
   @media only screen and (max-width: 1280px) {
@@ -698,7 +699,8 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     z-index: 1;
     position: absolute;
     letter-spacing: 0.25em;
-    top: 32.75% !important;
+    top: 49.5% !important;
+    transform: translateY(-50%);
     right: -2.27rem !important;
   }
   @media only screen and (max-width: 1280px) {
@@ -709,7 +711,8 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
 
   #home .swiper-button-next {
     position: absolute;
-    top: 42.7% !important;
+    top: 45.25% !important;
+    transform: translateY(-50%);
     right: -0.35rem !important;
   }
   @media only screen and (max-width: 1280px) {
@@ -719,7 +722,8 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
   }
   #home .swiper-button-prev {
     position: absolute;
-    top: 42.7% !important;
+    top: 45.25% !important;
+    transform: translateY(-50%);
     right: 10rem !important;
   }
   @media only screen and (max-width: 1280px) {
@@ -1703,6 +1707,53 @@ span::before {
 
 .link-4:hover span,
 .link-4:focus span {
+	-webkit-transform: translateY(-100%);
+	-moz-transform: translateY(-100%);
+	transform: translateY(-100%);
+}
+
+/* Hover Home Page Case Studies */
+
+.link-5 div {
+	position: relative;
+	display: inline-block;
+  color: #fff;
+  /* padding-top: 0.15rem; */
+}
+
+.link-5 div:hover,
+.link-5 div:focus {
+	outline: none;
+}
+
+.link-5 {
+  max-height:0.8rem !important;
+}
+
+.link-5 div {
+  overflow: hidden;
+  max-height:0.7rem !important;
+}
+
+.link-5 div span {
+	position: relative;
+	display: inline-block;
+	-webkit-transition: -webkit-transform 0.3s;
+	-moz-transition: -moz-transform 0.3s;
+  transition: transform 0.3s;
+}
+
+.link-5 div span::before {
+	position: absolute;
+	top: 100%;
+	content: attr(data-hover);
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.link-5:hover span,
+.link-5:focus span {
 	-webkit-transform: translateY(-100%);
 	-moz-transform: translateY(-100%);
 	transform: translateY(-100%);
