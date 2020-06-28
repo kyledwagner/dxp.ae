@@ -25,6 +25,7 @@
 
     <div class="page" id="case-study">
     <div class="z-50 absolute left-0 bg-white h-screen"></div>
+    <div class="z-40 absolute right-0 bg-film h-screen"></div>
 
     <div id="main">
 
@@ -80,10 +81,10 @@
                 <div class="flex flex-wrap container pl-0 md:pl-32 lg:pl-40 mx-auto">
                   <div class="w-full md:pt-0 lg:w-7/12 pt-1 nunito-bold text-8xl text-left tracking-tight leading-none">
                     <ul>
-                      <li class="hidden md:block mb-1 md:mb-3 lg:mb-8"><a onClick="window.scrollTo(0,0)" href="index.html" target="_top" class="hvr-forward">Home</a></li>
-                      <li class="block mb-1 md:mb-3 lg:mb-8"><a onClick="window.scrollTo(0,0)" href="about.html" target="_self" class="hvr-forward">About</a></li>
-                      <li class="block"><a onClick="window.scrollTo(0,0)" href="portfolio.html" target="_self" class="hvr-forward">Portfolio</a></li>
-                      <li class="block mt-1 md:mt-3 lg:mt-8"><a onClick="window.scrollTo(0,0)" href="case-studies.html" target="_self" class="hvr-forward">Case Studies</a></li>
+                      <li class="hidden md:block mb-1 md:mb-3 lg:mb-8"><a onclick="nextPage(), window.scrollTo(0,0)" href="index.html" target="_top" class="next-page hvr-forward">Home</a></li>
+                      <li class="block mb-1 md:mb-3 lg:mb-8"><a onclick="nextPage(), window.scrollTo(0,0)" href="about.html" target="_self" class="next-page hvr-forward">About</a></li>
+                      <li class="block"><a onclick="nextPage(), window.scrollTo(0,0)" href="portfolio.html" target="_self" class="next-page hvr-forward">Portfolio</a></li>
+                      <li class="block mt-1 md:mt-3 lg:mt-8"><a onclick="nextPage(), window.scrollTo(0,0)" href="case-studies.html" target="_self" class="next-page hvr-forward">Case Studies</a></li>
                     </ul>
                   </div>
                   <div class="mob-address pt-6 lg:pt-0 self-center w-full lg:w-5/12 ml-0 lg:pl-16 text-sm md:text-base">
@@ -209,8 +210,8 @@
         </div>
         <div id="arrows-arrows" class="relative">
           <div class="arrows-arrows-block z-10 absolute hidden lg:block bottom-0 mx-auto w-screen h-auto text-center">
-            <a onClick="window.scrollTo(0,0)" href="time-to-care.html" class="mr-24"><div class="hvr-backward pl-5 py-5"><img src="assets/icon/prev.svg" class="max-w-none js-attract-hover" width="50"></div></a>
-            <a onClick="window.scrollTo(0,0)" href="future-plans-visualization.html" class="ml-20"><div class="hvr-forward pr-5 py-5"><img src="assets/icon/next.svg" class="max-w-none js-attract-hover" width="50"></div></a>
+            <a onclick="nextPage(), window.scrollTo(0,0)" href="time-to-care.html" class="next-page mr-24"><div class="hvr-backward pl-5 py-5"><img src="assets/icon/prev.svg" class="max-w-none js-attract-hover" width="50"></div></a>
+            <a onclick="nextPage(), window.scrollTo(0,0)" href="future-plans-visualization.html" class="next-page ml-20"><div class="hvr-forward pr-5 py-5"><img src="assets/icon/next.svg" class="max-w-none js-attract-hover" width="50"></div></a>
           </div>
           <div class="next-case-study nunito-semibold block md:hidden lg:block w-screen h-auto absolute leading-none uppercase text-left md:text-center tracking-widest bottom-0 text-sm pl-8 lg:pl-0">
             <div class="link-6"><div><span data-hover="NEXT CASE STUDY">Next Case Study</span></div></div>
@@ -229,6 +230,28 @@
     window.addEventListener('load', setVh);
     window.addEventListener('resize', setVh);
     </script>
+    <script>
+      function nextPage() {
+        anime({
+        targets: '.bg-white',
+        width: '100%',
+        easing: 'easeInOutCirc',
+        direction: 'reverse',
+        loop: 1,
+        translateX: {
+        value: '100%',
+        duration: 1000
+        },
+      });
+      anime({
+        targets: '.bg-film',
+        width: '100%',
+        easing: 'easeInOutCirc',
+        direction: 'normal',
+        duration: 1000
+      });
+        }
+    </script>
     <script src='assets/js/jquery-3.5.1.slim.min.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.min.js"></script>
     <script src="assets/js/script.min.js"></script>
@@ -236,6 +259,11 @@
       $('#toggle').click(function() {
       $(this).toggleClass('active');
       $('#overlay').toggleClass('open');
+    });
+    $(".next-page").click(function(e) {
+      e.preventDefault();
+      var destination = $(this).attr('href');
+      setTimeout(function() { window.location.href = destination; }, 1200);
     });
     </script>
     <script>

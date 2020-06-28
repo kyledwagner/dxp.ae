@@ -24,6 +24,7 @@
     <body>
     <div class="page">
     <div class="z-50 absolute left-0 bg-white h-screen"></div>
+    <div class="z-40 absolute right-0 bg-film h-screen"></div>
     <div class="fixed h-screen w-screen" id="particles-js"></div>
 
     <!-- HUD -->
@@ -78,10 +79,10 @@
                 <div class="flex flex-wrap container pl-0 md:pl-32 lg:pl-40 mx-auto">
                   <div class="w-full md:pt-0 lg:w-7/12 pt-1 nunito-bold text-8xl text-left tracking-tight leading-none">
                     <ul>
-                      <li class="transition-fade hidden md:block mb-1 md:mb-3 lg:mb-8"><a onClick="window.scrollTo(0,0)" href="index.html" target="_top" class="hvr-forward">Home</a></li>
+                      <li class="transition-fade hidden md:block mb-1 md:mb-3 lg:mb-8"><a onclick="nextPage(), window.scrollTo(0,0)" href="index.html" target="_top" class="next-page hvr-forward">Home</a></li>
                       <li class="nav-close transition-fade block mb-1 md:mb-3 lg:mb-8"><a onClick="window.scrollTo(0,0)" href="#" target="_self" class="hvr-forward">About</a></li>
-                      <li class="transition-fade block"><a onClick="window.scrollTo(0,0)" href="portfolio.html" target="_self" class="hvr-forward">Portfolio</a></li>
-                      <li class="transition-fade block mt-1 md:mt-3 lg:mt-8"><a onClick="window.scrollTo(0,0)" href="case-studies.html" target="_self" class="hvr-forward">Case Studies</a></li>
+                      <li class="transition-fade block"><a onclick="nextPage(), window.scrollTo(0,0)" href="portfolio.html" target="_self" class="next-page hvr-forward">Portfolio</a></li>
+                      <li class="transition-fade block mt-1 md:mt-3 lg:mt-8"><a onclick="nextPage(), window.scrollTo(0,0)" href="case-studies.html" target="_self" class="next-page hvr-forward">Case Studies</a></li>
                     </ul>
                   </div>
                   <div class="mob-address pt-6 lg:pt-0 self-center w-full lg:w-5/12 ml-0 lg:pl-16 text-sm md:text-base">
@@ -412,6 +413,28 @@
       window.addEventListener('load', setVh);
       window.addEventListener('resize', setVh);
       </script>
+      <script>
+        function nextPage() {
+          anime({
+          targets: '.bg-white',
+          width: '100%',
+          easing: 'easeInOutCirc',
+          direction: 'reverse',
+          loop: 1,
+          translateX: {
+          value: '100%',
+          duration: 1000
+          },
+        });
+        anime({
+          targets: '.bg-film',
+          width: '100%',
+          easing: 'easeInOutCirc',
+          direction: 'normal',
+          duration: 1000
+        });
+          }
+      </script>
     <script type="text/javascript">
       ScrollReveal({ distance: '1rem' }).reveal('.header-sr', { delay: 50, interval: 50, origin: 'bottom' });
       ScrollReveal({ distance: '1rem' }).reveal('.subheader-sr', { delay: 300, interval: 50, origin: 'bottom' });
@@ -447,6 +470,11 @@
     $('.nav-close').on('click', function(){
         $("#toggle").toggleClass("active");
         $("#overlay").toggleClass("open");
+    });
+    $(".next-page").click(function(e) {
+      e.preventDefault();
+      var destination = $(this).attr('href');
+      setTimeout(function() { window.location.href = destination; }, 1200);
     });
     </script>
     </body>
