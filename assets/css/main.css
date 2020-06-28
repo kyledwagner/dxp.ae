@@ -18,7 +18,17 @@
 }
 
 .next-case-study {
-  margin-bottom: 0.65rem !important;
+  margin-bottom: -0.15rem !important;
+}
+
+.arrows-arrows-block {
+  padding-bottom: 2.6rem;
+}
+
+@media only screen and (max-width: 1280px) {
+  .arrows-arrows-block {
+    padding-bottom: 1.65rem;
+  }
 }
 
 html { /* body won't work for Chrome, Firefox ¯\_(ツ)_/¯ */
@@ -1829,6 +1839,53 @@ span::before {
 
 .link-5:hover span,
 .link-5:focus span {
+	-webkit-transform: translateY(-100%);
+	-moz-transform: translateY(-100%);
+	transform: translateY(-100%);
+}
+
+/* Hover Case Studies Special */
+
+.link-6 div {
+	position: relative;
+	display: inline-block;
+  color: #fff;
+  /* padding-top: 0.15rem; */
+}
+
+.link-6 div:hover,
+.link-6 div:focus {
+	outline: none;
+}
+
+.link-6 {
+  max-height:0.8rem !important;
+}
+
+.link-6 div {
+  overflow: hidden;
+  max-height:0.7rem !important;
+}
+
+.link-6 div span {
+	position: relative;
+	display: inline-block;
+	-webkit-transition: -webkit-transform 0.3s;
+	-moz-transition: -moz-transform 0.3s;
+  transition: transform 0.3s;
+}
+
+.link-6 div span::before {
+	position: absolute;
+	top: 100%;
+	content: attr(data-hover);
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+#arrows-arrows:hover .link-6 span,
+#arrows-arrows:focus .link-6 span {
 	-webkit-transform: translateY(-100%);
 	-moz-transform: translateY(-100%);
 	transform: translateY(-100%);
