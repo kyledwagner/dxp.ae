@@ -246,8 +246,8 @@
 
         <!-- Add Arrows -->
         <div class="hidden lg:block">
-          <div class="swiper-button-next"><div class="hvr-forward absolute p-16 -mr-4 xl:-mr-2 -mt-8"><img src="assets/icon/next.svg" class="max-w-none" width="50"></div></div>
-          <div class="swiper-button-prev"><div class="hvr-backward absolute p-16 -ml-16 xl:-ml-12 -mt-8"><img src="assets/icon/prev.svg" class="max-w-none" width="50"></div></div>
+          <div class="swiper-button-next"><div class="hvr-forward absolute p-16 -mr-4 xl:-mr-2 -mt-8"><img src="assets/icon/next.svg" class="max-w-none js-attract-hover" width="50"></div></div>
+          <div class="swiper-button-prev"><div class="hvr-backward absolute p-16 -ml-16 xl:-ml-12 -mt-8"><img src="assets/icon/prev.svg" class="max-w-none js-attract-hover" width="50"></div></div>
         </div>
 
         </div>
@@ -378,6 +378,16 @@
     <script src="assets/js/mediabox.min.js"></script>
     <script>
       MediaBox('.mediabox');
+    </script>
+    <script src="assets/js/attractHover.js"></script>
+    <script>
+      $.attractHover(
+        '.js-attract-hover',
+        {
+          proximity: 30,
+          magnetism: 3
+        }
+      );
     </script>
     </body>
 </html>
