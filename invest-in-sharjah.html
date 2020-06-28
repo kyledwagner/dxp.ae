@@ -214,8 +214,8 @@
         </div>
         <div id="arrows-arrows" class="relative">
           <div class="arrows-arrows-block z-10 absolute hidden lg:block bottom-0 mx-auto w-screen h-auto text-center">
-            <a onClick="window.scrollTo(0,0)" href="abu-dhabi-plan.html" class="mr-24"><div class="hvr-backward pl-5 py-5"><img src="assets/icon/prev.svg" class="max-w-none" width="50"></div></a>
-            <a onClick="window.scrollTo(0,0)" href="time-to-care.html" class="ml-20"><div class="hvr-forward pr-5 py-5"><img src="assets/icon/next.svg" class="max-w-none" width="50"></div></a>
+            <a onClick="window.scrollTo(0,0)" href="abu-dhabi-plan.html" class="mr-24"><div class="hvr-backward pl-5 py-5"><img src="assets/icon/prev.svg" class="max-w-none js-attract-hover" width="50"></div></a>
+            <a onClick="window.scrollTo(0,0)" href="time-to-care.html" class="ml-20"><div class="hvr-forward pr-5 py-5"><img src="assets/icon/next.svg" class="max-w-none js-attract-hover" width="50"></div></a>
           </div>
           <div class="next-case-study nunito-semibold block md:hidden lg:block w-screen h-auto absolute leading-none uppercase text-left md:text-center tracking-widest bottom-0 text-sm pl-8 lg:pl-0 pb-8 lg:pb-12 xl:pb-16">
             <div class="link-6"><div><span data-hover="NEXT CASE STUDY">Next Case Study</span></div></div>
@@ -303,6 +303,16 @@
     <script src="assets/js/mediabox.min.js"></script>
     <script>
       MediaBox('.mediabox');
+    </script>
+    <script src="assets/js/attractHover.js"></script>
+    <script>
+      $.attractHover(
+        '.js-attract-hover',
+        {
+          proximity: 30,
+          magnetism: 4
+        }
+      );
     </script>
     </body>
 </html>

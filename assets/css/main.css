@@ -3,9 +3,13 @@
   outline: none;
 }
 
-/* * {
+.attract-hover-easing {
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+* {
   outline: 1px solid purple;
-} */
+}
 
 .all-rights-reserved {
   padding-bottom: 3.72rem;
