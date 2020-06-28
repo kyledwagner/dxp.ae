@@ -12,26 +12,31 @@
 } */
 
 .all-rights-reserved {
-  padding-bottom: 3.72rem;
+  padding-bottom: 3.85rem;
 }
 
 @media only screen and (max-width: 1280px) {
   .all-rights-reserved {
-    padding-bottom: 2.7rem;
+    padding-bottom: 2.9rem;
   }
 }
 
 .next-case-study {
-  margin-bottom: -0.15rem !important;
+  padding-bottom: 3.85rem !important;
+}
+@media only screen and (max-width: 1280px) {
+  .next-case-study {
+    padding-bottom: 2.9rem !important;
+  }
 }
 
 .arrows-arrows-block {
-  padding-bottom: 2.6rem;
+  padding-bottom: 2.72rem;
 }
 
 @media only screen and (max-width: 1280px) {
   .arrows-arrows-block {
-    padding-bottom: 1.65rem;
+    padding-bottom: 1.72rem;
   }
 }
 
