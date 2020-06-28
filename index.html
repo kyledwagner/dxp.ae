@@ -22,14 +22,12 @@
             left: 0;
             width: 100%;
             height: 100%;
-            cursor: none !important;
         }
         #loader {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            cursor: none !important;
         }
         /* Circle Loader */
           .showbox {
@@ -38,13 +36,11 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            cursor: none !important;
           }
           .loader {
             position: relative;
             margin: 0px auto;
             width: 210px;
-            cursor: none !important;
           }
           .loader:before {
             content: '';
@@ -62,7 +58,6 @@
             left: 0;
             right: 0;
             margin: auto;
-            cursor: none !important;
           }
           .path {
             stroke-dasharray: 1,200;
@@ -189,11 +184,11 @@
           </div>
         </div>
         <!-- Hamburger Menu -->
-          <div class="button_container z-20 hvr-grow" id="toggle">
+        <a href="javascript:void(0);"><div class="button_container z-20 hvr-grow" id="toggle">
             <span class="top"></span>
             <span class="middle"></span>
             <span class="bottom"></span>
-          </div>
+          </div></a>
           <div class="overlay z-10" id="overlay">
             <nav class="overlay-menu">
               <div class="h-screen w-screen flex items-center px-8">
@@ -227,7 +222,7 @@
                         <span class="nunito-semibold link-3 hvr-forward"><a href="mailto:contact@dxp.ae">contact@dxp.ae</a></span></div>
                       </li>
                       <li class="mt-6 md:mt-8 -ml-1">
-                        <a href="https://www.facebook.com/doublexposureproductions" target="_blank" class="hvr-float inline-block"><img class="mr-4" src="assets/icon/facebook.svg" width="25"></a>
+                        <a href="https://www.facebook.com/doublexposureproductions" target="_blank" class="hvr-float inline-block"><img class="social mr-4" src="assets/icon/facebook.svg" width="25"></a>
                         <a href="https://www.instagram.com/dxpae/" target="_blank" class="hvr-float inline-block"><img class="mr-4" src="assets/icon/instagram.svg" width="25"></a>
                         <a href="https://www.vimeo.com/dxpae" target="_blank" class="hvr-float inline-block"><img class="mr-4" src="assets/icon/vimeo.svg" width="25"></a>
                         <a href="https://www.youtube.com/user/DXPae" target="_blank" class="hvr-float inline-block"><img class="mr-4" src="assets/icon/youtube.svg" width="25"></a>
@@ -308,13 +303,13 @@
               <div class="h-screen hidden lg:block case-study-nav nunito-semibold z-10 text-white absolute text-sm leading-none pb-32 pt-48 pl-56 pr-32 mr-12 xl:mr-14 link-5"><div><span data-hover="CASE STUDIES">CASE STUDIES</span></div></div>
               <!-- Add Arrows -->
               <div class="hidden lg:block">
-                <a href=""><div class="swiper-button-next"><div class="p-5 hvr-forward mr-12 xl:mr-14"><img src="assets/icon/next.svg" class="max-w-none js-attract-hover" width="50"></div></div></a>
-                  <a href=""><div class="swiper-button-prev"><div class="p-5 hvr-backward mr-12 xl:mr-14"><img src="assets/icon/prev.svg" class="max-w-none js-attract-hover" width="50"></div></div></a>
+                <div class="swiper-button-next"><div class="p-5 hvr-forward mr-12 xl:mr-14"><img src="assets/icon/next.svg" class="max-w-none js-attract-hover" width="50"></div></div>
+                  <div class="swiper-button-prev"><div class="p-5 hvr-backward mr-12 xl:mr-14"><img src="assets/icon/prev.svg" class="max-w-none js-attract-hover" width="50"></div></div>
               </div>
             </div>
 
     </div>
-    <div class="hidden md:block circle-cursor circle-cursor--inner"></div>
+    <!-- <div class="hidden md:block circle-cursor circle-cursor--inner"></div> -->
     <div class="hidden md:block circle-cursor circle-cursor--outer"></div>
   </div>
 
