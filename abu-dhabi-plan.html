@@ -314,6 +314,8 @@
     <script src="assets/js/glightbox.min-new.js" type="text/javascript"></script>
     <script type="text/javascript">
       const lightbox = GLightbox({
+        onClose: () => { console.log('Lightbox closed'); window.scrollTo(0, document.body.scrollHeight); },
+        afterSlideChange: (prevSlide, currentSlide) => {   const { index, slide, player } = currentSlide;  if (player) {   player.on('exitfullscreen', event => { console.log("him exit"); window.scrollTo(0, document.body.scrollHeight);  });   } },
         touchNavigation: true,
         autoplayVideos: true,
         closeOnOutsideClick: true,

@@ -15,7 +15,7 @@
 
         <link rel="stylesheet" href="assets/css/tailwind.min.css">
         <link rel="stylesheet" href="assets/css/main.css">
-        <link rel="stylesheet" href="assets/css/glightbox.min.css">
+        <link rel="stylesheet" href="assets/css/glightbox.min-new.css">
         <link rel="stylesheet" href="assets/css/mediabox.min.css">
         <script src="https://unpkg.com/scrollreveal@4"></script>
         <script src="assets/js/anime.min.js"></script>
@@ -304,9 +304,11 @@
           }
           }
   </script>
-    <script src="assets/js/glightbox.min.js"></script>
+    <script src="assets/js/glightbox.min-new.js"></script>
     <script type="text/javascript">
       const lightbox = GLightbox({
+        onClose: () => { console.log('Lightbox closed'); window.scrollTo(0, document.body.scrollHeight); },
+        afterSlideChange: (prevSlide, currentSlide) => {   const { index, slide, player } = currentSlide;  if (player) {   player.on('exitfullscreen', event => { console.log("him exit"); window.scrollTo(0, document.body.scrollHeight);  });   } },
         touchNavigation: true,
         autoplayVideos: true,
         closeOnOutsideClick: true,
