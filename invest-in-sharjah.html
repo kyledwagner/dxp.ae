@@ -209,7 +209,7 @@
         <!-- Film Section -->
         <div class="h-screen w-screen bg-film flex items-center">
         <div class="z-50 absolute left-0 bg-white h-screen"></div>
-        <div class="z-40 absolute right-0 bg-film h-screen"></div>
+        <div class="z-40 absolute right-0 bg-film bg-film-next-page h-screen"></div>
         <div class="z-40 absolute left-0 bg-film bg-film2 h-screen"></div>
         <div class="flex flex-wrap container pl-0 md:px-16 mx-auto">
         <div class="w-full lg:w-1/4 pb-2 md:pb-4">
@@ -325,7 +325,7 @@
         },
       });
       anime({
-        targets: '.bg-film',
+        targets: '.bg-film-next-page',
         width: '100%',
         easing: 'easeInOutCirc',
         direction: 'normal',

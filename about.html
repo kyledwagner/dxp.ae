@@ -41,7 +41,7 @@
     </div>
 
     <div class="z-50 absolute left-0 bg-white h-screen"></div>
-    <div class="z-50 absolute right-0 bg-film h-screen"></div>
+    <div class="z-50 absolute right-0 bg-film bg-film-next-page h-screen"></div>
     <div class="z-50 absolute left-0 bg-film bg-film2 h-screen"></div>
 
     <div style="display:none;" id="main">
@@ -505,7 +505,7 @@
           },
         });
         anime({
-          targets: '.bg-film',
+          targets: '.bg-film-next-page',
           width: '100%',
           easing: 'easeInOutCirc',
           direction: 'normal',

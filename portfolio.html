@@ -42,7 +42,7 @@
     </div>
 
     <div class="z-50 absolute left-0 bg-white h-screen"></div>
-    <div class="z-40 absolute right-0 bg-film h-screen"></div>
+    <div class="z-40 absolute right-0 bg-film bg-film-next-page h-screen"></div>
     <div class="z-40 absolute left-0 bg-film bg-film2 h-screen"></div>
 
     <div style="display:none;" id="main">
@@ -343,6 +343,28 @@
 
       return direction;
     }
+        }
+    </script>
+    <script>
+      function nextPage() {
+        anime({
+        targets: '.bg-white',
+        width: '100%',
+        easing: 'easeInOutCirc',
+        direction: 'reverse',
+        loop: 1,
+        translateX: {
+        value: '100%',
+        duration: 1000
+        },
+      });
+      anime({
+        targets: '.bg-film-next-page',
+        width: '100%',
+        easing: 'easeInOutCirc',
+        direction: 'normal',
+        duration: 1000
+      });
         }
     </script>
 
