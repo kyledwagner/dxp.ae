@@ -390,6 +390,11 @@
         $("#toggle").toggleClass("active");
         $("#overlay").toggleClass("open");
     });
+    $(".next-page").click(function(e) {
+      e.preventDefault();
+      var destination = $(this).attr('href');
+      setTimeout(function() { window.location.href = destination; }, 1200);
+    });
     </script>
           <script>
             if (matchMedia) {
