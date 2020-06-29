@@ -21,25 +21,32 @@
         <!-- <link rel="stylesheet" href="assets/css/swiper.min.css"> -->
         <link rel="stylesheet" href="assets/css/swiper.min.css">
         <script src="assets/js/anime.min.js"></script>
-
+        <style>
+          #preloader {
+              z-index: -1;
+              background: rgb(21,40,55);
+              background: radial-gradient(circle, rgba(21,40,55,1) 0%, rgba(13,21,28,1) 100%);
+              position: fixed;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+          }
+          </style>
     </head>
-    <body id="portfolio">
-    <!-- <div id="preloader">
-      <img src="../assets/preloader/DXP-animation.gif" class="mx-auto my-auto h-100" width="500" id="loader">
+    <body onload="myFunction()" id="portfolio">
+
+    <div id="preloader">
       <div id="loader">
-        <div class="showbox" id="showbox">
-          <div class="loader">
-            <svg class="circular" viewBox="25 25 50 50">
-              <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="0.5" stroke-miterlimit="10"/>
-            </svg>
-          </div>
-        </div>
       </div>
-    </div> -->
-    <div class="page">
+    </div>
+
     <div class="z-50 absolute left-0 bg-white h-screen"></div>
     <div class="z-40 absolute right-0 bg-film h-screen"></div>
-    <div id="main">
+    <div class="z-40 absolute left-0 bg-film bg-film2 h-screen"></div>
+
+    <div style="display:none;" id="main">
+    <div class="page">
 
     <!-- HUD -->
     <div class="z-20 fixed top-0 left-0 p-6 xl:pl-12 xl:pt-10 xl:ml-1">
@@ -258,6 +265,87 @@
       <!-- <div class="hidden md:block circle-cursor circle-cursor--inner"></div> -->
       <div class="hidden md:block circle-cursor circle-cursor--outer"></div>
 
+      <script>
+        var myVar;
+
+        function myFunction() {
+        myVar = setTimeout(showSwipe, 200);
+        myVar = setTimeout(showPage, 250);
+        myVar = setTimeout(showSwiper, 600);
+
+        }
+
+        function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("main").style.display = "block";
+        }
+
+        function showSwipe() {
+        anime({
+        targets: '.bg-white',
+        width: '100%',
+        easing: 'easeInOutCirc',
+        direction: 'reverse',
+        loop: 1,
+        translateX: {
+        value: '100%',
+        duration: 700
+        },
+      });
+        anime({
+        targets: '.bg-film2',
+        width: '100%',
+        easing: 'easeInOutCirc',
+        direction: 'reverse',
+      });
+        }
+        function showSwiper() {
+          var swiper = new Swiper('.swiper-container', {
+        slidesPerView: '2.5',
+        direction: getDirection(),
+        spaceBetween: 31,
+        loop: true,
+        centeredSlides: true,
+        centerInsufficientSlides: true,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        keyboard: {
+        enabled: true,
+        onlyInViewport: false,
+        },
+        mousewheel: {
+        invert: true,
+        forceToAxis: true,
+        releaseOnEdges: true,
+        },
+        breakpoints: {
+        300: {
+          slidesPerView: 3,
+          spaceBetween: 31,
+        },
+        767: {
+          slidesPerView: 2.5,
+          spaceBetween: 31,
+        }
+      },
+        on: {
+        resize: function () {
+          swiper.changeDirection(getDirection());
+        }
+      }
+    });
+
+    function getDirection() {
+      var windowWidth = window.innerWidth;
+      var direction = window.innerWidth <= 767 ? 'vertical' : 'horizontal';
+
+      return direction;
+    }
+        }
+    </script>
+
     <script>
       const setVh = () => {
       const vh = window.innerHeight * 0.01;
@@ -309,49 +397,7 @@
             }
     </script>
     <script>
-      var swiper = new Swiper('.swiper-container', {
-        slidesPerView: '2.5',
-        direction: getDirection(),
-        spaceBetween: 31,
-        loop: true,
-        centeredSlides: true,
-        centerInsufficientSlides: true,
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-        keyboard: {
-        enabled: true,
-        onlyInViewport: false,
-        },
-        mousewheel: {
-        invert: true,
-        forceToAxis: true,
-        releaseOnEdges: true,
-        },
-        breakpoints: {
-        300: {
-          slidesPerView: 3,
-          spaceBetween: 31,
-        },
-        767: {
-          slidesPerView: 2.5,
-          spaceBetween: 31,
-        }
-      },
-        on: {
-        resize: function () {
-          swiper.changeDirection(getDirection());
-        }
-      }
-    });
 
-    function getDirection() {
-      var windowWidth = window.innerWidth;
-      var direction = window.innerWidth <= 767 ? 'vertical' : 'horizontal';
-
-      return direction;
-    }
     </script>
     <script src='assets/js/glightbox.min.js'></script>
     <script type="text/javascript">
