@@ -272,6 +272,7 @@
         myVar = setTimeout(showSwipe, 200);
         myVar = setTimeout(showPage, 250);
         myVar = setTimeout(showSwiper, 600);
+        myVar = setTimeout(showLogo, 750);
 
         }
 
@@ -343,6 +344,18 @@
 
       return direction;
     }
+        }
+        function showLogo(){
+          anime({
+          targets: '.dxp-animate path, .dxp-animate line',
+          strokeDashoffset: [anime.setDashoffset, 0],
+          easing: 'easeInOutCubic',
+          duration: 500,
+          delay: anime.stagger(100, {start: 50}),
+          direction: 'alternate',
+          loop: true,
+          endDelay: 3500
+        });
         }
     </script>
     <script>

@@ -65,18 +65,6 @@
         </svg>
       </a>
     </div>
-    <script>
-      anime({
-        targets: '.dxp-animate path, .dxp-animate line',
-        strokeDashoffset: [anime.setDashoffset, 0],
-        easing: 'easeInOutCubic',
-        duration: 500,
-        delay: anime.stagger(100, {start: 50}),
-        direction: 'alternate',
-        loop: true,
-        endDelay: 5000
-      });
-    </script>
     <div class="z-20 nunito-bold hidden md:inline-block text-sm text-white tracking-wider fixed top-0 right-0 p-12 xl:pr-16 xl:pt-12 xl:mt-1">Double Exposure Productions<div class="ml-4 slider-scroll-down"><span class="bounce-line"></span></div></div>
     <div class="z-20 all-rights-reserved nunito-light fixed hidden md:block left-auto right-0 bottom-0 text-sm text-white leading-none md:pr-12 xl:pr-16">All rights reserved.</div>
     <div class="z-20 nunito-semibold hidden md:block fixed bottom-0 left-0 pb-12 pl-12 xl:pb-16 xl:pl-16">
@@ -249,6 +237,7 @@
         myVar = setTimeout(showSwipe, 200);
         myVar = setTimeout(showPage, 250);
         myVar = setTimeout(showScroll, 425);
+        myVar = setTimeout(showLogo, 750);
 
         }
 
@@ -293,6 +282,18 @@
           ScrollReveal({ distance: '1rem' }).reveal('.language-sr', { delay: 600, interval: 50, origin: 'bottom' });
 
           ScrollReveal({ distance: '6rem' }).reveal('.line-sr', { delay: 200, interval: 50, origin: 'left' });
+        }
+        function showLogo(){
+          anime({
+          targets: '.dxp-animate path, .dxp-animate line',
+          strokeDashoffset: [anime.setDashoffset, 0],
+          easing: 'easeInOutCubic',
+          duration: 500,
+          delay: anime.stagger(100, {start: 50}),
+          direction: 'alternate',
+          loop: true,
+          endDelay: 3500
+        });
         }
     </script>
 
