@@ -545,12 +545,7 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     scroll-snap-stop: always;
   }
 
-  .testying {
-    height: 100vh;
-    height: calc(var(--vh, 1vh) * 100) !important;
-  }
-
-  #case-study .film-top .container {
+  #case-study .h-screen {
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100) !important;
   }
