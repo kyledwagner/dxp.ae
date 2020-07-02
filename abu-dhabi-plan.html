@@ -250,6 +250,7 @@
         function myFunction() {
         myVar = setTimeout(showSwipe, 200);
         myVar = setTimeout(showPage, 250);
+        myVar = setTimeout(showResize, 250);
         myVar = setTimeout(showScroll, 425);
         myVar = setTimeout(showLogo, 750);
         }
@@ -308,8 +309,17 @@
           endDelay: 3500
         });
         }
+        function showResize(){
+          const setVh = () => {
+          const vh = window.innerHeight * 0.01;
+          document.documentElement.style.setProperty('--vh', `${vh}px`);
+          };
+
+          window.addEventListener('load', setVh);
+          window.addEventListener('resize', setVh);
+        }
       </script>
-      <script type="text/javascript">
+      <!-- <script type="text/javascript">
         const setVh = () => {
         const vh = window.innerHeight * 0.01;
         document.documentElement.style.setProperty('--vh', `${vh}px`);
@@ -317,7 +327,7 @@
 
       window.addEventListener('load', setVh);
       window.addEventListener('resize', setVh);
-      </script>
+      </script> -->
       <script>
         function nextPage() {
           anime({
