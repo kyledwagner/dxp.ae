@@ -545,8 +545,8 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     scroll-snap-stop: always;
   }
 
-  #case-study .h-screen {
-    height: 100vh;
+  #case-study .swiper-container {
+    height: 100vh !important;
     height: calc(var(--vh, 1vh) * 100) !important;
   }
 
