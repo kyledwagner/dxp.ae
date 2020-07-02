@@ -1162,11 +1162,11 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
   overflow: hidden; /* [1.2] Hide the overflowing of child elements */
 }
 .image-box img {
-  transition: transform .4s ease !important;
+  transition: transform .75s ease !important;
 }
 
 .image-box:hover img {
-  transform: scale(1.1);
+  transform: scale(1.07);
 }
 
 .hvr-float {
