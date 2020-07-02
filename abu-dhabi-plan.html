@@ -243,12 +243,16 @@
       <!-- <div class="hidden md:block circle-cursor circle-cursor--inner"></div> -->
       <div class="hidden md:block circle-cursor circle-cursor--outer"></div>
       <script>
-        window.onload = function() {
-        // short timeout
-        setTimeout(function() {
-            $(document.body).scrollTop(0);
-        }, 15);
-        };
+ setTimeout(function () {
+        window.scroll({
+                        top: 0,
+                        left: 0,
+                        behavior: 'smooth'
+                    });
+
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+
+}, 15);
       </script>
       <script>
         var myVar;
