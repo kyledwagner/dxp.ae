@@ -33,14 +33,6 @@
         </style>
     </head>
     <body onload="myFunction(), window.focus()">
-    <script>
-      window.onload = function() {
-      // short timeout
-      setTimeout(function() {
-          $(document.body).scrollTop(0);
-      }, 15);
-      };
-    </script>
     <div id="preloader">
       <div id="loader">
       </div>
@@ -250,7 +242,14 @@
       </div>
       <!-- <div class="hidden md:block circle-cursor circle-cursor--inner"></div> -->
       <div class="hidden md:block circle-cursor circle-cursor--outer"></div>
-
+      <script>
+        window.onload = function() {
+        // short timeout
+        setTimeout(function() {
+            $(document.body).scrollTop(0);
+        }, 15);
+        };
+      </script>
       <script>
         var myVar;
 
