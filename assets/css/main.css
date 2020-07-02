@@ -1156,34 +1156,18 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-.hvr-grow-2 {
-  /* display: inline-block;
-  vertical-align: middle; */
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
+
+.image-box {
+  height: auto; /* [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
 }
-.hvr-grow-2:hover, .hvr-grow:focus, .hvr-grow:active {
-  -webkit-transform: scale(1.03);
-  transform: scale(1.03);
+.image-box img {
+  transition: transform .4s ease !important;
 }
 
-/* #portfolio .play-button {
-  opacity: 0;
+.image-box:hover img {
+  transform: scale(1.1);
 }
-
-#portfolio .hvr-grow-2 .play-button {
-  transition: .25s ease;
-}
-
-#portfolio .hvr-grow-2:hover .play-button {
-  opacity: 1;
-  transition: .7s ease;
-} */
 
 .hvr-float {
   display: inline-block;
