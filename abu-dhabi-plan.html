@@ -248,10 +248,20 @@
         var myVar;
 
         function myFunction() {
+        myVar = setTimeout(showTop, 100);
         myVar = setTimeout(showSwipe, 200);
         myVar = setTimeout(showPage, 250);
         myVar = setTimeout(showScroll, 425);
         myVar = setTimeout(showLogo, 750);
+        }
+
+        function showTop() {
+          window.onload = function() {
+          // short timeout
+          setTimeout(function() {
+              $(document.body).scrollTop(0);
+          }, 15);
+      };
         }
 
         function showPage() {
@@ -353,9 +363,9 @@
       var destination = $(this).attr('href');
       setTimeout(function() { window.location.href = destination; }, 750);
     });
-    $(function() {
-      $('body').scrollTop(0);
-    });
+    // $(window).unload(function() {
+    // $('body').scrollTop(0);
+    // });
     </script>
     <script type="text/javascript">
             if (matchMedia) {
