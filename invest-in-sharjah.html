@@ -127,6 +127,7 @@
           </div>
           <!-- END Hamburger Menu -->
 
+      <section class="scroll-snap-please">
       <div class="swiper-container">
       <div class="sharjah-reel">
       <div class="film-top h-screen w-screen flex flex-wrap items-center absolute">
@@ -150,10 +151,11 @@
           </video>
       </div>
       </div>
+    </section>
 
         <!-- Intro Section -->
-        <section id="section-intro" class="hidden">
-        <div class="h-screen w-screen flex items-center bg-gradient-light scroll-snap-please">
+        <section class="scroll-snap-please">
+        <div class="h-screen w-screen flex items-center bg-gradient-light">
         <div class="flex flex-wrap container pl-0 md:pl-24 lg:pl-40 mx-auto">
           <div class="w-full lg:w-1/6 pt-1 pb-2 md:pb-4">
             <div class="client-sr nunito-semibold uppercase text-sm md:text-md tracking-widest text-white px-8">The Client</div>
@@ -185,8 +187,8 @@
         </div>
         </section>
         <!-- Task Section -->
-        <section id="section-task" class="hidden">
-        <div class="h-screen w-screen bg-sharjah flex items-center scroll-snap-please">
+        <section class="scroll-snap-please">
+        <div class="h-screen w-screen bg-sharjah flex items-center">
           <div class="flex flex-wrap container pl-0 md:pl-24 lg:pl-40 mx-auto">
           <div class="w-full lg:w-1/6 pt-1 pb-2 md:pb-4">
             <div class="task-sr nunito-semibold uppercase text-sm md:text-md tracking-widest text-white px-8">The Task</div>
@@ -199,7 +201,7 @@
         </div>
         </section>
         <!-- Film Section -->
-        <section id="section-film" class="hidden">
+        <section class="scroll-snap-please">
         <div class="h-screen w-screen bg-film flex items-center scroll-snap-please">
         <div class="z-50 absolute left-0 bg-white h-screen"></div>
         <div class="z-40 absolute right-0 bg-film bg-film-next-page h-screen"></div>
@@ -245,11 +247,6 @@
       <!-- <div class="hidden md:block circle-cursor circle-cursor--inner"></div> -->
       <div class="hidden md:block circle-cursor circle-cursor--outer"></div>
 
-      <script>
-        document.addEventListener("DOMContentLoaded", function(event) {
-            window.scrollTo(0, 0);
-        });
-    </script>
       <script>
         var myVar;
 
@@ -405,12 +402,12 @@
     <script>
       MediaBox('.mediabox');
     </script>
-    <script>
+    <!-- <script>
         $( document ).ready(function() {
         setTimeout(function() { $( "#section-intro" ).toggleClass( "hidden" ); },2000);
         setTimeout(function() { $( "#section-task" ).toggleClass( "hidden" ); }, 2200);
         setTimeout(function() { $( "#section-film" ).toggleClass( "hidden" ); }, 2400);
       });
-    </script>
+    </script> -->
     </body>
 </html>
