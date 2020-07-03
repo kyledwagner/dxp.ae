@@ -53,8 +53,8 @@ a:link {
 }
 
 html { /* body won't work for Chrome, Firefox ¯\_(ツ)_/¯ */
-  /* scroll-snap-type: y mandatory; */
-  /* scroll-behavior: smooth; */
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
   background-color: black !important;
   cursor: auto !important;
 }
@@ -65,11 +65,15 @@ html.sr .load-hidden {
 }
 
 body { /* html won't work for Safari ¯\_(ツ)_/¯ */
-  /* scroll-snap-type: y mandatory; */
-  /* overscroll-behavior-y: none; */
+  scroll-snap-type: y mandatory;
+  overscroll-behavior-y: none;
   cursor: auto !important;
   background: rgb(21,40,55);
   background: radial-gradient(circle, rgba(21,40,55,1) 0%, rgba(13,21,28,1) 100%);
+}
+
+.scroll-snap-please {
+  scroll-snap-align: center;
 }
 
 @font-face {
@@ -328,8 +332,8 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
   .bg-gradient-light {
     background: rgb(108,123,144);
     background: linear-gradient(144deg, rgba(108,123,144,1) 0%, rgba(189,203,212,1) 100%);
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
+    /* scroll-snap-align: start;
+    scroll-snap-stop: always; */
   }
 
   .bg-dubai-urban-sky-dome-img {
@@ -350,8 +354,8 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     background-size: cover;
     min-height: -webkit-fill-available;
     min-height: 100vh;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
+    /* scroll-snap-align: start;
+    scroll-snap-stop: always; */
   }
 
  .bg-abu-dhabi {
@@ -364,8 +368,8 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     background-size: cover;
     min-height: -webkit-fill-available;
     min-height: 100vh;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
+    /* scroll-snap-align: start;
+    scroll-snap-stop: always; */
   }
 
   @media only screen and (min-width: 600px) {
@@ -379,8 +383,8 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     background-size: cover;
     min-height: -webkit-fill-available;
     min-height: 100vh;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
+    /* scroll-snap-align: start;
+    scroll-snap-stop: always; */
   }
  }
 
@@ -394,8 +398,8 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     background-size: cover;
     min-height: -webkit-fill-available;
     min-height: 100vh;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
+    /* scroll-snap-align: start;
+    scroll-snap-stop: always; */
   }
 
   .bg-business-excellence-awards {
@@ -408,8 +412,8 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     background-size: cover;
     min-height: -webkit-fill-available;
     min-height: 100vh;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
+    /* scroll-snap-align: start;
+    scroll-snap-stop: always; */
   }
 
   .bg-dubai-urban-sky-dome {
@@ -422,8 +426,8 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     background-size: cover;
     min-height: -webkit-fill-available;
     min-height: 100vh;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
+    /* scroll-snap-align: start;
+    scroll-snap-stop: always; */
   }
 
 
@@ -436,8 +440,8 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
   .bg-film {
     background: rgb(21,40,55);
     background: radial-gradient(circle, rgba(21,40,55,1) 0%, rgba(13,21,28,1) 100%);
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
+    /* scroll-snap-align: start;
+    scroll-snap-stop: always; */
   }
 
   .video-player video {
@@ -541,8 +545,8 @@ body { /* html won't work for Safari ¯\_(ツ)_/¯ */
     /* overflow-x: hidden; */
     width: 100%;
     height: 100%;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
+    /* scroll-snap-align: start;
+    scroll-snap-stop: always; */
   }
 
   .sharjah-reel video {
