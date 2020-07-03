@@ -128,7 +128,7 @@
           <!-- END Hamburger Menu -->
 
       <section>
-      <div class="swiper-container">
+      <div class="swiper-container scroll-snap-please">
       <div class="sharjah-reel">
       <div class="film-top h-screen w-screen flex flex-wrap items-center absolute">
         <div class="w-full container md:w-1/2 mx-auto">
@@ -202,7 +202,7 @@
         </section>
         <!-- Film Section -->
         <section>
-        <div class="h-screen w-screen bg-film flex items-center scroll-snap-please">
+        <div class="h-screen w-screen bg-film flex items-center">
         <div class="z-50 absolute left-0 bg-white h-screen"></div>
         <div class="z-40 absolute right-0 bg-film bg-film-next-page h-screen"></div>
         <div class="z-40 absolute left-0 bg-film bg-film2 h-screen"></div>
@@ -243,6 +243,7 @@
           </div>
         </div>
       </div>
+    </div>
       <!-- <div class="hidden md:block circle-cursor circle-cursor--inner"></div> -->
       <div class="hidden md:block circle-cursor circle-cursor--outer"></div>
 
@@ -347,8 +348,8 @@
     <script src="assets/js/script.min.js"></script>
     <script>
       $( document ).ready(function() {
-        $( "section" ).addClass( "scroll-snap-please" );
-      });
+        setTimeout(function() { $( "section" ).addClass( "scroll-snap-please" ); }, 900);
+});
       $('#toggle').click(function() {
       $(this).toggleClass('active');
       $('#overlay').toggleClass('open');
