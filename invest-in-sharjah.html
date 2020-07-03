@@ -33,7 +33,6 @@
         </style>
     </head>
     <body onload="myFunction(), window.focus()">
-    <div class="scroll-snap-please"></div>
 
     <div id="preloader">
       <div id="loader">
@@ -46,6 +45,7 @@
 
     <div style="display:none;" id="main">
     <div class="page" id="case-study">
+    <div class="scroll-snap-please"></div>
 
     <!-- HUD -->
     <div class="z-20 fixed top-0 left-0 p-6 xl:pl-12 xl:pt-10 xl:ml-1">
@@ -127,7 +127,6 @@
           </div>
           <!-- END Hamburger Menu -->
 
-      <section>
       <div class="swiper-container">
       <div class="sharjah-reel">
       <div class="film-top h-screen w-screen flex flex-wrap items-center absolute">
@@ -151,10 +150,9 @@
           </video>
       </div>
       </div>
-      </section>
 
         <!-- Intro Section -->
-        <section>
+        <section class="hidden scroll-snap-please">
         <div class="h-screen w-screen flex items-center bg-gradient-light">
         <div class="flex flex-wrap container pl-0 md:pl-24 lg:pl-40 mx-auto">
           <div class="w-full lg:w-1/6 pt-1 pb-2 md:pb-4">
@@ -187,7 +185,7 @@
         </div>
         </section>
         <!-- Task Section -->
-        <section>
+        <section class="hidden scroll-snap-please">
         <div class="h-screen w-screen bg-sharjah flex items-center">
           <div class="flex flex-wrap container pl-0 md:pl-24 lg:pl-40 mx-auto">
           <div class="w-full lg:w-1/6 pt-1 pb-2 md:pb-4">
@@ -201,7 +199,7 @@
         </div>
         </section>
         <!-- Film Section -->
-        <section>
+        <section class="hidden scroll-snap-please">
         <div class="h-screen w-screen bg-film flex items-center">
         <div class="z-50 absolute left-0 bg-white h-screen"></div>
         <div class="z-40 absolute right-0 bg-film bg-film-next-page h-screen"></div>
@@ -403,9 +401,9 @@
       MediaBox('.mediabox');
     </script>
     <script>
-      //       $( document ).ready(function() {
-      //   setTimeout(function() { $( "section" ).addClass( "scroll-snap-please" ); }, 900);
-      // });
+            $( document ).ready(function() {
+        setTimeout(function() { $( "section" ).toggleClass( "hidden" ); }, 1500);
+      });
     </script>
     </body>
 </html>
