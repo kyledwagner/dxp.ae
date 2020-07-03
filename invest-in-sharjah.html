@@ -230,8 +230,8 @@
             <div class="link-6"><div><span data-hover="NEXT CASE STUDY">Next Case Study</span></div></div>
           </div>
           <div class="next-case-study nunito-semibold block lg:hidden w-screen h-auto absolute leading-none uppercase text-left tracking-widest bottom-0 text-sm pl-8">
-            <!-- <a onclick="nextPage(), window.scrollTo(0,0)" href="time-to-care.html" target="_self" class="next-page"><div class="link-6"><div><span data-hover="NEXT CASE STUDY">Next Case Study</span></div></div></a> -->
-            <a href="#" target="_self" id="scrollMe"><div class="link-6"><div><span data-hover="NEXT CASE STUDY">Next Case Study</span></div></div></a>
+            <a onclick="nextPage(), window.scrollTo(0,0)" href="time-to-care.html" target="_self" class="next-page"><div class="link-6"><div><span data-hover="NEXT CASE STUDY">Next Case Study</span></div></div></a>
+            <!-- <a href="#" target="_self" id="scrollMe"><div class="link-6"><div><span data-hover="NEXT CASE STUDY">Next Case Study</span></div></div></a> -->
           </div>
         </div>
       </div>
@@ -335,7 +335,7 @@
         }
     </script>
     <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
-    <script src="assets/js/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.min.js"></script>
     <script src="assets/js/script.min.js"></script>
     <script>
       $('#toggle').click(function() {
@@ -348,6 +348,11 @@
       setTimeout(function() { window.location.href = destination; }, 1200);
     });
     </script>
+          <script>
+            $( document ).ready(function() {
+    window.document.documentElement.scrollTop=0;
+;});
+          </script>
     <script>
           if (matchMedia) {
             const mq = window.matchMedia("(max-width: 767px)");
@@ -392,14 +397,6 @@
     <script src="assets/js/mediabox.min.js"></script>
     <script>
       MediaBox('.mediabox');
-    </script>
-    <script src="assets/js/skrollTop.min.js"></script>
-    <script>
-    document.getElementById('scrollMe').addEventListener('click', function(){
-        skrollTop.scrollTo({
-            to: 1,
-        });
-    });
     </script>
     </body>
 </html>
