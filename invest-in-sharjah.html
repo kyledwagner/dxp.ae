@@ -152,7 +152,7 @@
       </div>
 
         <!-- Intro Section -->
-        <section class="hidden scroll-snap-please">
+        <section id="section-intro" class="hidden scroll-snap-please">
         <div class="h-screen w-screen flex items-center bg-gradient-light">
         <div class="flex flex-wrap container pl-0 md:pl-24 lg:pl-40 mx-auto">
           <div class="w-full lg:w-1/6 pt-1 pb-2 md:pb-4">
@@ -185,7 +185,7 @@
         </div>
         </section>
         <!-- Task Section -->
-        <section class="hidden scroll-snap-please">
+        <section id="section-task" class="hidden scroll-snap-please">
         <div class="h-screen w-screen bg-sharjah flex items-center">
           <div class="flex flex-wrap container pl-0 md:pl-24 lg:pl-40 mx-auto">
           <div class="w-full lg:w-1/6 pt-1 pb-2 md:pb-4">
@@ -199,7 +199,7 @@
         </div>
         </section>
         <!-- Film Section -->
-        <section class="hidden scroll-snap-please">
+        <section id="section-film" class="hidden scroll-snap-please">
         <div class="h-screen w-screen bg-film flex items-center">
         <div class="z-50 absolute left-0 bg-white h-screen"></div>
         <div class="z-40 absolute right-0 bg-film bg-film-next-page h-screen"></div>
@@ -401,8 +401,10 @@
       MediaBox('.mediabox');
     </script>
     <script>
-            $( document ).ready(function() {
-        setTimeout(function() { $( "section" ).toggleClass( "hidden" ); }, 2000);
+        $( document ).ready(function() {
+        setTimeout(function() { $( "#section-intro" ).toggleClass( "hidden" ); },2000);
+        setTimeout(function() { $( "#section-task" ).toggleClass( "hidden" ); }, 2200);
+        setTimeout(function() { $( "#section-film" ).toggleClass( "hidden" ); }, 2400);
       });
     </script>
     </body>
