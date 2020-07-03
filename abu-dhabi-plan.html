@@ -126,9 +126,9 @@
       </div>
       <!-- END Hamburger Menu -->
 
-      <div class="swiper-container" id="thetop">
-      <div class="sharjah-reel" id="thetop">
-      <div class="film-top h-screen w-screen flex flex-wrap items-center absolute" id="thetop">
+      <div class="swiper-container">
+      <div class="sharjah-reel">
+      <div class="film-top h-screen w-screen flex flex-wrap items-center absolute">
         <div class="textying w-full container md:w-1/2 mx-auto" id=“top”>
             <div class="load-hidden title-sr nunito-bold block md:mr-auto pl-8 md:pl-1 text-xl text-white text-left tracking-widest leading-none">Abu Dhabi Executive Council</div>
             <div class="load-hidden subtitle-sr nunito-bold block w-full md:mr-auto pl-8 md:pl-0 text-7xl text-white pt-2 text-left tracking-tight leading-none">Abu Dhabi <br>Plan</div>
@@ -234,7 +234,7 @@
           <div class="link-6"><div><span data-hover="NEXT CASE STUDY">Next Case Study</span></div></div>
         </div>
         <div class="next-case-study nunito-semibold block lg:hidden w-screen h-auto absolute leading-none uppercase text-left tracking-widest bottom-0 text-sm pl-8">
-          <a onclick="nextPage(), window.scrollTo(0,0), window.focus()" href="invest-in-sharjah.html" target="_self" class="next-page" id="scrollMe"><div class="link-6"><div><span data-hover="NEXT CASE STUDY">Next Case Study</span></div></div></a>
+          <a onclick="nextPage(), window.scrollTo(0,0), window.focus()" href="invest-in-sharjah.html" target="_self" class="next-page"><div class="link-6"><div><span data-hover="NEXT CASE STUDY">Next Case Study</span></div></div></a>
         </div>
       </div>
 
@@ -410,19 +410,6 @@
           magnetism: 3
         }
       );
-    </script>
-    <script src="assets/js/skrollTop.min.js"></script>
-    <script>
-    document.getElementById('scrollMe').addEventListener('click', function(){
-        skrollTop.scrollTo({
-            to: 0,
-            easing: window.easings.easeOutBounce,
-            duration: 800,
-            callback: function() {
-              console.log("finished!");
-            }
-        });
-    });
     </script>
     </body>
 </html>
