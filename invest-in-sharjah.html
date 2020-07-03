@@ -127,7 +127,8 @@
           </div>
           <!-- END Hamburger Menu -->
 
-      <div class="swiper-container scroll-snap-please">
+      <section>
+      <div class="swiper-container">
       <div class="sharjah-reel">
       <div class="film-top h-screen w-screen flex flex-wrap items-center absolute">
         <div class="w-full container md:w-1/2 mx-auto">
@@ -150,9 +151,11 @@
           </video>
       </div>
       </div>
+      </section>
 
         <!-- Intro Section -->
-        <div class="h-screen w-screen flex items-center bg-gradient-light scroll-snap-please">
+        <section>
+        <div class="h-screen w-screen flex items-center bg-gradient-light">
         <div class="flex flex-wrap container pl-0 md:pl-24 lg:pl-40 mx-auto">
           <div class="w-full lg:w-1/6 pt-1 pb-2 md:pb-4">
             <div class="client-sr nunito-semibold uppercase text-sm md:text-md tracking-widest text-white px-8">The Client</div>
@@ -182,8 +185,10 @@
           </div>
         </div>
         </div>
+        </section>
         <!-- Task Section -->
-        <div class="h-screen w-screen bg-sharjah flex items-center scroll-snap-please">
+        <section>
+        <div class="h-screen w-screen bg-sharjah flex items-center">
           <div class="flex flex-wrap container pl-0 md:pl-24 lg:pl-40 mx-auto">
           <div class="w-full lg:w-1/6 pt-1 pb-2 md:pb-4">
             <div class="task-sr nunito-semibold uppercase text-sm md:text-md tracking-widest text-white px-8">The Task</div>
@@ -194,7 +199,9 @@
           </div>
         </div>
         </div>
+        </section>
         <!-- Film Section -->
+        <section>
         <div class="h-screen w-screen bg-film flex items-center scroll-snap-please">
         <div class="z-50 absolute left-0 bg-white h-screen"></div>
         <div class="z-40 absolute right-0 bg-film bg-film-next-page h-screen"></div>
@@ -221,6 +228,7 @@
           <a href="abu-dhabi-plan.html#main" target="_self"><div class="swiper-button-prev nunito-light text-white right-0 pr-10 xl:pr-16 p-5"><img src="assets/icon/prev.svg" class="max-w-none" width="50"></div></a>
         </div> -->
         </div>
+        </section>
         <div id="arrows-arrows" class="relative">
           <div class="arrows-arrows-block z-10 absolute hidden lg:block bottom-0 mx-auto w-screen h-auto text-center">
             <a onclick="nextPage(), window.scrollTo(0,0)" href="abu-dhabi-plan.html" class="next-page mr-24"><div class="hvr-backward pl-5 py-5"><img src="assets/icon/prev.svg" class="max-w-none js-attract-hover" width="50"></div></a>
@@ -338,6 +346,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.min.js"></script>
     <script src="assets/js/script.min.js"></script>
     <script>
+      $( document ).ready(function() {
+        $( "section" ).addClass( "scroll-snap-please" );
+      });
       $('#toggle').click(function() {
       $(this).toggleClass('active');
       $('#overlay').toggleClass('open');
