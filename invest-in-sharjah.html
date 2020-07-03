@@ -395,23 +395,11 @@
     </script>
     <script src="assets/js/skrollTop.min.js"></script>
     <script>
-      
-document.getElementById('scrollMe').addEventListener('click', function(){
-    skrollTop.scrollTo({
-        to: 10,
-        easing: window.easings.easeOutBounce,
-        duration: 800,
-        callback: function() {
-           console.log("finished!");
-        }
+    document.getElementById('scrollMe').addEventListener('click', function(){
+        skrollTop.scrollTo({
+            to: 1,
+        });
     });
-});
-
-/*
-Want to stop the animation at any moment ?
-skrollTop.stop();
-*/
-
     </script>
     </body>
 </html>
