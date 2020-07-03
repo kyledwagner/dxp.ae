@@ -127,7 +127,7 @@
       <!-- END Hamburger Menu -->
 
       <div class="swiper-container">
-      <div class="sharjah-reel">
+      <div class="sharjah-reel" id="thetop">
       <div class="film-top h-screen w-screen flex flex-wrap items-center absolute">
         <div class="textying w-full container md:w-1/2 mx-auto" id=“top”>
             <div class="load-hidden title-sr nunito-bold block md:mr-auto pl-8 md:pl-1 text-xl text-white text-left tracking-widest leading-none">Abu Dhabi Executive Council</div>
@@ -234,7 +234,7 @@
           <div class="link-6"><div><span data-hover="NEXT CASE STUDY">Next Case Study</span></div></div>
         </div>
         <div class="next-case-study nunito-semibold block lg:hidden w-screen h-auto absolute leading-none uppercase text-left tracking-widest bottom-0 text-sm pl-8">
-          <a onclick="nextPage(), window.scrollTo(0,0), window.focus()" href="invest-in-sharjah.html" target="_self" class="next-page"><div class="link-6"><div><span data-hover="NEXT CASE STUDY">Next Case Study</span></div></div></a>
+          <a onclick="nextPage(), window.scrollTo(0,0), window.focus()" href="#thetop" target="_self" class="next-page"><div class="link-6"><div><span data-hover="NEXT CASE STUDY">Next Case Study</span></div></div></a>
         </div>
       </div>
 
@@ -242,18 +242,7 @@
       </div>
       <!-- <div class="hidden md:block circle-cursor circle-cursor--inner"></div> -->
       <div class="hidden md:block circle-cursor circle-cursor--outer"></div>
-      <script>
- setTimeout(function () {
-        window.scroll({
-                        top: 0,
-                        left: 0,
-                        behavior: 'smooth'
-                    });
-
-    document.body.scrollTop = document.documentElement.scrollTop = 0;
-
-}, 15);
-      </script>
+ 
       <script>
         var myVar;
 
