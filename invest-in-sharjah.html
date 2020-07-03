@@ -246,8 +246,11 @@
       <div class="hidden md:block circle-cursor circle-cursor--outer"></div>
 
       <script>
-        document.location.reload(true)
-      </script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+            var scrollpos = localStorage.getItem('scrollpos');
+            if (scrollpos) window.scrollTo(0, 0);
+        });
+    </script>
       <script>
         var myVar;
 
