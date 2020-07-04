@@ -1878,14 +1878,17 @@ span::before {
 }
 
 @media only screen and (min-width: 767px) {
+  .link-6 div {
+    max-height:0.7rem !important;
+  }
+}
+
 .link-6 {
   max-height:0.8rem !important;
-}
 }
 
 .link-6 div {
   overflow: hidden;
-  max-height:0.7rem !important;
 }
 
 .link-6 div span {
