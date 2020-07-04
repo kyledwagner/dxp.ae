@@ -931,8 +931,8 @@ body {
     opacity: 0.4;
     height: 5rem;
     position: absolute;
-    margin-top: 0.4rem !important;
-    top: 50% !important;
+    /* margin-top: 0.4rem !important; */
+    top: 49% !important;
     transform: translateY(-50%);
     right: 6rem !important;
     -webkit-transition: opacity 0.75s ease;
@@ -949,9 +949,9 @@ body {
     cursor: pointer !important;
     opacity: 0.4;
     height: 5rem;
-    margin-top: 0.4rem !important;
+    /* margin-top: 0.4rem !important; */
     position: absolute;
-    top: 50% !important;
+    top: 49% !important;
     transform: translateY(-50%);
     left: 13.3rem !important;
     -webkit-transition: opacity 0.75s ease;

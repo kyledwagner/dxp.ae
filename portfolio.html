@@ -255,8 +255,8 @@
 
         <!-- Add Arrows -->
         <div class="hidden lg:block">
-          <div class="swiper-button-next"><div class="hvr-forward absolute p-16 -mr-4 xl:-mr-2 -mt-8"><img src="assets/icon/next.svg" class="max-w-none js-attract-hover" width="50"></div></div>
-          <div class="swiper-button-prev"><div class="hvr-backward absolute p-16 -ml-16 xl:-ml-12 -mt-8"><img src="assets/icon/prev.svg" class="max-w-none js-attract-hover" width="50"></div></div>
+          <div class="swiper-button-next"><div class="hvr-forward absolute p-16 -mr-4 xl:-mr-2"><img src="assets/icon/next.svg" class="max-w-none js-attract-hover" width="50"></div></div>
+          <div class="swiper-button-prev"><div class="hvr-backward absolute p-16 -ml-16 xl:-ml-12"><img src="assets/icon/prev.svg" class="max-w-none js-attract-hover" width="50"></div></div>
         </div>
 
         </div>
@@ -308,6 +308,8 @@
         slidesPerView: '2.5',
         direction: getDirection(),
         spaceBetween: 31,
+        speed: 800,
+        parallax: true,
         loop: true,
         centeredSlides: true,
         centerInsufficientSlides: true,
