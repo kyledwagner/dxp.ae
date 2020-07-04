@@ -69,7 +69,7 @@
     <script>
       anime({
         targets: '.dxp-animate path, .dxp-animate line',
-        // strokeDashoffset: [anime.setDashoffset, 0],
+        strokeDashoffset: [anime.setDashoffset, 0],
         easing: 'easeInOutCubic',
         duration: 500,
         delay: anime.stagger(100, {start: 50}),
@@ -222,7 +222,13 @@
           <hr class="line-sr hidden md:block mx-8">
         </div>
         <div class="video-player w-full relative flex justify-center items-center lg:w-3/4 pb-2 md:pb-4 px-8">
-        <a id="lightbox" href="https://vimeo.com/326292144" class="glightbox">
+        <span id="lightbox" onclick="openGallery()" class="hidden md:block">
+          <img class="absolute play-button" src="assets/icon/play.svg" alt="Play Button">
+          <video poster="assets/img/case-study/time-to-care-desktop.jpg" autoplay playsinline muted loop>
+            <source src="assets/video/Case_Study_Time_To_Care_Prev.mp4" type="video/mp4">
+          </video>
+        </span>
+        <a href="https://vimeo.com/326292144" class="mediabox block md:hidden">
           <img class="absolute play-button" src="assets/icon/play.svg" alt="Play Button">
           <video poster="assets/img/case-study/time-to-care-desktop.jpg" autoplay playsinline muted loop>
             <source src="assets/video/Case_Study_Time_To_Care_Prev.mp4" type="video/mp4">
@@ -230,7 +236,9 @@
         </a>
         </div>
         <div class="language-sr w-full flex justify-end">
-        <div class="nunito-light text-base text-right tracking-normal text-white px-8"><a id="lightbox3" href="https://vimeo.com/326285655" class="glightbox hvr-sink">English</a> | <span class="nunito-semibold"><a id="lightbox2" href="https://vimeo.com/326292144" class="glightbox hvr-sink">Arabic</a></span></div>
+        <div class="nunito-light text-base text-right tracking-normal text-white px-8">
+        <a id="lightbox3" href="https://vimeo.com/326285655" class="glightbox hvr-sink" >English</a> |
+        <span class="nunito-semibold"><a id="lightbox2" href="https://vimeo.com/326292144" class="glightbox hvr-sink">Arabic</a></span></div>
         </div>
         </div>
         </div>
@@ -371,13 +379,21 @@
           // media query change
           function WidthChange(mq) {
           if (mq.matches) {
-            lightbox.classList.replace("glightbox", "mediabox");
             lightbox2.classList.replace("glightbox", "mediabox");
             lightbox3.classList.replace("glightbox", "mediabox");
           }
           }
   </script>
+
     <script src="assets/js/glightbox.min-new.js"></script>
+    <script>
+function openGallery(){
+    console.log("opened",lightbox);
+    lightbox.open();
+        lightbox.index=1;
+
+}
+    </script>
     <script type="text/javascript">
       const lightbox = GLightbox({
         onClose: () => { console.log('Lightbox closed'); window.scrollTo(0, document.body.scrollHeight); },
@@ -385,6 +401,7 @@
         touchNavigation: true,
         autoplayVideos: true,
         closeOnOutsideClick: true,
+        startAt:1,
         svg: {},
         plyr: {
           css: 'assets/css/plyr.css', // Custom Colored Version

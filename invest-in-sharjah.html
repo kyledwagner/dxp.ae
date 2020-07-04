@@ -206,11 +206,17 @@
           <hr class="line-sr hidden md:block mx-8">
         </div>
         <div class="video-player w-full relative flex justify-center items-center lg:w-3/4 pb-2 md:pb-4 px-8">
-        <a id="lightbox" href="https://vimeo.com/414306014/" class="glightbox" data-gallery="gallery1">
-          <img class="absolute play-button" src="assets/icon/play.svg" alt="Play Button">
+        <span id="lightbox" onclick="openGallery()" class="hidden md:block">
+            <img class="absolute play-button" src="assets/icon/play.svg" alt="Play Button">
           <video poster="assets/img/case-study/invest-in-sharjah-desktop.jpg" autoplay playsinline muted loop>
             <source src="assets/video/Case_Study_Invest_In_Sharjah_Prev.mp4" type="video/mp4">
           </video>
+        </span>
+        <a href="https://vimeo.com/414306014/" class="mediabox block md:hidden">
+          <img class="absolute play-button" src="assets/icon/play.svg" alt="Play Button">
+        <video poster="assets/img/case-study/invest-in-sharjah-desktop.jpg" autoplay playsinline muted loop>
+          <source src="assets/video/Case_Study_Invest_In_Sharjah_Prev.mp4" type="video/mp4">
+        </video>
         </a>
         </div>
         <div class="language-sr w-full flex justify-end">
@@ -354,11 +360,16 @@
           // media query change
           function WidthChange(mq) {
           if (mq.matches) {
-            lightbox.classList.replace("glightbox", "mediabox");
             lightbox2.classList.replace("glightbox", "mediabox");
             lightbox3.classList.replace("glightbox", "mediabox");
           }
           }
+  </script>
+  <script>
+    function openGallery(){
+        console.log("opened",lightbox);
+        lightbox.open();
+    }
   </script>
     <script src="assets/js/glightbox.min-new.js"></script>
     <script type="text/javascript">

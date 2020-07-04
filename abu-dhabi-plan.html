@@ -211,12 +211,18 @@
           <!-- <div class="hidden md:block mx-8 slider-scroll-down"><span class="bounce-line"></span></div> -->
         </div>
         <div class="video-player w-full relative flex justify-center items-center lg:w-3/4 pb-2 md:pb-4 px-8">
-          <a id="lightbox" href="https://vimeo.com/414307456" class="glightbox" data-gallery="gallery1">
+        <span id="lightbox" onclick="openGallery()" class="hidden md:block">
             <img class="absolute play-button" src="assets/icon/play.svg" alt="Play Button">
             <video poster="assets/img/case-study/abu-dhabi-plan-desktop.jpg" autoplay playsinline muted loop>
               <source src="assets/video/Case_Study_The_Abu_Dhabi_Plan_Prev.mp4" class="z-10" type="video/mp4">
             </video>
-          </a>
+        </span>
+        <a href="https://vimeo.com/414307456" class="mediabox block md:hidden">
+          <img class="absolute play-button" src="assets/icon/play.svg" alt="Play Button">
+          <video poster="assets/img/case-study/abu-dhabi-plan-desktop.jpg" autoplay playsinline muted loop>
+            <source src="assets/video/Case_Study_The_Abu_Dhabi_Plan_Prev.mp4" class="z-10" type="video/mp4">
+          </video>
+        </a>
         </div>
         <div class="language-sr w-full flex justify-end">
         <div class="nunito-light text-base text-right tracking-normal text-white px-8"><span class="nunito-semibold"><a id="lightbox2" href="https://vimeo.com/414307456" class="glightbox hvr-sink" data-gallery="gallery2">English</a></span> | <a id="lightbox3" href="https://vimeo.com/414306463" class="glightbox hvr-sink" data-gallery="gallery1">Arabic</a></div>
@@ -364,11 +370,16 @@
             // media query change
             function WidthChange(mq) {
             if (mq.matches) {
-              lightbox.classList.replace("glightbox", "mediabox");
               lightbox2.classList.replace("glightbox", "mediabox");
               lightbox3.classList.replace("glightbox", "mediabox");
             }
             }
+    </script>
+    <script>
+      function openGallery(){
+          console.log("opened",lightbox);
+          lightbox.open();
+      }
     </script>
     <script src="assets/js/glightbox.min-new.js" type="text/javascript"></script>
     <script type="text/javascript">
