@@ -15,7 +15,7 @@
 
         <link rel="stylesheet" href="assets/css/tailwind.min.css">
         <link rel="stylesheet" href="assets/css/main.css">
-        <link rel="stylesheet" href="assets/css/glightbox.min.css">
+        <link rel="stylesheet" href="assets/css/glightbox.min-new.css">
         <link rel="stylesheet" href="assets/css/mediabox.min.css">
         <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
         <script src="assets/js/anime.min.js" type="text/javascript"></script>
@@ -135,7 +135,6 @@
                   </div>
                 </div>
               </div>
-              </div>
             </nav>
           </div>
           <!-- END Hamburger Menu -->
@@ -223,7 +222,7 @@
           <hr class="line-sr hidden md:block mx-8">
         </div>
         <div class="video-player w-full relative flex justify-center items-center lg:w-3/4 pb-2 md:pb-4 px-8">
-        <a id="lightbox" href="https://vimeo.com/326292144/" class="glightbox" data-gallery="gallery1">
+        <a id="lightbox" href="https://vimeo.com/326292144" class="glightbox">
           <img class="absolute play-button" src="assets/icon/play.svg" alt="Play Button">
           <video poster="assets/img/case-study/time-to-care-desktop.jpg" autoplay playsinline muted loop>
             <source src="assets/video/Case_Study_Time_To_Care_Prev.mp4" type="video/mp4">
@@ -231,13 +230,9 @@
         </a>
         </div>
         <div class="language-sr w-full flex justify-end">
-        <div class="nunito-light text-base text-right tracking-normal text-white px-8"><a id="lightbox3" href="https://vimeo.com/326285655/" class="glightbox hvr-sink" data-gallery="gallery2">English</a> | <span class="nunito-semibold"><a id="lightbox2" href="https://vimeo.com/326292144/" class="glightbox hvr-sink" data-gallery="gallery1">Arabic</a></span></div>
+        <div class="nunito-light text-base text-right tracking-normal text-white px-8"><a id="lightbox3" href="https://vimeo.com/326285655" class="glightbox hvr-sink">English</a> | <span class="nunito-semibold"><a id="lightbox2" href="https://vimeo.com/326292144" class="glightbox hvr-sink">Arabic</a></span></div>
         </div>
         </div>
-        <!-- <div class="hidden md:block relative">
-          <a href="business-excellence-awards.html#main" target="_self"><div class="swiper-button-next nunito-light text-white right-0 pr-10 xl:pr-16 p-5"><img src="assets/icon/next.svg" class="max-w-none" width="50"></div></a>
-          <a href="invest-in-sharjah.html#main" target="_self"><div class="swiper-button-prev nunito-light text-white right-0 pr-10 xl:pr-16 p-5"><img src="assets/icon/prev.svg" class="max-w-none" width="50"></div></a>
-        </div> -->
         </div>
         <div id="arrows-arrows" class="relative">
           <div class="arrows-arrows-block z-10 absolute hidden lg:block bottom-0 mx-auto w-screen h-auto text-center">
@@ -252,6 +247,7 @@
           </div>
         </div>
       </div>
+    </div>
       <!-- <div class="hidden md:block circle-cursor circle-cursor--inner"></div> -->
       <div class="hidden md:block circle-cursor circle-cursor--outer"></div>
 
@@ -381,9 +377,11 @@
           }
           }
   </script>
-    <script src="assets/js/glightbox.min.js"></script>
+    <script src="assets/js/glightbox.min-new.js"></script>
     <script type="text/javascript">
       const lightbox = GLightbox({
+        onClose: () => { console.log('Lightbox closed'); window.scrollTo(0, document.body.scrollHeight); },
+        afterSlideChange: (prevSlide, currentSlide) => {   const { index, slide, player } = currentSlide;  if (player) {   player.on('exitfullscreen', event => { console.log("him exit"); window.scrollTo(0, document.body.scrollHeight);  });   } },
         touchNavigation: true,
         autoplayVideos: true,
         closeOnOutsideClick: true,
