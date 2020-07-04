@@ -1877,8 +1877,10 @@ span::before {
 	outline: none;
 }
 
+@media only screen and (min-width: 767px) {
 .link-6 {
   max-height:0.8rem !important;
+}
 }
 
 .link-6 div {
