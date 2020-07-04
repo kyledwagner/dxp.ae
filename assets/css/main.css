@@ -19,10 +19,6 @@ a:link {
   transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-/* * {
-  outline: 1px solid purple;
-} */
-
 .all-rights-reserved {
   padding-bottom: 3.85rem;
 }
@@ -52,10 +48,22 @@ a:link {
   }
 }
 
-html { /* body won't work for Chrome, Firefox ¯\_(ツ)_/¯ */
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-  background-color: black !important;
+/* CSS Scroll Snap creates a bug in page loading and never loads from the top for mobile iOS Safari */
+@media only screen and (min-width: 414px) {
+  /* body won't work for Chrome, Firefox ¯\_(ツ)_/¯ */
+  html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+  }
+  /* html won't work for Safari ¯\_(ツ)_/¯ */
+  body {
+    scroll-snap-type: y mandatory;
+  }
+}
+
+html {
+  background: rgb(21,40,55);
+  background: radial-gradient(circle, rgba(21,40,55,1) 0%, rgba(13,21,28,1) 100%);
   cursor: auto !important;
 }
 
@@ -64,8 +72,7 @@ html.sr .load-hidden {
   visibility: hidden;
 }
 
-body { /* html won't work for Safari ¯\_(ツ)_/¯ */
-  scroll-snap-type: y mandatory;
+body {
   overscroll-behavior-y: none;
   cursor: auto !important;
   background: rgb(21,40,55);
