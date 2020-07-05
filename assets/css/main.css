@@ -432,8 +432,6 @@ body {
     scroll-snap-stop: always;
   }
 
-
-
   .bg-portfolio {
     background: rgb(21,40,55);
     background: radial-gradient(circle, rgba(21,40,55,1) 0%, rgba(13,21,28,1) 100%);
@@ -455,7 +453,30 @@ body {
     width: 3rem;
   }
 
-
+  .image-box {
+    height: auto; /* [1.1] Set it as per your need */
+    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+  }
+  #portfolio .swiper-slide-active .titlehvr .image-box img {
+    transition: transform .75s ease !important;
+  }
+  #portfolio .swiper-slide-active .titlehvr:hover .image-box img {
+    transform: scale(1.07);
+  }
+  #portfolio .swiper-slide-active .titlehvr .title-hvr-grow {
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  #portfolio .swiper-slide-active .titlehvr:hover .title-hvr-grow {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
 
   #portfolio .swiper-slide-active img {
     filter: brightness(100%) !important;
@@ -1161,34 +1182,6 @@ body {
 .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
-}
-
-.image-box {
-  height: auto; /* [1.1] Set it as per your need */
-  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
-}
-.titlehvr .image-box img {
-  transition: transform .75s ease !important;
-}
-
-.titlehvr:hover .image-box img {
-  transform: scale(1.07);
-}
-
-.titlehvr .title-hvr-grow {
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-}
-
-.titlehvr:hover .title-hvr-grow {
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
 }
 
 
