@@ -11,6 +11,21 @@ a:link {
   cursor: pointer !important;
 }
 
+/* Removing arrows on iPhone 5 Screens */
+@media only screen and (min-width: 325px) {
+  .next-case-study-tiny {
+    display: none;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .arrows-arrows-block {
+    display: none;
+  }
+  .next-case-study-normal {
+    display: none;
+  }
+}
+
 .hvr-forward, .hvr-backward, .hvr-grow {
   cursor: pointer !important;
 }
