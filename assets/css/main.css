@@ -505,21 +505,9 @@ body {
     transition: opacity 0.75s ease;
   }
 
-  /* Fixing Alignment on Language on Mobile Heights */
   #portfolio .portfolio-mob-language {
     bottom: 0vh;
-    margin-bottom: -1rem;
-  }
-  @media only screen and (min-height: 650px) {
-    #portfolio .portfolio-mob-language {
-      bottom: 0vh;
-      margin-bottom: -1.5rem;
-    }
-  }
-  @media only screen and (min-height: 810px) {
-    #portfolio .portfolio-mob-language {
-      bottom: 4.5vh;
-    }
+    margin-bottom: -2.25rem;
   }
 
   #portfolio .swiper-slide-active img {
