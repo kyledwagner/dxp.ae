@@ -518,7 +518,7 @@ body {
   }
   @media only screen and (min-height: 810px) {
     #portfolio .portfolio-mob-language {
-      bottom: 4vh;
+      bottom: 12% !important;
     }
   }
 
