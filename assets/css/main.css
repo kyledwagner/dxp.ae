@@ -702,7 +702,7 @@ body {
   }
   .swiper-pagination {
     cursor: pointer !important;
-    top: 49.25% !important;
+    top: 48% !important;
     transform: translateY(-50%);
     padding-right: 3.2rem;
   }
@@ -805,7 +805,7 @@ body {
   #home .swiper-button-next {
     cursor: pointer !important;
     position: absolute;
-    top: 47.15% !important;
+    top: 46.15% !important;
     transform: translateY(-50%);
     right: -0.35rem !important;
   }
@@ -817,7 +817,7 @@ body {
   #home .swiper-button-prev {
     cursor: pointer !important;
     position: absolute;
-    top: 47.15% !important;
+    top: 46.15% !important;
     transform: translateY(-50%);
     right: 10rem !important;
   }
@@ -845,7 +845,7 @@ body {
   #case-studies .swiper-button-next {
     cursor: auto !important;
     position: absolute;
-    top: 47.15% !important;
+    top: 46.15% !important;
     transform: translateY(-50%);
     right: -0.35rem !important;
   }
@@ -857,7 +857,7 @@ body {
   #case-studies .swiper-button-prev {
     cursor: auto !important;
     position: absolute;
-    top: 47.15% !important;
+    top: 46.15% !important;
     transform: translateY(-50%);
     right: 10rem !important;
   }
