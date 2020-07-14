@@ -1,0 +1,5 @@
+User-Agent: *
+Disallow: 
+Disallow: /hosting
+Disallow: /node_modules
+Disallow: /swup
