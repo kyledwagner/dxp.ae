@@ -1,12 +1,15 @@
+# FORCE HTTPS
 RewriteEngine On
-RewriteCond %{SERVER_PORT} !^443$
-RewriteRule ^(.*)$ https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
+RewriteCond %{HTTPS} !on
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
 
+# REMOVE .HTML
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-d 
 RewriteCond %{REQUEST_FILENAME} !-f 
 RewriteRule ^([^\.]+)$ $1.html [NC, L]
 
+# REMOVE WWW
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
 RewriteRule ^(.*)$ http://%1%{REQUEST_URI} [R=301,QSA,NC,L]
